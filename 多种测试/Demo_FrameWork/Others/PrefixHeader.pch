@@ -1,0 +1,40 @@
+//
+//  PrefixHeader.pch
+//  多种测试
+//
+//  Created by kfz on 16/8/2.
+//  Copyright © 2016年 Jaly. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#ifdef __OBJC__
+// 单例测试key
+#define NAME @"signalname"
+
+// color
+#import "UIColor+extension.h"
+
+#define SC_Width [UIScreen mainScreen].bounds.size.width
+#define SC_Height [UIScreen mainScreen].bounds.size.height
+
+
+#ifdef DEBUG
+#define DLog(...) NSLog(__VA_ARGS__)
+#define debugMethod() NSLog(@"%s", __func__)
+#else
+#define DLog(...)
+#define debugMethod()
+#endif
+
+#define RGB(a,b,c) [UIColor colorWithRed:a/255. green:b/255. blue:c/255. alpha:1.]
+
+#import "UIView+extension.h"
+
+#endif
+
+
+
+#endif /* PrefixHeader_pch */

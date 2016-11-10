@@ -1,0 +1,11 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, ‘7.0’
+
+target '多种测试' do
+  pod 'AFNetworking','~> 1.2.1'
+  pod 'FlatUIKit'
+  pod 'EGOTableViewPullRefresh', '~> 0.1.0'
+  pod 'JSPatch'
+  pod 'SDWebImage', '~> 3.8.1'
+  pod 'FMDB', '~> 2.6.2'
+end

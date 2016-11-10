@@ -1,0 +1,34 @@
+{
+    allowReceiverd = 1;
+    catId = 1001;
+    isRead = 0;
+    isReplyed = 0;
+    messageId = 100000482990;
+    msgContent = "http://neibubook.kongfz.com/3424/80078055/?ref=search";
+    receiver = 5752597;
+    receiverDeleteTime = "2016-09-02 14:16:16";
+    receiverDeleted = 0;
+    receiverNickname = wutest08;
+    receiverPhoto = "http://neibuuser.kongfz.com/data/member_pic/2597/5752597.jpg";
+    receiverSaveTime = "2016-09-02 14:16:16";
+    receiverSaved = 0;
+    richContent =         (
+                           {
+                           bizType = shop;
+                           img = "http://www.kfzimg.com/G01/M01/02/FD/o4YBAFQBQyeAHFv7AAD8iWb5Y8w128_s.jpg";
+                           itemName = "\U7b2c\U4e09\U56de\U592a\U94c1\U5c40\U7efc\U5408\U8fd0\U52a8\U4f1a\Uff08\U662d\U548c17\U5e741942\U5e74\Uff09\U65e5\U672c\U4fb5\U534e\U65f6\U671f\U7531\U65e5\U4f2a\U592a\U539f\U94c1\U8def\U5c40\U65e5\U672c\U4eba\U4e3e\U529e\U592a\U539f\U94c1\U8def\U5c40\U8fd0\U52a8\U4f1a";
+                           price = "6000.00";
+                           time = "2010-01-28 23:00:31";
+                           url = "http://neibubook.kongfz.com/3424/80078055/?ref=search";
+                           }
+                           );
+    sendTime = "2016-09-02 14:16:16";
+    sender = 5752508;
+    senderDeleteTime = "2016-09-02 14:16:16";
+    senderDeleted = 0;
+    senderNickname = neibu123;
+    senderPhoto = "http://neibuuser.kongfz.com/data/member_pic/2508/5752508.jpg";
+    senderSaveTime = "2016-09-02 14:16:16";
+    senderSaved = 0;
+    urlContent = "<a href=\"http://neibubook.kongfz.com/3424/80078055/?ref=search\" target=\"_blank\">http://neibubook.kongfz.com/3424/80078055/?ref=search</a>";
+}

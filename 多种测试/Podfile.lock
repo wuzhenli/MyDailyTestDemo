@@ -1,0 +1,33 @@
+PODS:
+  - AFNetworking (1.2.1)
+  - EGOTableViewPullRefresh (0.1.0)
+  - FlatUIKit (1.6.2)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - JSPatch (1.1):
+    - JSPatch/Core (= 1.1)
+  - JSPatch/Core (1.1)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
+
+DEPENDENCIES:
+  - AFNetworking (~> 1.2.1)
+  - EGOTableViewPullRefresh (~> 0.1.0)
+  - FlatUIKit
+  - FMDB (~> 2.6.2)
+  - JSPatch
+  - SDWebImage (~> 3.8.1)
+
+SPEC CHECKSUMS:
+  AFNetworking: f60a525e16c10e857523265c3a77ad5cc6a91e82
+  EGOTableViewPullRefresh: d4c15be51914f4168d6fd7529b6ad3a4ab01e5f4
+  FlatUIKit: 1b41f0d4952ce8d970d8479ce79df54a960242c4
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  JSPatch: ade285ad1d8f06146ed6054a39cef87509453299
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+
+PODFILE CHECKSUM: 866e34a8f99fab631c8e95acd7fc87b34351a872
+
+COCOAPODS: 1.0.1
