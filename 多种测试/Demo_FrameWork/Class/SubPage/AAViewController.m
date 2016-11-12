@@ -14,6 +14,7 @@
 #import "NotificationTool.h"
 #import "UIImage+extension.h"
 #import "NSString+extension.h"
+#import "BBViewController.h"
 
 #define TEST
 
@@ -21,7 +22,7 @@
 
 @interface AAViewController ()<UITextViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) UILabel *label;
 
 @property (weak, nonatomic) UILabel *fontLabel;
 
@@ -36,7 +37,15 @@
 
 @implementation AAViewController
 
-
+- (UILabel *)label {
+    if (!_label) {
+        UILabel *l = [[UILabel alloc] init];
+        l.backgroundColor = [UIColor redColor];
+        [self.view addSubview:l];
+        _label = l;
+    }
+    return _label;
+}
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if (self = [super initWithNibName:@"AAViewController" bundle:nibBundleOrNil]) {
@@ -47,14 +56,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.textView.delegate = self;
-    self.textView.tintColor = [UIColor redColor];
     
-    dispatch_apply(6, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(size_t index) {
-        NSLog(@"%zu", index);
-    });
-    
+    self.label.backgroundColor = [UIColor redColor];
+    self.label.translatesAutoresizingMaskIntoConstraints = NO;
+    [self addLayout];
 }
+
+//- (void)updateViewConstraints {
+//    [super updateViewConstraints];
+//    [self addLayout];
+//}
+- (void)addLayout {
+    UIView *view = self.label;
+    // 1
+    NSLayoutConstraint *constraintTop = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1. constant:90];
+    NSLayoutConstraint *constraintLeft = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeft multiplier:1. constant:20];
+    NSLayoutConstraint *constraintRight = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeRight multiplier:1. constant:-20];
+    NSLayoutConstraint *constraintHeight = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1. constant:40];
+    
+    NSArray<NSLayoutConstraint *> *constraints = @[constraintTop, constraintLeft, constraintRight, constraintHeight];
+    [self.view addConstraints:constraints];
+}
+
+
+
 - (IBAction)pop:(id)sender {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -89,7 +114,8 @@
 
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [self test];
+    BBViewController *vc = [[BBViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)test {
@@ -579,17 +605,6 @@
 
 
 
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-}
-
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-}
-- (void)viewDidDisappear:(BOOL)animated {
-    
-}
 
 //- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 //    CGRect rect = self.label.frame;

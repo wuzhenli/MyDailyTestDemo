@@ -19,6 +19,12 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    NSLog(@"before  %s", __func__);
+    [super viewDidAppear:animated];
+    NSLog(@"after  %s", __func__);
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
