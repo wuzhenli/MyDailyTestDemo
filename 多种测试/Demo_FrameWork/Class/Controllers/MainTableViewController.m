@@ -72,11 +72,19 @@
     [self addItem:@"表格高度自适应" class:@"HeightTableViewController"];  // HeightTableViewController
     
     
-    [self pushInto:@"AAViewController"];
+//    [self pushInto:@"AAViewController"];
 //    [self loadDic];
-
+    self.title = NSStringFromClass([self class]);
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
+}
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    self.navigationController.navigationBarHidden = NO;
+}
 
 /*
 - (void)viewWillAppear:(BOOL)animated {
@@ -141,7 +149,7 @@
         self.edgesForExtendedLayout = UIRectEdgeAll;
         self.tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
         
-        UIView *v =  [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 0.1)];
+        UIView *v =  [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 10.1)];
         v.backgroundColor = [UIColor orangeColor];
         self.tableView.tableHeaderView = v;
     }

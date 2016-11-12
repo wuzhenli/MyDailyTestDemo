@@ -25,6 +25,9 @@
                     <rect key="frame" x="85" y="405" width="132" height="78"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Button" image="QQ"/>
+                    <connections>
+                        <action selector="goToBViewConstroller:" destination="-1" eventType="touchUpInside" id="PYF-vk-HP4"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEm-Vi-KEY">
                     <rect key="frame" x="224" y="132" width="60" height="30"/>

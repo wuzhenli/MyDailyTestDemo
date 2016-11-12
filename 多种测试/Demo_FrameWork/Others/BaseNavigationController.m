@@ -21,7 +21,7 @@
     [[UINavigationBar appearance] setBarTintColor:[UIColor cyanColor]];
     // 标题属性
     [[UINavigationBar appearance] setTitleTextAttributes:@{
-                                                           NSForegroundColorAttributeName:[UIColor redColor],
+                                                           NSForegroundColorAttributeName:[UIColor blackColor],
                                                            NSFontAttributeName : [UIFont systemFontOfSize:18]
                                                            }];
 }

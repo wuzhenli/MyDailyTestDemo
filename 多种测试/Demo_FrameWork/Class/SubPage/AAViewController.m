@@ -57,15 +57,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = NSStringFromClass([self class]);
+    
+    
+    
     self.label.backgroundColor = [UIColor redColor];
     self.label.translatesAutoresizingMaskIntoConstraints = NO;
     [self addLayout];
 }
 
-//- (void)updateViewConstraints {
-//    [super updateViewConstraints];
-//    [self addLayout];
-//}
 - (void)addLayout {
     UIView *view = self.label;
     // 1
@@ -113,10 +113,6 @@
 
 
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    BBViewController *vc = [[BBViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
 
 - (void)test {
     __block typeof(self) ws = self;
@@ -133,6 +129,10 @@
 
 
 
+- (IBAction)goToBViewConstroller:(id)sender {
+    BBViewController *vc = [[BBViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 
 

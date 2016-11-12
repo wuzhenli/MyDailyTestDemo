@@ -17,12 +17,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.title = NSStringFromClass([self class]);
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     NSLog(@"before  %s", __func__);
     [super viewDidAppear:animated];
     NSLog(@"after  %s", __func__);
+}
+- (IBAction)popViewController:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
