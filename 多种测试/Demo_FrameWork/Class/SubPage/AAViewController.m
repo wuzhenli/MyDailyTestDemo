@@ -78,17 +78,19 @@
     [self.view addConstraints:constraints];
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.timer invalidate];
+}
+
 
 
 - (IBAction)pop:(id)sender {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"dispatch onece" message:@"test ~~~" preferredStyle:UIAlertControllerStyleAlert];
-        [alertController addAction:[UIAlertAction actionWithTitle:@"cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-            ;
-        }]];
-        [self presentViewController:alertController animated:YES completion:nil];
-    });
+    self.timer = [NSTimer timerWithTimeInterval:3. target:self selector:@selector(timerRun) userInfo:nil repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
+}
+                  
+- (void)timerRun {
+    NSLog(@"%s", __func__);
 }
 
 //- (void)adjustChinese {
