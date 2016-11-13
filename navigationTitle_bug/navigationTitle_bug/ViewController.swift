@@ -12,6 +12,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = NSStringFromClass(self.classForCoder)
+        
+        title = NSStringFromClass(self.classForCoder)
+        
+        let appName: String = Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as! String
+        print(appName)
+        
+//        let c: = NSClassFromString(appName+".BViewController")
         
     }
 

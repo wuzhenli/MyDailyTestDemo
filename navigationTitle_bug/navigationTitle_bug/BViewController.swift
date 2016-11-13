@@ -13,7 +13,9 @@ class BViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "BViewController"
+//        title = "BViewController"
+        title = NSStringFromClass(self.classForCoder)
+        
     }
 
     @IBAction func pop(_ sender: Any) {

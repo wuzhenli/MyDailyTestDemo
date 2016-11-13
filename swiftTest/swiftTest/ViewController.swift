@@ -12,7 +12,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let a = Address();
+        a.town = "chaoyang"
+        print(a.city + "--" + a.town!)
+        let b = a
+        b.town = "changping"
+        if a === b {
+            print("a==b")
+        } else  {
+            print("a != b")
+        }
     }
 
     
@@ -20,3 +29,8 @@ class ViewController: UIViewController {
 
 }
 
+
+class Address {
+    let city = "beijing"
+    var town: String?
+}

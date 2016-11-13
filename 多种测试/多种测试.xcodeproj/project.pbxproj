@@ -16,6 +16,8 @@
 		DB33A4BB1D8B93AE00DA0DB7 /* InLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB33A4BA1D8B93AE00DA0DB7 /* InLabel.m */; };
 		DB3C63221DAD0DC200B22690 /* SegueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3C63211DAD0DC200B22690 /* SegueViewController.m */; };
 		DB43A9CC1DB4798400DC3D94 /* AdjustString.m in Sources */ = {isa = PBXBuildFile; fileRef = DB43A9CB1DB4798400DC3D94 /* AdjustString.m */; };
+		DB6519041DD815FA005FD77A /* LayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6519021DD815FA005FD77A /* LayoutViewController.m */; };
+		DB6519051DD815FA005FD77A /* LayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB6519031DD815FA005FD77A /* LayoutViewController.xib */; };
 		DB726EC71DA2809E004C6571 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB726EC61DA2809E004C6571 /* BaseNavigationController.m */; };
 		DB73965C1D7137850057804E /* CoreTextLineData.m in Sources */ = {isa = PBXBuildFile; fileRef = DB73965B1D7137850057804E /* CoreTextLineData.m */; };
 		DB73965F1D714E240057804E /* CTLinkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DB73965E1D714E240057804E /* CTLinkUtil.m */; };
@@ -193,6 +195,9 @@
 		DB3C63211DAD0DC200B22690 /* SegueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegueViewController.m; sourceTree = "<group>"; };
 		DB43A9CA1DB4798400DC3D94 /* AdjustString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdjustString.h; sourceTree = "<group>"; };
 		DB43A9CB1DB4798400DC3D94 /* AdjustString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdjustString.m; sourceTree = "<group>"; };
+		DB6519011DD815FA005FD77A /* LayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutViewController.h; sourceTree = "<group>"; };
+		DB6519021DD815FA005FD77A /* LayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutViewController.m; sourceTree = "<group>"; };
+		DB6519031DD815FA005FD77A /* LayoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LayoutViewController.xib; sourceTree = "<group>"; };
 		DB726EC51DA2809E004C6571 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		DB726EC61DA2809E004C6571 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		DB73965A1D7137850057804E /* CoreTextLineData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextLineData.h; sourceTree = "<group>"; };
@@ -489,6 +494,16 @@
 			name = "面试 UI";
 			sourceTree = "<group>";
 		};
+		DB6519001DD815E4005FD77A /* NSlayoutConstraint */ = {
+			isa = PBXGroup;
+			children = (
+				DB6519011DD815FA005FD77A /* LayoutViewController.h */,
+				DB6519021DD815FA005FD77A /* LayoutViewController.m */,
+				DB6519031DD815FA005FD77A /* LayoutViewController.xib */,
+			);
+			name = NSlayoutConstraint;
+			sourceTree = "<group>";
+		};
 		DB7CADA31D55C9EB00CDACBB /* Runloop */ = {
 			isa = PBXGroup;
 			children = (
@@ -545,6 +560,7 @@
 		DB7D3A151D0405E80002A704 /* SubPage */ = {
 			isa = PBXGroup;
 			children = (
+				DB6519001DD815E4005FD77A /* NSlayoutConstraint */,
 				DB8B02771DAC850D00FB354B /* Archive */,
 				DBC449DA1D9CB856007C74FF /* 图片圆角 */,
 				DBB25B901D9A2555007444FE /* 显示网页 */,
@@ -1208,6 +1224,7 @@
 				DB7CADA81D55CA0300CDACBB /* RunloopViewController.xib in Resources */,
 				DBB25B951D9A2581007444FE /* WebVC.xib in Resources */,
 				DB83DEBE1D87FB8200290E10 /* HeightTableViewCell.xib in Resources */,
+				DB6519051DD815FA005FD77A /* LayoutViewController.xib in Resources */,
 				DB8A166A1D79758E009B0C2C /* test.json in Resources */,
 				DB8B027C1DAC851E00FB354B /* ArchiveViewController.xib in Resources */,
 				DB81AF541D98FE3A00346EB0 /* CameraViewController.xib in Resources */,
@@ -1321,6 +1338,7 @@
 				DB8B027F1DAC856800FB354B /* Person_Ar.m in Sources */,
 				DBB25B941D9A2581007444FE /* WebVC.m in Sources */,
 				DB726EC71DA2809E004C6571 /* BaseNavigationController.m in Sources */,
+				DB6519041DD815FA005FD77A /* LayoutViewController.m in Sources */,
 				DBC449E31D9CB8C8007C74FF /* CoreGraphiViewController.m in Sources */,
 				DB7F32571D5C7F3C001F76E4 /* BViewController.m in Sources */,
 				DB33A4BB1D8B93AE00DA0DB7 /* InLabel.m in Sources */,

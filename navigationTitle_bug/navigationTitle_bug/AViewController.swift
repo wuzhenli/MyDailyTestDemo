@@ -13,7 +13,10 @@ class AViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "AViewController"
+//        title = "AViewController"
+        title = NSStringFromClass(self.classForCoder)
+        
+        
     }
 
     @IBAction func PushBVC(_ sender: Any) {
