@@ -73,7 +73,7 @@
     [self addItem:@"表格高度自适应" class:@"HeightTableViewController"];  // HeightTableViewController
     
     
-    [self pushInto:@"AAViewController"];
+    [self pushInto:@"AnimationViewController"];
 //    [self loadDic];
     self.title = NSStringFromClass([self class]);
 }
