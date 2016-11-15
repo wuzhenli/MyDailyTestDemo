@@ -127,6 +127,7 @@
 - (void)messagesInputToolbar:(JSQMessagesInputToolbar *)toolbar
       didPressRightBarButton:(UIButton *)sender {
     DLOG(@"%s", __func__);
+    toolbar.contentView.textView.text = nil;
 }
 
 /**

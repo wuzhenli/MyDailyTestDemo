@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AAViewController">
             <connections>
                 <outlet property="emptionView" destination="paw-Dg-fGw" id="KdG-Ph-RKk"/>
+                <outlet property="inputToolBar" destination="TC3-sm-ZwJ" id="p5Y-Tc-Af5"/>
                 <outlet property="textView" destination="QFP-Uy-VS4" id="qsw-p1-OKD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -77,6 +78,14 @@
                         <action selector="pop:" destination="-1" eventType="touchUpInside" id="kDx-m2-r5t"/>
                     </connections>
                 </button>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TC3-sm-ZwJ">
+                    <rect key="frame" x="6" y="623" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem title="Item" id="vr7-gA-Yb6"/>
+                        <barButtonItem title="Item2" id="WRX-sB-m4z"/>
+                    </items>
+                </toolbar>
             </subviews>
             <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <point key="canvasLocation" x="-299.5" y="58.5"/>

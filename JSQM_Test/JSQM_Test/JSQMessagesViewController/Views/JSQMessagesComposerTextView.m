@@ -136,7 +136,7 @@
         newHeight = MAX(newHeight, self.minHeightConstraint.constant);
     }
 
-    // update the height constraint
+    // update the height  
     self.heightConstraint.constant = newHeight;
 }
 

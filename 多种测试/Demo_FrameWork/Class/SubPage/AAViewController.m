@@ -31,6 +31,7 @@
 @property (weak, nonatomic) UITextField *tmpField;
 
 @property (strong, nonatomic) IBOutlet UIView *emptionView;
+@property (weak, nonatomic) IBOutlet UIToolbar *inputToolBar;
 
 @property (strong, nonatomic) NSTimer *timer;
 @end
@@ -58,8 +59,8 @@
     [super viewDidLoad];
     
     self.title = NSStringFromClass([self class]);
-    
-    
+    [self.inputToolBar removeFromSuperview];
+    self.textView.inputAccessoryView = self.inputToolBar;
     
     self.label.backgroundColor = [UIColor redColor];
     self.label.translatesAutoresizingMaskIntoConstraints = NO;
