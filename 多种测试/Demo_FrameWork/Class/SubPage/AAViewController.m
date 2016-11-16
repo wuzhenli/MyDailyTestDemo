@@ -60,11 +60,11 @@
     
     self.title = NSStringFromClass([self class]);
     [self.inputToolBar removeFromSuperview];
-    self.textView.inputAccessoryView = self.inputToolBar;
+//    self.textView.inputAccessoryView = self.inputToolBar;
     
     self.label.backgroundColor = [UIColor redColor];
     self.label.translatesAutoresizingMaskIntoConstraints = NO;
-    [self addLayout];
+//    [self addLayout];
 }
 
 - (void)addLayout {

@@ -14,6 +14,11 @@
 		DB329B7D1DB64370002AB449 /* DepySub.m in Sources */ = {isa = PBXBuildFile; fileRef = DB329B7C1DB64370002AB449 /* DepySub.m */; };
 		DB32FFBC1DAA334400C80831 /* NSString+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = DB32FFBB1DAA334400C80831 /* NSString+extension.m */; };
 		DB33A4BB1D8B93AE00DA0DB7 /* InLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB33A4BA1D8B93AE00DA0DB7 /* InLabel.m */; };
+		DB36B4901DDB2BFF00124062 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB36B48F1DDB2BFF00124062 /* RootViewController.m */; };
+		DB36B4931DDB2C1100124062 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB36B4921DDB2C1100124062 /* DetailViewController.m */; };
+		DB36B4951DDB2C1E00124062 /* espressos.txt in Resources */ = {isa = PBXBuildFile; fileRef = DB36B4941DDB2C1E00124062 /* espressos.txt */; };
+		DB36B4991DDB2C3100124062 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB36B4981DDB2C3100124062 /* TTTAttributedLabel.m */; };
+		DB36B49C1DDB2C5400124062 /* AttributedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB36B49B1DDB2C5400124062 /* AttributedTableViewCell.m */; };
 		DB3C63221DAD0DC200B22690 /* SegueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3C63211DAD0DC200B22690 /* SegueViewController.m */; };
 		DB43A9CC1DB4798400DC3D94 /* AdjustString.m in Sources */ = {isa = PBXBuildFile; fileRef = DB43A9CB1DB4798400DC3D94 /* AdjustString.m */; };
 		DB6519041DD815FA005FD77A /* LayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6519021DD815FA005FD77A /* LayoutViewController.m */; };
@@ -191,6 +196,15 @@
 		DB32FFBB1DAA334400C80831 /* NSString+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+extension.m"; sourceTree = "<group>"; };
 		DB33A4B91D8B93AE00DA0DB7 /* InLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InLabel.h; sourceTree = "<group>"; };
 		DB33A4BA1D8B93AE00DA0DB7 /* InLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InLabel.m; sourceTree = "<group>"; };
+		DB36B48E1DDB2BFF00124062 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		DB36B48F1DDB2BFF00124062 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		DB36B4911DDB2C1100124062 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		DB36B4921DDB2C1100124062 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		DB36B4941DDB2C1E00124062 /* espressos.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = espressos.txt; sourceTree = "<group>"; };
+		DB36B4971DDB2C3100124062 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
+		DB36B4981DDB2C3100124062 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
+		DB36B49A1DDB2C5400124062 /* AttributedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributedTableViewCell.h; sourceTree = "<group>"; };
+		DB36B49B1DDB2C5400124062 /* AttributedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributedTableViewCell.m; sourceTree = "<group>"; };
 		DB3C63201DAD0DC200B22690 /* SegueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegueViewController.h; sourceTree = "<group>"; };
 		DB3C63211DAD0DC200B22690 /* SegueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegueViewController.m; sourceTree = "<group>"; };
 		DB43A9CA1DB4798400DC3D94 /* AdjustString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdjustString.h; sourceTree = "<group>"; };
@@ -494,6 +508,28 @@
 			name = "面试 UI";
 			sourceTree = "<group>";
 		};
+		DB36B48D1DDB2BEC00124062 /* TTTAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				DB36B49A1DDB2C5400124062 /* AttributedTableViewCell.h */,
+				DB36B49B1DDB2C5400124062 /* AttributedTableViewCell.m */,
+				DB36B4911DDB2C1100124062 /* DetailViewController.h */,
+				DB36B4921DDB2C1100124062 /* DetailViewController.m */,
+				DB36B48E1DDB2BFF00124062 /* RootViewController.h */,
+				DB36B48F1DDB2BFF00124062 /* RootViewController.m */,
+			);
+			name = TTTAttributedLabel;
+			sourceTree = "<group>";
+		};
+		DB36B4961DDB2C3100124062 /* TTTAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				DB36B4971DDB2C3100124062 /* TTTAttributedLabel.h */,
+				DB36B4981DDB2C3100124062 /* TTTAttributedLabel.m */,
+			);
+			path = TTTAttributedLabel;
+			sourceTree = "<group>";
+		};
 		DB6519001DD815E4005FD77A /* NSlayoutConstraint */ = {
 			isa = PBXGroup;
 			children = (
@@ -527,6 +563,7 @@
 		DB7D1C381D5091D5004CB242 /* CoreText */ = {
 			isa = PBXGroup;
 			children = (
+				DB36B48D1DDB2BEC00124062 /* TTTAttributedLabel */,
 				DB7D1C391D5091E5004CB242 /* CoreTextViewController.h */,
 				DB7D1C3A1D5091E5004CB242 /* CoreTextViewController.m */,
 				DB7D1C3B1D5091E5004CB242 /* CoreTextViewController.xib */,
@@ -809,6 +846,7 @@
 		DBA1EEA91D8FCB0000856AE3 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				DB36B4961DDB2C3100124062 /* TTTAttributedLabel */,
 				DBA1EEAA1D8FCB0800856AE3 /* Regex */,
 			);
 			name = Lib;
@@ -991,6 +1029,7 @@
 		DBE1324C1CFFDDC300FC702C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DB36B4941DDB2C1E00124062 /* espressos.txt */,
 				DBD215F21D52E3F900CA0B0B /* coretext-image-1.jpg */,
 				DBD215F31D52E3F900CA0B0B /* coretext-image-2.jpg */,
 				DBD215F41D52E3F900CA0B0B /* cursor@2x.png */,
@@ -1230,6 +1269,7 @@
 				DB81AF541D98FE3A00346EB0 /* CameraViewController.xib in Resources */,
 				DB80535B1D7A9A6A0026860C /* PastViewController.xib in Resources */,
 				DB830E9D1D7D24D0009EAE7D /* SaveImageViewController.xib in Resources */,
+				DB36B4951DDB2C1E00124062 /* espressos.txt in Resources */,
 				DBD4CC331D7BB925008219E1 /* mulitiTest.js in Resources */,
 				DB7D1C371D506FC5004CB242 /* CFViewController.xib in Resources */,
 				DBD315131D7A596600CA6610 /* TipsViewController.xib in Resources */,
@@ -1352,6 +1392,7 @@
 				DB8CC3F11D2B923100E57856 /* ColViewController.m in Sources */,
 				DBD315161D7A5AFC00CA6610 /* User.m in Sources */,
 				DBCC98601D5D787D00E7DE2A /* BBViewController.m in Sources */,
+				DB36B4931DDB2C1100124062 /* DetailViewController.m in Sources */,
 				DB80535A1D7A9A6A0026860C /* PastViewController.m in Sources */,
 				DB7F325A1D5C80C2001F76E4 /* ANavigationController.m in Sources */,
 				DB8053641D7AC4A50026860C /* JSQMessagesCellTextView.m in Sources */,
@@ -1376,12 +1417,15 @@
 				DBA1EEAD1D8FCB2B00856AE3 /* RegexKitLite.m in Sources */,
 				DBDC22271D86662B00467F1A /* NSString+ex.m in Sources */,
 				DB8ABD4A1D81530A002E5F90 /* SaveSecondViewController.m in Sources */,
+				DB36B4991DDB2C3100124062 /* TTTAttributedLabel.m in Sources */,
+				DB36B49C1DDB2C5400124062 /* AttributedTableViewCell.m in Sources */,
 				DBDC221A1D86553400467F1A /* LayerViewController.m in Sources */,
 				DB80535E1D7A9B6C0026860C /* UICopyLabel.m in Sources */,
 				DBDC221E1D86560F00467F1A /* MyLayer.m in Sources */,
 				DB7D1C451D50A294004CB242 /* UIView+extension.m in Sources */,
 				DB83DEB81D87FA7400290E10 /* HeightTableViewController.m in Sources */,
 				DB7EF31F1D228369005A8267 /* CalenderViewController.m in Sources */,
+				DB36B4901DDB2BFF00124062 /* RootViewController.m in Sources */,
 				DB9DC0321D6BD7D2005ACE2A /* AnimationViewController.m in Sources */,
 				DBC449DE1D9CB87E007C74FF /* CornerRadiousViewController.m in Sources */,
 				DB7D3A1D1D04062A0002A704 /* TipView.m in Sources */,
