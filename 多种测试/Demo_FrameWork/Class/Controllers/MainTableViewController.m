@@ -38,7 +38,7 @@
     [super viewDidLoad];
     [self setTable];
     
-    [self addItem:@"TTTAttributedLabel" class:@"RootViewController"];  // RootViewController
+    [self addItem:@"TTTAttributedLabel" class:@"RootViewController"];  // 
     [self addItem:@"NSlayoutConstraint" class:@"LayoutViewController"];  // 
     [self addItem:@"深拷贝" class:@"DepyCopyViewController"];  // 
     [self addItem:@"ArchiveViewController" class:@"ArchiveViewController"];  //

@@ -16,6 +16,9 @@
 #import "NSString+extension.h"
 #import "BBViewController.h"
 
+#import <WebKit/WebKit.h>
+#import <objc/runtime.h>
+
 #define TEST
 
 #define SERVERNAMETEST  @""
@@ -57,6 +60,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    {
+        WKWebView *wv = [[WKWebView alloc] init];
+        
+        unsigned int count = 0;
+        Ivar *ivars = class_copyIvarList([wv.configuration.processPool class], &count);
+        for (int i = 0; i<count; i++) {
+            Ivar ivar = ivars[i];
+            const char *name = ivar_getName(ivar);
+            NSLog(@"%s", name);
+        }
+        
+    }
     
     self.title = NSStringFromClass([self class]);
     [self.inputToolBar removeFromSuperview];
