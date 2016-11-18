@@ -37,6 +37,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setTable];
+    [self setRightButton];
     
     [self addItem:@"TTTAttributedLabel" class:@"RootViewController"];  // 
     [self addItem:@"NSlayoutConstraint" class:@"LayoutViewController"];  // 
@@ -72,20 +73,52 @@
     [self addItem:@"复制 粘贴 功能" class:@"PastViewController"];  //
     [self addItem:@"保存图片" class:@"SaveImageViewController"];  //
     [self addItem:@"表格高度自适应" class:@"HeightTableViewController"];  // HeightTableViewController
+     
     
     
-    [self pushInto:@"AAViewController"];
+//    [self pushInto:@"AAViewController"];
 //    [self loadDic];
     self.title = NSStringFromClass([self class]);
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.navigationController.navigationBarHidden = YES;
+//    self.navigationController.navigationBarHidden = YES;
 }
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-    self.navigationController.navigationBarHidden = NO;
+//    self.navigationController.navigationBarHidden = NO;
+}
+
+
+- (void)setBGView {
+    UIImageView *img = ({
+        UIImageView *imgV = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"banner"]];
+        imgV.frame = self.view.bounds;
+        
+        
+        imgV;
+    });
+    
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 40 - 64, 100, 40)];
+    btn.backgroundColor = [UIColor redColor];
+    [btn addTarget:self action:@selector(btcClicked) forControlEvents:UIControlEventTouchUpInside];
+    [img addSubview:btn];
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
+    [img addGestureRecognizer:tap];
+
+    [img addGestureRecognizer:tap];
+    
+    self.tableView.backgroundView = img;
+//    [self.view addSubview:img];
+}
+
+- (void)btcClicked {
+    NSLog(@"%s  %s", __func__, __FUNCTION__);
+}
+- (void)tap:(UIGestureRecognizer *)gesture {
+    NSLog(@"%@", gesture);
 }
 
 /*
@@ -145,11 +178,21 @@
     tableView.delegate = self;
 }
 
+- (void)setRightButton {
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"R" style:UIBarButtonItemStyleDone target:self action:@selector(right)];
+    self.navigationItem.rightBarButtonItem = rightItem;
+}
+- (void)right {
+    NSLog(@"%@", self.tableView.visibleCells);
+}
 - (void)setTable {
     {
         self.automaticallyAdjustsScrollViewInsets = NO;
         self.edgesForExtendedLayout = UIRectEdgeAll;
         self.tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+        
+        self.tableView.separatorInset = UIEdgeInsetsMake(30, 30, 10, 10);
+        self.tableView.separatorColor = [UIColor greenColor];
         
         UIView *v =  [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 10.1)];
         v.backgroundColor = [UIColor orangeColor];

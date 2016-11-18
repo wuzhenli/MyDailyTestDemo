@@ -44,6 +44,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.tableView.separatorInset = UIEdgeInsetsMake(30, 40, 50, 10);
+    
     self.title = NSLocalizedString(@"Espressos", nil);
     [self.navigationController.navigationBar setTintColor:[UIColor darkGrayColor]];
 }
