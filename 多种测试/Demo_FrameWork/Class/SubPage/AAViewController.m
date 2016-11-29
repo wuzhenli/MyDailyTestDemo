@@ -37,10 +37,27 @@
 @property (weak, nonatomic) IBOutlet UIToolbar *inputToolBar;
 
 @property (strong, nonatomic) NSTimer *timer;
+
+@property (strong, nonatomic) UIView *redView;
 @end
 
 @implementation AAViewController
 
+- (UIView *)redView {
+    if (!_redView) {
+        NSLog(@"---   redView  -----%@", [NSThread currentThread]);
+        UIView *v = [[UIView alloc] initWithFrame:CGRectMake(0, 64, 120, 120)];
+        
+        v.backgroundColor = [UIColor redColor];
+//        [self.view addSubview:v];
+        _redView = v;
+    }
+    
+    return _redView;
+}
+- (void)addREdView {
+    [self redView];
+}
 - (UILabel *)label {
     if (!_label) {
         UILabel *l = [[UILabel alloc] init];
@@ -57,10 +74,21 @@
     }
     return self;
 }
+//- (void)loadView {
+//    [super loadView];
+//    [self redView];
+//}
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+//    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.edgesForExtendedLayout = UIRectEdgeAll;
+    
+    [self.view addSubview:self.redView];
+    [self encodeTest];
     {
         WKWebView *wv = [[WKWebView alloc] init];
         
@@ -81,6 +109,17 @@
     self.label.backgroundColor = [UIColor redColor];
     self.label.translatesAutoresizingMaskIntoConstraints = NO;
 //    [self addLayout];
+}
+
+
+- (void)encodeTest {
+    // https%3A%2F%2Fneibum.kongfz.com%2Fm%2F&userId=5752508#/shop/cart/list
+    NSString *str = @"https://neibum.kongfz.com/m/#/shop/cart/list";
+    
+    NSString *new1 = [str stringByReplacingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
+    NSLog(@"%@", new1);
+    NSString *new2 = [str stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
+    NSLog(@"%@", new2);
 }
 
 - (void)addLayout {

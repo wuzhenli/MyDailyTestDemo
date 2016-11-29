@@ -9,6 +9,7 @@
 #import "MainTableViewController.h"
 #import "KVO_ViewController.h"
 #import "AAViewController.h"
+#import <WebKit/WebKit.h>
 
 @interface MainTableViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -35,10 +36,14 @@
 }
 
 - (void)viewDidLoad {
+//    WKWebView;
+    NSLog(@"%s", __func__);
     [super viewDidLoad];
     [self setTable];
     [self setRightButton];
     
+    [self addItem:@"扫描二维码" class:@"ScaleViewController"];  // ScaleViewController
+    [self addItem:@"测试  测试   测试" class:@"AAViewController"];  // 
     [self addItem:@"TTTAttributedLabel" class:@"RootViewController"];  // 
     [self addItem:@"NSlayoutConstraint" class:@"LayoutViewController"];  // 
     [self addItem:@"深拷贝" class:@"DepyCopyViewController"];  // 
@@ -68,7 +73,7 @@
     
     [self addItem:@"RunloopViewController" class:@"RunloopViewController"];  //
     [self addItem:@"TextKitViewController" class:@"TextKitViewController"];  //
-    [self addItem:@"测试  测试   测试" class:@"AAViewController"];  //
+    
     [self addItem:@"iOS Tips" class:@"TipsViewController"];  //
     [self addItem:@"复制 粘贴 功能" class:@"PastViewController"];  //
     [self addItem:@"保存图片" class:@"SaveImageViewController"];  //
@@ -165,11 +170,17 @@
 
 - (void)loadView {
     [super loadView];
+    NSLog(@"%s", __func__);
+    
+    
     CGRect rect = [UIScreen mainScreen].bounds;
     self.view = [[UIView alloc] initWithFrame:rect];
     self.view.backgroundColor = [UIColor redColor];
     
-    rect.size.height -= 50;
+    self.automaticallyAdjustsScrollViewInsets = NO;
+//    self.edgesForExtendedLayout = UIRectEdgeAll;
+    
+    rect.size.height -= 64;
     rect.origin.y = 64;
     UITableView *tableView = [[UITableView alloc] initWithFrame:rect style:UITableViewStyleGrouped];
     [self.view addSubview:tableView];
@@ -187,8 +198,7 @@
 }
 - (void)setTable {
     {
-        self.automaticallyAdjustsScrollViewInsets = NO;
-        self.edgesForExtendedLayout = UIRectEdgeAll;
+        
         self.tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
         
         self.tableView.separatorInset = UIEdgeInsetsMake(30, 30, 10, 10);
@@ -256,10 +266,11 @@
     Class c = self.classArray[indexPath.section];
     UIViewController *vc = [[c alloc] init];
     
-//    UIViewController *vc = [[AAViewController alloc] initWithNibName:@"AAViewController" bundle:nil];
+//    AAViewController *vc = [[AAViewController alloc] initWithNibName:@"AAViewController" bundle:nil];
     
     
-    [self.navigationController pushViewController:vc animated:YES];
+    [self.navigationController pushViewController:vc animated:NO];
+//    [vc addREdView];
 }
 
 

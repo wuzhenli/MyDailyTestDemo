@@ -114,6 +114,9 @@
 		DBB25B8F1D9A0129007444FE /* UIImage+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB25B8E1D9A0129007444FE /* UIImage+extension.m */; };
 		DBB25B941D9A2581007444FE /* WebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB25B921D9A2581007444FE /* WebVC.m */; };
 		DBB25B951D9A2581007444FE /* WebVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBB25B931D9A2581007444FE /* WebVC.xib */; };
+		DBC057E81DEC43CE0052BD5D /* ScaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC057E61DEC43CE0052BD5D /* ScaleViewController.m */; };
+		DBC057E91DEC43CE0052BD5D /* ScaleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBC057E71DEC43CE0052BD5D /* ScaleViewController.xib */; };
+		DBC057EB1DEC440D0052BD5D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC057EA1DEC440D0052BD5D /* AVFoundation.framework */; };
 		DBC449DE1D9CB87E007C74FF /* CornerRadiousViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC449DC1D9CB87E007C74FF /* CornerRadiousViewController.m */; };
 		DBC449DF1D9CB87E007C74FF /* CornerRadiousViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBC449DD1D9CB87E007C74FF /* CornerRadiousViewController.xib */; };
 		DBC449E31D9CB8C8007C74FF /* CoreGraphiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC449E11D9CB8C8007C74FF /* CoreGraphiViewController.m */; };
@@ -373,6 +376,10 @@
 		DBB25B911D9A2581007444FE /* WebVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebVC.h; sourceTree = "<group>"; };
 		DBB25B921D9A2581007444FE /* WebVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebVC.m; sourceTree = "<group>"; };
 		DBB25B931D9A2581007444FE /* WebVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebVC.xib; sourceTree = "<group>"; };
+		DBC057E51DEC43CE0052BD5D /* ScaleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScaleViewController.h; sourceTree = "<group>"; };
+		DBC057E61DEC43CE0052BD5D /* ScaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScaleViewController.m; sourceTree = "<group>"; };
+		DBC057E71DEC43CE0052BD5D /* ScaleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScaleViewController.xib; sourceTree = "<group>"; };
+		DBC057EA1DEC440D0052BD5D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		DBC449DB1D9CB87E007C74FF /* CornerRadiousViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CornerRadiousViewController.h; sourceTree = "<group>"; };
 		DBC449DC1D9CB87E007C74FF /* CornerRadiousViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CornerRadiousViewController.m; sourceTree = "<group>"; };
 		DBC449DD1D9CB87E007C74FF /* CornerRadiousViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CornerRadiousViewController.xib; sourceTree = "<group>"; };
@@ -469,6 +476,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBC057EB1DEC440D0052BD5D /* AVFoundation.framework in Frameworks */,
 				DB75E04F1DDDA67E00C60E2C /* WebKit.framework in Frameworks */,
 				DBA1EEAF1D8FCBBD00856AE3 /* libicucore.tbd in Frameworks */,
 				DBD19F6F1D824B9000FB9CB3 /* CoreGraphics.framework in Frameworks */,
@@ -628,6 +636,7 @@
 		DB7D3A151D0405E80002A704 /* SubPage */ = {
 			isa = PBXGroup;
 			children = (
+				DBC057E41DEC43B30052BD5D /* 扫描二维码 */,
 				DB2DFF641DDC80C000950C50 /* 运行时+崩溃处理 */,
 				DB6519001DD815E4005FD77A /* NSlayoutConstraint */,
 				DB8B02771DAC850D00FB354B /* Archive */,
@@ -924,6 +933,16 @@
 			name = api;
 			sourceTree = "<group>";
 		};
+		DBC057E41DEC43B30052BD5D /* 扫描二维码 */ = {
+			isa = PBXGroup;
+			children = (
+				DBC057E51DEC43CE0052BD5D /* ScaleViewController.h */,
+				DBC057E61DEC43CE0052BD5D /* ScaleViewController.m */,
+				DBC057E71DEC43CE0052BD5D /* ScaleViewController.xib */,
+			);
+			name = "扫描二维码";
+			sourceTree = "<group>";
+		};
 		DBC449DA1D9CB856007C74FF /* 图片圆角 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1160,6 +1179,7 @@
 		F8B3B35E4EDF8D8C3589B92E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DBC057EA1DEC440D0052BD5D /* AVFoundation.framework */,
 				DB75E04E1DDDA67E00C60E2C /* WebKit.framework */,
 				DBA1EEAE1D8FCBBD00856AE3 /* libicucore.tbd */,
 				DBD19F6E1D824B9000FB9CB3 /* CoreGraphics.framework */,
@@ -1333,6 +1353,7 @@
 				DBD215F71D52E3FA00CA0B0B /* coretext-image-2.jpg in Resources */,
 				DB8FD8CD1D8E8F94004AC729 /* UITestViewController.xib in Resources */,
 				DB8976B51D51F70000CE36FB /* imgContent.json in Resources */,
+				DBC057E91DEC43CE0052BD5D /* ScaleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1503,6 +1524,7 @@
 				DBDC22241D86655400467F1A /* UIImage+ex.m in Sources */,
 				DB7DC0101D8D35F700B1C52C /* AnimationTool.m in Sources */,
 				DB81CFE51D13D8A600C57FFC /* PswViewController.m in Sources */,
+				DBC057E81DEC43CE0052BD5D /* ScaleViewController.m in Sources */,
 				DBD308B91D97604E0031DDEF /* MyTextView.m in Sources */,
 				DB84DED41D41BE5300C6527D /* EGOViewController.m in Sources */,
 				DBE16CEA1D13B1C4002BDDD4 /* ButtonScaleViewController.m in Sources */,

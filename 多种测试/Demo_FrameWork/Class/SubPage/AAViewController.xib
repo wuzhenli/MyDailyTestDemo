@@ -90,14 +90,35 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="顶部 64" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6Y-TP-Mah">
+                    <rect key="frame" x="157.5" y="64" width="60.5" height="21"/>
+                    <color key="backgroundColor" red="1" green="0.9671478899" blue="0.67583474570000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="紧贴 底部 高 48" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkU-x2-8a3">
+                    <rect key="frame" x="126.5" y="619" width="121" height="48"/>
+                    <color key="backgroundColor" red="1" green="0.9671478899" blue="0.67583474570000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="AXF-Qq-59O"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="QFP-Uy-VS4" secondAttribute="trailing" constant="60" id="1Qg-6c-KEs"/>
+                <constraint firstItem="R6Y-TP-Mah" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ahp-XR-Fqr"/>
+                <constraint firstItem="nkU-x2-8a3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="E7h-Cw-DJ8"/>
                 <constraint firstItem="QFP-Uy-VS4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="60" id="EQS-JY-XCl"/>
                 <constraint firstItem="QFP-Uy-VS4" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="200" id="GjV-84-FlJ"/>
+                <constraint firstItem="R6Y-TP-Mah" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="Ng4-L6-DwL"/>
+                <constraint firstAttribute="bottom" secondItem="nkU-x2-8a3" secondAttribute="bottom" id="n1P-9M-mYI"/>
             </constraints>
-            <point key="canvasLocation" x="-299.5" y="58.5"/>
+            <point key="canvasLocation" x="-371" y="45"/>
         </view>
         <view contentMode="scaleToFill" id="paw-Dg-fGw">
             <rect key="frame" x="0.0" y="0.0" width="266" height="123"/>

@@ -11,4 +11,6 @@
 
 @interface AAViewController : UIViewController
 
+- (void)addREdView ;
+
 @end
