@@ -111,6 +111,10 @@
 //    [self addLayout];
 }
 
+- (IBAction)pushBVC:(id)sender {
+    BBViewController *vc = [[BBViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 - (void)encodeTest {
     // https%3A%2F%2Fneibum.kongfz.com%2Fm%2F&userId=5752508#/shop/cart/list

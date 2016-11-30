@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScaleViewController">
             <connections>
                 <outlet property="resultLabel" destination="keY-t2-brV" id="dxO-ZC-ZCB"/>
+                <outlet property="scanIndicateImgView" destination="0mT-6H-YQQ" id="ba0-r1-A4U"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,13 +27,6 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scale_bgImage" translatesAutoresizingMaskIntoConstraints="NO" id="MLg-Bs-ZgP">
-                    <rect key="frame" x="40" y="100" width="120" height="120"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="120" id="QXs-ZW-7kn"/>
-                        <constraint firstAttribute="width" constant="120" id="pmy-Ws-zda"/>
-                    </constraints>
-                </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lZu-E4-sYd">
                     <rect key="frame" x="0.0" y="332" width="375" height="3"/>
                     <color key="backgroundColor" red="1" green="0.29926069630000002" blue="0.67583474570000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -47,6 +41,10 @@
                         <constraint firstAttribute="width" constant="3" id="YMF-BS-nfz"/>
                     </constraints>
                 </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scale_bgImage" translatesAutoresizingMaskIntoConstraints="NO" id="0mT-6H-YQQ">
+                    <rect key="frame" x="9" y="120" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -54,10 +52,8 @@
                 <constraint firstAttribute="trailing" secondItem="lZu-E4-sYd" secondAttribute="trailing" id="9qB-eK-tax"/>
                 <constraint firstItem="keY-t2-brV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YMD-rC-nVk"/>
                 <constraint firstItem="keY-t2-brV" firstAttribute="top" secondItem="2pc-Ch-ry8" secondAttribute="bottom" id="cR7-bR-Yb5"/>
-                <constraint firstItem="MLg-Bs-ZgP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="cXc-I9-twB"/>
                 <constraint firstItem="lZu-E4-sYd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fE0-xY-DKe"/>
                 <constraint firstItem="2pc-Ch-ry8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="j9J-pK-Hvu"/>
-                <constraint firstItem="MLg-Bs-ZgP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="kSy-fF-PhN"/>
                 <constraint firstItem="2pc-Ch-ry8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qbg-wI-K1P"/>
                 <constraint firstAttribute="bottom" secondItem="keY-t2-brV" secondAttribute="bottom" constant="60" id="uPh-Wp-exe"/>
             </constraints>

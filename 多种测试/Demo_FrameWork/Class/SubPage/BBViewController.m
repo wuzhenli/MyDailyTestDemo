@@ -9,6 +9,7 @@
 #import "BBViewController.h"
 
 @interface BBViewController ()
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 
 @end
 
@@ -16,6 +17,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UIColor *tintColor = [UIColor orangeColor];
+    self.searchBar.tintColor = tintColor;
+    self.searchBar.showsCancelButton = YES;
+    self.searchBar.showsBookmarkButton = YES;
+
+    UIButton *cancelBtn = (UIButton *) [self.searchBar valueForKey:@"_cancelButton"];
+    [cancelBtn setTitle:@"取消" forState:UIControlStateNormal];
+    [cancelBtn setTitle:@"取消" forState:UIControlStateHighlighted];
+    [cancelBtn setTitleColor:tintColor forState:UIControlStateDisabled];
+    [cancelBtn setTitleColor:tintColor forState:UIControlStateNormal];
+    
+    self.searchBar.prompt = @"prompt";
+                             
+
+    
+    
+    [self.searchBar setImage:[UIImage imageNamed:@"QQ"] forSearchBarIcon:UISearchBarIconSearch state:UIControlStateNormal];
+    
+    
+    
     // Do any additional setup after loading the view from its nib.
     self.title = NSStringFromClass([self class]);
 }
@@ -27,6 +48,10 @@
 }
 - (IBAction)popViewController:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];
 }
 
 - (void)didReceiveMemoryWarning {

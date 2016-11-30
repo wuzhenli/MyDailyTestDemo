@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BBViewController">
             <connections>
+                <outlet property="searchBar" destination="aqe-GJ-JB3" id="vIA-Zw-WW0"/>
+                <outlet property="searchDisplayController" destination="eEJ-on-NJe" id="US3-Np-abT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,15 +22,32 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJy-DH-0Ec">
-                    <rect key="frame" x="168" y="199" width="46" height="30"/>
+                    <rect key="frame" x="150" y="586" width="46" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="BBVC"/>
                     <connections>
                         <action selector="popViewController:" destination="-1" eventType="touchUpInside" id="wGG-VQ-ibl"/>
                     </connections>
                 </button>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="aqe-GJ-JB3">
+                    <rect key="frame" x="0.0" y="70" width="375" height="44"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aqe-GJ-JB3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="OgE-fj-jL0"/>
+                <constraint firstAttribute="trailing" secondItem="aqe-GJ-JB3" secondAttribute="trailing" id="Wlj-C0-0kf"/>
+                <constraint firstItem="aqe-GJ-JB3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dyw-1r-vMy"/>
+            </constraints>
         </view>
+        <searchDisplayController id="eEJ-on-NJe">
+            <connections>
+                <outlet property="delegate" destination="-1" id="x4Z-Nm-Ygh"/>
+                <outlet property="searchContentsController" destination="-1" id="Vrv-ln-mPx"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="dej-2l-5JK"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="kDT-bO-ELd"/>
+            </connections>
+        </searchDisplayController>
     </objects>
 </document>

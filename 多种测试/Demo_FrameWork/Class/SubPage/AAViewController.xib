@@ -30,14 +30,6 @@
                         <action selector="goToBViewConstroller:" destination="-1" eventType="touchUpInside" id="PYF-vk-HP4"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEm-Vi-KEY">
-                    <rect key="frame" x="224" y="132" width="60" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="表情键盘"/>
-                    <connections>
-                        <action selector="buttonClicked:" destination="-1" eventType="touchUpInside" id="fMY-A0-n5u"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itu-BW-fgm">
                     <rect key="frame" x="60" y="203" width="100" height="37"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -107,6 +99,22 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogj-zJ-AGc">
+                    <rect key="frame" x="140" y="124" width="68" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="push BVC"/>
+                    <connections>
+                        <action selector="pushBVC:" destination="-1" eventType="touchUpInside" id="jXn-pP-7tI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEm-Vi-KEY">
+                    <rect key="frame" x="261" y="224" width="91" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="表情键盘"/>
+                    <connections>
+                        <action selector="buttonClicked:" destination="-1" eventType="touchUpInside" id="fMY-A0-n5u"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -118,7 +126,7 @@
                 <constraint firstItem="R6Y-TP-Mah" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="Ng4-L6-DwL"/>
                 <constraint firstAttribute="bottom" secondItem="nkU-x2-8a3" secondAttribute="bottom" id="n1P-9M-mYI"/>
             </constraints>
-            <point key="canvasLocation" x="-371" y="45"/>
+            <point key="canvasLocation" x="-371.5" y="44.5"/>
         </view>
         <view contentMode="scaleToFill" id="paw-Dg-fGw">
             <rect key="frame" x="0.0" y="0.0" width="266" height="123"/>
