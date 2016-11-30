@@ -81,10 +81,56 @@
      
     
     
+      
 //    [self pushInto:@"AAViewController"];
 //    [self loadDic];
     self.title = NSStringFromClass([self class]);
 }
+
+- (void)testEncode {
+    NSString *url=@"http://neibutousu.kongfz.com/member/complaints_admin/manage_complaint.php?act=detail&complaintId=246348";
+    NSString *encodedValue = [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    //    NSLog(@"-=-=    %@", encodedValue);
+    
+    
+    NSString *encode_1 = [url stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+    
+    
+    NSString *encode_2 = [self encodeString:url];
+    NSLog(@"-=-=    %@", encode_2);
+    NSString *deencode = [self decodeString:encode_2];
+    NSLog(@"-=-=    %@", deencode);
+}
+
+- (NSString *)decodeString:(NSString*)encodedString
+
+{
+    //NSString *decodedString = [encodedString stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding ];
+    
+    NSString *decodedString  = (__bridge_transfer NSString *)CFURLCreateStringByReplacingPercentEscapesUsingEncoding(NULL,
+                                                                                                                     (__bridge CFStringRef)encodedString,
+                                                                                                                     CFSTR(""),
+                                                                                                                     CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding));
+    return decodedString;
+}
+
+//URLEncode
+- (NSString*)encodeString:(NSString*)unencodedString{
+    
+    // CharactersToBeEscaped = @":/?&=;+!@#$()~',*";
+    // CharactersToLeaveUnescaped = @"[].";
+    
+    NSString *encodedString = (NSString *)
+    CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
+                                                              (CFStringRef)unencodedString,
+                                                              NULL,
+                                                              (CFStringRef)@"!*'();:@&=+$,/?%#[]",
+                                                              kCFStringEncodingUTF8));
+    
+    return encodedString;
+}
+
+
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
