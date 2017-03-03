@@ -32,6 +32,9 @@
 /// previewLayer
 @property (strong, nonatomic) AVCaptureVideoPreviewLayer *previewLayer;
 
+/** device */
+@property (strong, nonatomic) AVCaptureDevice *device;
+
 /// output
 @property (strong, nonatomic) AVCaptureStillImageOutput *output;
 
@@ -107,6 +110,7 @@
     
     // device --> input
     AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    self.device = device;
     if ( [device isFlashAvailable] && [device lockForConfiguration:nil] ) {
         self.flashMode = AVCaptureFlashModeAuto;
         if ( ![device isFlashModeSupported:self.flashMode] ) {
@@ -197,6 +201,10 @@
     for (AVCaptureDevice *device in [AVCaptureDevice devices]) {
         // 1、找到制定方向的设备
         if (device.position == desiredPosition) {
+            // 判断设备是否为同一个
+            if (device == self.device) {
+                return;
+            }
             // 2、切换input
             AVCaptureDeviceInput *input = [AVCaptureDeviceInput deviceInputWithDevice:device error:nil];
             
