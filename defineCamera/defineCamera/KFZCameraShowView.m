@@ -24,7 +24,14 @@
 }
 
 - (IBAction)retake:(id)sender {
+    if (self.reTakePhotoBlock) {
+        self.reTakePhotoBlock();
+    }
     [self removeFromSuperview];
+}
+
+- (void)dealloc {
+    NSLog(@"%s", __func__);
 }
 
 - (IBAction)usePhoto:(id)sender {

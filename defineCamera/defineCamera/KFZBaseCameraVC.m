@@ -91,7 +91,7 @@
 
 
 - (void)showTipError {
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"本应用想访问您的相机" message:@"请到-[设置]-[隐私]-[相机]-中，允许应用访问您的相机" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"应用想访问您的相机" message:@"请到-[设置]-[隐私]-[相机]-中，允许应用访问您的相机" preferredStyle:UIAlertControllerStyleAlert];
     [alert addAction:[UIAlertAction actionWithTitle:@"知道了" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [self dismissViewControllerAnimated:YES completion:nil];
     }]];
@@ -155,7 +155,11 @@
 
 
 
+#pragma -mark
+#pragma -mark 按钮的点击事件
 
+#pragma -mark
+#pragma -mark 拍照
 - (void)captureButtonClicked {
     static BOOL isCaptureImage = NO;
     if (isCaptureImage) {
@@ -165,6 +169,12 @@
     
     
     AVCaptureConnection *connection = [self _currentConnection];
+    
+    // 设置 镜像
+    if ([connection isVideoMirroringSupported]) {
+        connection.videoMirrored = self.deviceposition == AVCaptureDevicePositionFront;
+    }
+    
     if (connection == nil) {
         return;
     }
@@ -205,6 +215,11 @@
             } else {
                 self.flashButton.selected = NO;
             }
+            
+//            // 4、转场效果
+//            [UIView transitionWithView:self.previewView duration:0.4 options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+//                ;
+//            } completion:nil];
             break;
         }
     }
@@ -212,7 +227,7 @@
 }
 
 #pragma -mark
-#pragma -mark 打开、关闭闪光灯
+#pragma -mark 打开、关闭 闪光灯
 - (void)falshButtonClicked:(UIButton *)sender {
     AVCaptureFlashMode desiredMode ;
     switch (self.flashMode) {
@@ -270,6 +285,8 @@
 }
 
 
+#pragma -mark
+#pragma -mark 点击 “X”按钮，关闭拍照界面
 - (void)closeButtonClicked {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -278,10 +295,12 @@
 //    NSLog(@"%s", __func__);
 }
 
-
+#pragma -mark
+#pragma -mark 显示拍照预览图
 - (void)showCaptureImage:(NSData *)imgData {
     self.cameraShowView.imageData = imgData;
     [self.view addSubview:self.cameraShowView];
+    [_session stopRunning];
 }
 
 
@@ -348,6 +367,9 @@
             if (ws.delegate && [ws.delegate respondsToSelector:@selector(KFZBaseCameraVC:takeImageData:)]) {
                 [ws.delegate KFZBaseCameraVC:ws takeImageData:ws.cameraShowView.imageData];
             }
+        };
+        _cameraShowView.reTakePhotoBlock = ^{
+            [ws.session startRunning];
         };
     }
     return _cameraShowView;

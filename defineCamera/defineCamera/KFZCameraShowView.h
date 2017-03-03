@@ -13,5 +13,6 @@
 @property (strong, nonatomic) NSData *imageData;
 
 @property (copy, nonatomic) dispatch_block_t usePhotoBlock;
+@property (copy, nonatomic) dispatch_block_t reTakePhotoBlock;
 
 @end
