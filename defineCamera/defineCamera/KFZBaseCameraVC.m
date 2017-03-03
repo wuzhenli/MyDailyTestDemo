@@ -112,10 +112,7 @@
     AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     self.device = device;
     if ( [device isFlashAvailable] && [device lockForConfiguration:nil] ) {
-        self.flashMode = AVCaptureFlashModeAuto;
-        if ( ![device isFlashModeSupported:self.flashMode] ) {
-            self.flashMode = AVCaptureFlashModeOff;
-        }
+        self.flashMode = AVCaptureFlashModeOff;
         
         device.flashMode = self.flashMode;
         [device unlockForConfiguration];
@@ -182,12 +179,51 @@
     if (connection == nil) {
         return;
     }
+    
+    
     [_output captureStillImageAsynchronouslyFromConnection:connection completionHandler:^(CMSampleBufferRef imageDataSampleBuffer, NSError *error) {
+        if ( isCaptureImage == NO || imageDataSampleBuffer == NULL) {
+            isCaptureImage = NO;
+            return ;
+        }
+        
+        // 生成照片
         NSData *imgData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageDataSampleBuffer];
         isCaptureImage = NO;
         [self showCaptureImage:imgData];
+        [self addTakePhotoEffect];
     }];
+    
+    
+    
 }
+
+- (void)addTakePhotoEffect {
+    UIView *flashView = [UIView new];
+    flashView.backgroundColor = [UIColor colorWithWhite:0.9f alpha:1.f];
+    flashView.alpha = 0.f;
+    [self.view addSubview:flashView];
+    flashView.frame = [UIScreen mainScreen].bounds;
+    
+    [UIView animateWithDuration:0.15f
+                          delay:0.f
+                        options:UIViewAnimationOptionCurveEaseIn
+                     animations:^{
+                         flashView.alpha = 1.f;
+                     }
+                     completion:^(BOOL finished) {
+                         [UIView animateWithDuration:0.15f
+                                               delay:0.05f
+                                             options:UIViewAnimationOptionCurveEaseOut
+                                          animations:^{
+                                              flashView.alpha = 0.f;
+                                          }
+                                          completion:^(BOOL finished2) {
+                                              [flashView removeFromSuperview];
+                                          }];
+                     }];
+}
+
 
 #pragma -mark
 #pragma -mark 切换镜头方向
@@ -205,6 +241,9 @@
             if (device == self.device) {
                 return;
             }
+            
+            
+            self.device = device;
             // 2、切换input
             AVCaptureDeviceInput *input = [AVCaptureDeviceInput deviceInputWithDevice:device error:nil];
             
@@ -224,15 +263,14 @@
                 self.flashButton.selected = NO;
             }
             
-//            // 4、转场效果
-//            [UIView transitionWithView:self.previewView duration:0.4 options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
-//                ;
-//            } completion:nil];
+            
             break;
         }
     }
     
 }
+
+
 
 #pragma -mark
 #pragma -mark 打开、关闭 闪光灯
@@ -307,7 +345,8 @@
 #pragma -mark 显示拍照预览图
 - (void)showCaptureImage:(NSData *)imgData {
     self.cameraShowView.imageData = imgData;
-    [self.view addSubview:self.cameraShowView];
+    self.cameraShowView.hidden = NO;
+    [self.view bringSubviewToFront:self.cameraShowView];
     [_session stopRunning];
 }
 
@@ -367,9 +406,13 @@
 
 - (KFZCameraShowView *)cameraShowView {
     if (!_cameraShowView) {
-        _cameraShowView = [[[NSBundle mainBundle] loadNibNamed:@"KFZCameraShowView" owner:nil options:nil] lastObject];
-        _cameraShowView.frame = self.view.bounds;
         __weak typeof(self) ws = self;
+        _cameraShowView = [[[NSBundle mainBundle] loadNibNamed:@"KFZCameraShowView" owner:nil options:nil] lastObject];
+        [self.view addSubview:_cameraShowView];
+        [_cameraShowView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(ws.view);
+        }];
+        _cameraShowView.hidden = YES;
         _cameraShowView.usePhotoBlock = ^{
             [ws closeButtonClicked];
             if (ws.delegate && [ws.delegate respondsToSelector:@selector(KFZBaseCameraVC:takeImageData:)]) {
@@ -406,8 +449,8 @@
     }];
     // direction
     [self.directionButton mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(weakSelf.view).offset(15);
-        make.top.equalTo(weakSelf.view).offset(20);
+        make.right.equalTo(weakSelf.view).offset(-20);
+        make.bottom.equalTo(weakSelf.view).offset(-25);
     }];
     // preview
     [self.previewView mas_remakeConstraints:^(MASConstraintMaker *make) {

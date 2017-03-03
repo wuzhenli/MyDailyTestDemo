@@ -20,19 +20,19 @@
 - (void)setImageData:(NSData *)imageData {
     _imageData = imageData;
     _imgView.image = [UIImage imageWithData:imageData];
-    NSLog(@"%lu", imageData.length);
+    
 }
 
 - (IBAction)retake:(id)sender {
     if (self.reTakePhotoBlock) {
         self.reTakePhotoBlock();
     }
-    [self removeFromSuperview];
+    self.hidden = YES;
 }
 
-- (void)dealloc {
-    NSLog(@"%s", __func__);
-}
+//- (void)dealloc {
+//    NSLog(@"%s", __func__);
+//}
 
 - (IBAction)usePhoto:(id)sender {
     if (self.usePhotoBlock) {

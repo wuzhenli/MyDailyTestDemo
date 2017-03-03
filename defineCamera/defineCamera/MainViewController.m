@@ -11,6 +11,7 @@
 
 @interface MainViewController ()<KFZBaseCameraVCDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *imgView;
+@property (weak, nonatomic) IBOutlet UIView *aniView;
 
 @end
 
@@ -31,6 +32,38 @@
     
 }
 
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    CATransform3D transform = CATransform3DIdentity;
+    transform.m34 =  -1.0 / 1000.;
+    transform = CATransform3DTranslate(transform, 0, 0, 50);
+    
+    [UIView animateWithDuration:0.15 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        self.aniView.layer.transform = CATransform3DRotate(transform, -M_PI/2, 0, 1, 0);
+        self.aniView.alpha = 0.8;
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.15 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+            self.aniView.alpha = 1.;
+            self.aniView.layer.transform = CATransform3DIdentity;
+        } completion:^(BOOL finished) {
+            ;
+        }];
+    }];
+    
+    
+    /*
+     typedef NS_ENUM(NSInteger, UIDeviceOrientation) {
+     UIDeviceOrientationUnknown,
+     UIDeviceOrientationPortrait,            // Device oriented vertically, home button on the bottom
+     UIDeviceOrientationPortraitUpsideDown,  // Device oriented vertically, home button on the top
+     UIDeviceOrientationLandscapeLeft,       // Device oriented horizontally, home button on the right
+     UIDeviceOrientationLandscapeRight,      // Device oriented horizontally, home button on the left
+     UIDeviceOrientationFaceUp,              // Device oriented flat, face up
+     UIDeviceOrientationFaceDown             // Device oriented flat, face down
+     } __TVOS_PROHIBITED;
+     */
+}
+
 /*
 #pragma mark - Navigation
 
@@ -42,6 +75,13 @@
 */
 
 @end
+
+
+
+
+
+
+
 
 
 
