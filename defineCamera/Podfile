@@ -8,6 +8,8 @@ target 'defineCamera' do
   # Pods for defineCamera
   pod 'Masonry', '1.0.2'
   pod 'DBCamera', '~>2.4'
+  pod 'FMDB', '~> 2.6.2'
+
 
   target 'defineCameraTests' do
     inherit! :search_paths

@@ -22,8 +22,7 @@
     // Do any additional setup after loading the view from its nib.
 }
 - (IBAction)takePhoto:(id)sender {
-    KFZBaseCameraVC *baseVC = [[KFZBaseCameraVC alloc] init];
-    baseVC.delegate = self;
+    KFZBaseCameraVC *baseVC = [[KFZBaseCameraVC alloc] initWithDelegate:self];
     [self presentViewController:baseVC animated:YES completion:nil];
 }
 

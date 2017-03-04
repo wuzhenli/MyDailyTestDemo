@@ -10,11 +10,15 @@
 #import <AVFoundation/AVFoundation.h>
 #import <Masonry.h>
 #import "KFZCameraShowView.h"
+#import "KFZImageDBTool.h"
 
 
 #define kKFZCameraSelColor [UIColor greenColor]
 
 @interface KFZBaseCameraVC ()
+@property (weak, nonatomic) id<KFZBaseCameraVCDelegate> delegate;
+
+
 @property (strong, nonatomic) UIButton *captureButton;
 @property (strong, nonatomic) UIButton *flashButton;
 @property (strong, nonatomic) UIButton *closeButton;
@@ -48,9 +52,18 @@
 
 @implementation KFZBaseCameraVC
 
+- (instancetype)initWithDelegate:(id<KFZBaseCameraVCDelegate>)delegate {
+    if (self == [super init]) {
+        self.delegate = delegate;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setup];
+    // open DB
+    [KFZImageDBTool openDatatase];
     // Do any additional setup after loading the view, typically from a nib.
     [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -192,6 +205,18 @@
         isCaptureImage = NO;
         [self showCaptureImage:imgData];
         [self addTakePhotoEffect];
+        
+        // save
+        // 当前时间戳：long
+        time_t t = time(nil);
+        
+        NSTimeInterval interval = [[NSDate date] timeIntervalSince1970];
+        NSString *intervalStr = [NSString stringWithFormat:@"%lf", interval];
+        
+        NSLog(@"%ld, %@",t, intervalStr);
+        
+        
+        [KFZImageDBTool insertImage:[UIImage imageWithData:imgData] clientMsgId:intervalStr];
     }];
     
     

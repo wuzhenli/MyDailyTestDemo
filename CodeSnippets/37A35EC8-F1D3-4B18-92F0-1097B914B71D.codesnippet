@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>&lt;NSString *&gt;dataSource  shortcut</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (NSMutableArray&lt;NSString *&gt; *)dataSource {
+    if (!_dataSource) {
+        _dataSource = [NSMutableArray arrayWithCapacity:30];
+        for (int i=0; i&lt;30; i++) {
+            [_dataSource addObject:[NSString stringWithFormat:@"row: %d",i]];
+        }
+    }
+    return _dataSource;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>37A35EC8-F1D3-4B18-92F0-1097B914B71D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>&lt;NSString *&gt;dataSource  summary</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>dataSource title</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

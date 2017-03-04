@@ -18,7 +18,9 @@
 
 @interface KFZBaseCameraVC : UIViewController
 
-@property (weak, nonatomic) id delegate;
+- (instancetype)initWithDelegate:(id<KFZBaseCameraVCDelegate>)delegate ;
+- (instancetype)init UNAVAILABLE_ATTRIBUTE;
++ (instancetype)new UNAVAILABLE_ATTRIBUTE;
 
 @end
 
