@@ -48,7 +48,7 @@
             ;
         }];
     }];
-    
+    [self.view endEditing:YES];
     
     /*
      typedef NS_ENUM(NSInteger, UIDeviceOrientation) {

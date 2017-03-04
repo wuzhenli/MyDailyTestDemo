@@ -9,7 +9,7 @@ target 'defineCamera' do
   pod 'Masonry', '1.0.2'
   pod 'DBCamera', '~>2.4'
   pod 'FMDB', '~> 2.6.2'
-
+  pod 'IQKeyboardManager', '~> 4.0.8'
 
   target 'defineCameraTests' do
     inherit! :search_paths

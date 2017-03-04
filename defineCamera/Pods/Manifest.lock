@@ -5,19 +5,22 @@ PODS:
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
   - GPUImage (0.1.7)
+  - IQKeyboardManager (4.0.8)
   - Masonry (1.0.2)
 
 DEPENDENCIES:
   - DBCamera (~> 2.4)
   - FMDB (~> 2.6.2)
+  - IQKeyboardManager (~> 4.0.8)
   - Masonry (= 1.0.2)
 
 SPEC CHECKSUMS:
   DBCamera: 7a4343a541e1264610f9f33176552b93170a843e
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  IQKeyboardManager: 1a8189fa153bf09044355ee0ad36826f6767e7f7
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
 
-PODFILE CHECKSUM: c0faa003e757311daf3405c93c196d4ce52855ba
+PODFILE CHECKSUM: 2845f6e4e3377ff7906a870f11f9404f139b69d9
 
 COCOAPODS: 1.2.0
