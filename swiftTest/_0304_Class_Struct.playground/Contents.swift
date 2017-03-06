@@ -265,7 +265,62 @@ class ClassBiBao {
  */
 
 
-// MARK : 下次看点：http://wiki.jikexueyuan.com/project/swift/chapter2/17_Optional_Chaining.html
+// MARK : 错误处理
+/*
+    * Swift 中的错误处理并不涉及解除调用栈，这是一个计算代价高昂的过程。就此而言，throw语句的性能特性是可以和return语句相媲美的。
+ */
+
+func canThrowErrors() throws -> String {
+    return "error";
+}
+func cannotThrowErrors() -> String {
+    return "error";
+}
+
+enum ErrorDef : Error {
+    case ErrorOne
+    case ErrorTwo
+    case ErrorThree
+}
+
+
+func testThrows() throws -> String {
+    throw ErrorDef.ErrorOne
+//    return "string ---"
+}
+
+let x = try? testThrows()
+//print(x ?? "error---")
+
+let y: String?
+do {
+    y = try testThrows()
+    print("none error")
+} catch {
+    print("throw error")
+}
+/*
+    * try!来禁用错误传递
+    有时你知道某个throwing函数实际上在运行时是不会抛出错误的，在这种情况下，你可以在表达式前面写try!来禁用错误传递
+ */
+// defer
+print("----- defer -----")
+func deferTest() {
+    print("begin defer")
+    defer {
+        print("this is defer 1")
+    }
+    
+    print("center defer")
+    defer {
+        print("this is defer 2")
+    }
+    print("END defer")
+}
+
+deferTest()
+
+// MARK : 下节看点  http://wiki.jikexueyuan.com/project/swift/chapter2/19_Type_Casting.html
 
 
 
