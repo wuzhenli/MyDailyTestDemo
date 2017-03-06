@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import <SAMKeychain.h>
+#import "KeychainItemWrapper.h"
+
 
 @interface ViewController ()
 
@@ -17,6 +20,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    KeychainItemWrapper *chain = [[KeychainItemWrapper alloc] initWithIdentifier:@"www.kongfz.com.security" accessGroup:@"com.kongfz.www"];
+    [chain setObject:@"passowrd.kongfz" forKey:(__bridge id)kSecValueData];
+    NSString *psw = [chain objectForKey:(__bridge id)kSecValueData];
+    NSLog(@"%@", psw);
+    
 }
 
 

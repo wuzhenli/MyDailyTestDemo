@@ -19,6 +19,8 @@
 		CE47908F1E6D115100BC1416 /* securityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE47908E1E6D115100BC1416 /* securityTests.m */; };
 		CE47909A1E6D115100BC1416 /* securityUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4790991E6D115100BC1416 /* securityUITests.m */; };
 		CE4790A91E6D119B00BC1416 /* KeyChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4790A81E6D119B00BC1416 /* KeyChainViewController.m */; };
+		CE4790EF1E6D174C00BC1416 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4790EE1E6D174C00BC1416 /* KeychainItemWrapper.m */; };
+		CE4790F61E6D1DFC00BC1416 /* security.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE4790F51E6D1DFC00BC1416 /* security.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,10 @@
 		CE47909B1E6D115100BC1416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE4790A71E6D119B00BC1416 /* KeyChainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyChainViewController.h; sourceTree = "<group>"; };
 		CE4790A81E6D119B00BC1416 /* KeyChainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyChainViewController.m; sourceTree = "<group>"; };
+		CE4790ED1E6D174C00BC1416 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		CE4790EE1E6D174C00BC1416 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		CE4790F41E6D193000BC1416 /* security.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = security.entitlements; sourceTree = "<group>"; };
+		CE4790F51E6D1DFC00BC1416 /* security.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = security.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,8 @@
 		CE4790731E6D115100BC1416 /* security */ = {
 			isa = PBXGroup;
 			children = (
+				CE4790F41E6D193000BC1416 /* security.entitlements */,
+				CE4790E91E6D16DE00BC1416 /* KeychainWrapper */,
 				CE4790771E6D115100BC1416 /* AppDelegate.h */,
 				CE4790781E6D115100BC1416 /* AppDelegate.m */,
 				CE47907A1E6D115100BC1416 /* ViewController.h */,
@@ -183,6 +191,16 @@
 				CE47909B1E6D115100BC1416 /* Info.plist */,
 			);
 			path = securityUITests;
+			sourceTree = "<group>";
+		};
+		CE4790E91E6D16DE00BC1416 /* KeychainWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				CE4790ED1E6D174C00BC1416 /* KeychainItemWrapper.h */,
+				CE4790EE1E6D174C00BC1416 /* KeychainItemWrapper.m */,
+				CE4790F51E6D1DFC00BC1416 /* security.plist */,
+			);
+			path = KeychainWrapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +281,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = AR8RH55RMX;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					CE4790891E6D115100BC1416 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -303,6 +326,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4790F61E6D1DFC00BC1416 /* security.plist in Resources */,
 				CE4790841E6D115100BC1416 /* LaunchScreen.storyboard in Resources */,
 				CE4790811E6D115100BC1416 /* Assets.xcassets in Resources */,
 				CE47907F1E6D115100BC1416 /* Main.storyboard in Resources */,
@@ -471,6 +495,7 @@
 				CE47907C1E6D115100BC1416 /* ViewController.m in Sources */,
 				CE4790791E6D115100BC1416 /* AppDelegate.m in Sources */,
 				CE4790A91E6D119B00BC1416 /* KeyChainViewController.m in Sources */,
+				CE4790EF1E6D174C00BC1416 /* KeychainItemWrapper.m in Sources */,
 				CE4790761E6D115100BC1416 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -619,10 +644,12 @@
 			baseConfigurationReference = 1D4ACD6CA3BB13B748B06A3F /* Pods-security.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = security/security.entitlements;
 				DEVELOPMENT_TEAM = AR8RH55RMX;
 				INFOPLIST_FILE = security/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kongfz.www.security.security;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kongfz.security;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -632,10 +659,12 @@
 			baseConfigurationReference = AC8A098C22E526ACE08A1205 /* Pods-security.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = security/security.entitlements;
 				DEVELOPMENT_TEAM = AR8RH55RMX;
 				INFOPLIST_FILE = security/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kongfz.www.security.security;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kongfz.security;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

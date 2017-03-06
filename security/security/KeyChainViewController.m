@@ -7,6 +7,7 @@
 //
 
 #import "KeyChainViewController.h"
+#import <SAMKeychain.h>
 
 @interface KeyChainViewController ()
 
@@ -16,8 +17,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [SAMKeychain setPassword:@"123321-aa" forService:@"aa" account:@"li"];
+    [SAMKeychain setPassword:@"123321-bb" forService:@"bb" account:@"li"];
+    
 }
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    NSString *pwdAA = [SAMKeychain passwordForService:@"aa" account:@"li"];
+    NSString *pwdBB = [SAMKeychain passwordForService:@"bb" account:@"li"];
+    NSLog(@"%@ %@", pwdAA, pwdBB);
+}
+
 - (IBAction)dismiss:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
