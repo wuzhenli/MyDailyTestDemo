@@ -289,7 +289,7 @@ func testThrows() throws -> String {
 //    return "string ---"
 }
 
-let x = try? testThrows()
+//let x = try? testThrows()
 //print(x ?? "error---")
 
 let y: String?
@@ -297,12 +297,12 @@ do {
     y = try testThrows()
     print("none error")
 } catch {
-    print("throw error")
+//    print("throw error")
 }
 /*
     * try!来禁用错误传递
     有时你知道某个throwing函数实际上在运行时是不会抛出错误的，在这种情况下，你可以在表达式前面写try!来禁用错误传递
- */
+ 
 // defer
 print("----- defer -----")
 func deferTest() {
@@ -319,18 +319,196 @@ func deferTest() {
 }
 
 deferTest()
+*/
 
-// MARK : 下节看点  http://wiki.jikexueyuan.com/project/swift/chapter2/19_Type_Casting.html
+// MARK : 类型转换
+
+class MediaItem {
+    var name: String
+    init(name: String) {
+        self.name = name
+    }
+}
+class Movie: MediaItem {
+    var director: String
+    init(name: String, director: String) {
+        self.director = director
+        super.init(name: name)
+    }
+}
+
+class Song: MediaItem {
+    var artist: String
+    init(name: String, artist: String) {
+        self.artist = artist
+        super.init(name: name)
+    }
+}
 
 
+let library = [
+    Movie(name: "Casablanca", director: "Michael Curtiz"),
+    Song(name: "Blue Suede Shoes", artist: "Elvis Presley"),
+    Movie(name: "Citizen Kane", director: "Orson Welles"),
+    Song(name: "The One And Only", artist: "Chesney Hawkes"),
+    Song(name: "Never Gonna Give You Up", artist: "Rick Astley")
+]
+
+var movieCount: Int = 0
+var songCount: Int = 0
+var mediaCount = 0
+for item in library {
+    if item is MediaItem {
+        mediaCount += 1
+    }
+    if item is Movie {
+        movieCount += 1
+    } else if item is Song {
+        songCount += 1
+    }
+}
+//print("mediaCount:\(mediaCount)") // is  : 判断是否某各类，或其父类
+//print("song:\(songCount) moveCount:\(movieCount)")
+
+//for item in library {
+//    if let song = item as? Song {
+//        print("SONG \(song.artist) \(song.name)")
+//    } else if let movie = item as? Movie {
+//        print(movie.director)
+//    }
+//}
 
 
+/*
+         Swift 为不确定类型提供了两种特殊的类型别名：
+         
+         Any 可以表示任何类型，包括函数类型。
+         AnyObject 可以表示任何类类型的实例。
+ */
+var things = [Any]()
+things.append(0)
+things.append(0.00)
+things.append(12.32)
+things.append("things")
+//print(things)
 
+//for thing in things {
+//    switch thing {
+//    case 0 as Int:
+//        print("zero as an Int")
+//    case 0 as Double:
+//        print("zero as a Double")
+//    case let someInt as Int:
+//        print("an integer value of \(someInt)")
+//    case let someDouble as Double where someDouble > 0:
+//        print("a positive double value of \(someDouble)")
+//    case is Double:
+//        print("some other double value that I don't want to print")
+//    case let someString as String:
+//        print("a string value of \"\(someString)\"")
+//    case let (x, y) as (Double, Double):
+//        print("an (x, y) point at \(x), \(y)")
+//    case let movie as Movie:
+//        print("a movie called '\(movie.name)', dir. \(movie.director)")
+//    default:
+//        print("something else")
+//    }
+//}
+let typeAny: Int? = 22
+things.append(typeAny) // 警告 ⚠️
+things.append(typeAny as Any)
+/*  嵌套类型
+ *
+ */
 
+struct BlackjackCard {
+    // 嵌套的 Suit 枚举
+    enum Suit: Character {
+        case Spades = "♠", Hearts = "♡", Diamonds = "♢", Clubs = "♣"
+    }
+    // 嵌套的 Rank 枚举
+    enum Rank: Int {
+        case Two = 2, Three, Four, Five, Six, Seven, Eight, Nine, Ten
+        case Jack, Queen, King, Ace
+        struct Values {
+            let first: Int, second: Int?
+        }
+        var values: Values {
+            switch self {
+            case .Ace:
+                return Values(first: 1, second: 11)
+            case .Jack, .Queen, .King:
+                return Values(first: 10, second: nil)
+            default:
+                return Values(first: self.rawValue, second: nil)
+            }
+        }
+    }
+    // BlackjackCard 的属性和方法
+    let rank: Rank, suit: Suit
+    var description: String {
+        var output = "suit is \(suit.rawValue),"
+        output += " value is \(rank.values.first)"
+        if let second = rank.values.second {
+            output += " or \(second)"
+        }
+        return output
+    }
+}
 
+/* 扩展和 Objective-C 中的分类类似。（与 Objective-C 不同的是，Swift 的扩展没有名字。）
+     Swift 中的扩展可以：
+     
+     添加计算型属性和计算型类型属性
+        *  扩展可以添加新的计算型属性，但是不可以添加存储型属性，也不可以为已有属性添加属性观察器。
+     定义实例方法和类型方法
+     提供新的构造器
+     定义下标
+     定义和使用新的嵌套类型
+     使一个已有类型符合某个协议
+     在 Swift 中，你甚至可以对协议进行扩展，提供协议要求的实现，或者添加额外的功能，从而可以让符合协议的类型拥有这些功能。你可以从协议扩展获取更多的细节。
+ ------------------------
+  *  扩展可以为一个类型添加新的功能，但是不能重写已有的功能。
+  *  扩展能为类添加新的便利构造器，但是它们不能为类添加新的指定构造器或析构器。
+ */
+struct Size {
+    var width = 0.0, height = 0.0
+}
+struct Point_1 {
+    var x = 0.0, y = 0.0
+}
+struct Rect {
+    var origin = Point_1()
+    var size = Size()
+}
 
+extension Rect {
+    init(center: Point_1, size: Size) {
+        let originX = center.x - (size.width / 2)
+        let originY = center.y - (size.height / 2)
+        self.init(origin: Point_1(x: originX, y: originY), size: size)
+    }
+}
 
+//嵌套类型
+//扩展可以为已有的类、结构体和枚举添加新的嵌套类型：
+extension Int {
+    enum Kind {
+        case Negative, Zero, Positive
+    }
+    var kind: Kind {
+        switch self {
+        case 0:
+            return .Zero
+        case let x where x > 0:
+            return .Positive
+        default:
+            return .Negative
+        }
+    }
+}
 
+// MARK : 明日看点：http://wiki.jikexueyuan.com/project/swift/chapter2/22_Protocols.html
 
 
 
