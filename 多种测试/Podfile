@@ -2,8 +2,7 @@
 platform :ios, '7.0'
 
 target '多种测试' do
-  pod 'AFNetworking','~> 1.2.1'
-  pod 'IQKeyboardManager', '~> 4.0.8' 
+  pod 'AFNetworking','~> 1.2.1' 
   pod 'FlatUIKit'
   pod 'EGOTableViewPullRefresh', '~> 0.1.0'
   pod 'JSPatch'

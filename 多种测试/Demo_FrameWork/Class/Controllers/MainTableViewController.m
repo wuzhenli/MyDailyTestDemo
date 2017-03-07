@@ -82,7 +82,7 @@
     
     
       
-//    [self pushInto:@"AAViewController"];
+    [self pushInto:@"AAViewController"];
 //    [self loadDic];
     self.title = NSStringFromClass([self class]);
 }
