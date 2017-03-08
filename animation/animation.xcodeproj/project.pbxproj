@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE0C1C4A1E6FD639008FC9F1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0C1C491E6FD639008FC9F1 /* QuartzCore.framework */; };
 		CED5894D1E6E9621002BC9B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CED5894C1E6E9621002BC9B3 /* main.m */; };
 		CED589501E6E9621002BC9B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CED5894F1E6E9621002BC9B3 /* AppDelegate.m */; };
 		CED589531E6E9621002BC9B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED589521E6E9621002BC9B3 /* ViewController.m */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE0C1C491E6FD639008FC9F1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CED589481E6E9621002BC9B3 /* animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED5894C1E6E9621002BC9B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CED5894E1E6E9621002BC9B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0C1C4A1E6FD639008FC9F1 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE0C1C481E6FD638008FC9F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C1C491E6FD639008FC9F1 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CED5893F1E6E9621002BC9B3 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +99,7 @@
 				CED589641E6E9621002BC9B3 /* animationTests */,
 				CED5896F1E6E9621002BC9B3 /* animationUITests */,
 				CED589491E6E9621002BC9B3 /* Products */,
+				CE0C1C481E6FD638008FC9F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -528,6 +540,7 @@
 				CED589771E6E9621002BC9B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CED589781E6E9621002BC9B3 /* Build configuration list for PBXNativeTarget "animationTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +549,7 @@
 				CED5897A1E6E9621002BC9B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CED5897B1E6E9621002BC9B3 /* Build configuration list for PBXNativeTarget "animationUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +558,7 @@
 				CED5897D1E6E9621002BC9B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

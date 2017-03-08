@@ -6,26 +6,30 @@
 //  Copyright © 2017年 kongfz. All rights reserved.
 /*
     CALayer frame属性没有动画特性
+    必须提供fromValue、 toValue
  */
 
 #import "LayerAnimationViewController.h"
+#import <QuartzCore/QuartzCore.h>b
+
 
 @interface LayerAnimationViewController ()
-@property (strong, nonatomic) CALayer *shapLayer;
+@property (strong, nonatomic) CAShapeLayer *shapLayer;
 @property (weak, nonatomic) IBOutlet UIButton *greenView;
 
+@property (weak, nonatomic) IBOutlet UILabel *redLabel;
 
 @end
 
 @implementation LayerAnimationViewController
 
-- (CALayer *)shapLayer {
+- (CAShapeLayer *)shapLayer {
     if (!_shapLayer) {
-        _shapLayer = [CALayer layer];
+        _shapLayer = [CAShapeLayer layer];
         _shapLayer.frame = CGRectMake(0, 66, 100, 100);
         _shapLayer.position = CGPointMake(10, 70);
         _shapLayer.bounds = CGRectMake(0, 0, 100, 100);
-        _shapLayer.backgroundColor = [UIColor redColor].CGColor;
+        _shapLayer.backgroundColor = [UIColor whiteColor].CGColor;
     }
     return _shapLayer;
 }
@@ -33,8 +37,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self.view.layer addSublayer:self.shapLayer];
+    
 }
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    self.shapLayer.frame = self.redLabel.bounds;
+    [self.redLabel.layer addSublayer:self.shapLayer];
+}
+
 - (IBAction)greenViewClicked:(id)sender {
     
     CGRect beginRect = CGRectMake(0, 66, 100, 100);
@@ -51,8 +61,43 @@
 
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [self animation_1];
+    [self textProgressAnimation];
 }
+
+
+- (void)textProgressAnimation {
+    
+}
+
+- (void)animation_3 {
+    CAShapeLayer *layer = self.shapLayer;
+    
+    layer.fillColor = [UIColor redColor].CGColor;
+    layer.strokeColor = [UIColor greenColor].CGColor;
+    
+    CGRect rect = CGRectMake(20, 20, 200, 200);
+    UIBezierPath *beginPath = [UIBezierPath bezierPathWithOvalInRect:rect];
+    UIBezierPath *endPath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(200, 200, 300, 200)];
+    
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"path"];
+    animation.duration = 2.;
+//    animation.fillMode = kCAFillModeForwards;
+    
+//    animation.removedOnCompletion = YES;
+    animation.fromValue = (__bridge id _Nullable)(beginPath.CGPath);
+    animation.toValue = (__bridge id _Nullable)(endPath.CGPath);
+    
+    [layer addAnimation:animation forKey:nil];
+}
+
+- (void)animation_2 {
+    [CATransaction begin];
+    [CATransaction setDisableActions:NO]; // NO有动画，YES：关闭动画
+    [CATransaction setAnimationDuration:1];
+    self.shapLayer.position = CGPointMake(300, 300);
+    [CATransaction commit];
+}
+
 - (void)animation_1 {
     CGRect beginRect = CGRectMake(0, 66, 100, 100);
     CGRect endRect = CGRectMake(100, 166, 200, 200);
