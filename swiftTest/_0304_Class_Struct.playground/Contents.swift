@@ -508,9 +508,35 @@ extension Int {
     }
 }
 
-// MARK : 明日看点：http://wiki.jikexueyuan.com/project/swift/chapter2/22_Protocols.html
+// MARK : 高级运算符
+/*
+按位取反运算符
 
+按位取反运算符（~）可以对一个数值的全部比特位进行取反：
+*/
+let initialBits: UInt8 = 0b00001111
+let invertedBits = ~initialBits // 等于 0b11110000
+/*
+ 按位与运算符
+ 
+ 按位与运算符（&）: 只有当两个数的对应位都为 1 的时候，新数的对应位才为 1：
+ */
+let firstSixBits: UInt8 = 0b11111100
+let lastSixBits: UInt8  = 0b00111111
+let middleFourBits = firstSixBits & lastSixBits // 等于 00111100
 
+/*
+ 按位异或运算符
+ 
+ 按位异或运算符（^）: 当两个数的对应位不相同时，新数的对应位就为 1：
+ */
+let firstBits: UInt8 = 0b00010100
+let otherBits: UInt8 = 0b00000101
+let outputBits = firstBits ^ otherBits // 等于 00010001
+
+/*
+ 将一个整数左移一位，等价于将这个数乘以 2，同样地，将一个整数右移一位，等价于将这个数除以 2。
+ */
 
 
 
