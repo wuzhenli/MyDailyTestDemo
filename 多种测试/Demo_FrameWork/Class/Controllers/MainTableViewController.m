@@ -38,7 +38,8 @@
     [super viewDidLoad];
     [self setTable];
     
-    [self addItem:@"深拷贝" class:@"DepyCopyViewController"];  // DepyCopyViewController
+    [self addItem:@"运行时-保存单例" class:@"SaveDataViewController"];  // SaveDataViewController
+    [self addItem:@"深拷贝" class:@"DepyCopyViewController"];  //
     [self addItem:@"ArchiveViewController" class:@"ArchiveViewController"];  //
     [self addItem:@"设置图片圆角" class:@"CornerRadiousViewController"];  //
     [self addItem:@"显示网页" class:@"WebVC"];  //
@@ -72,7 +73,7 @@
     [self addItem:@"表格高度自适应" class:@"HeightTableViewController"];  // HeightTableViewController
     
     
-    [self pushInto:@"AAViewController"];
+    [self pushInto:@"SaveDataViewController"];
 //    [self loadDic];
 
 }
