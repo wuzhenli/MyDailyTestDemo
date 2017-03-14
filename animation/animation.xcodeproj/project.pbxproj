@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		CE0C1C4A1E6FD639008FC9F1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0C1C491E6FD639008FC9F1 /* QuartzCore.framework */; };
+		CE50DB9F1E769DAA00B5075C /* 5th-row@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE50DB9B1E769DAA00B5075C /* 5th-row@2x.png */; };
+		CE50DBA01E769DAA00B5075C /* mask1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE50DB9C1E769DAA00B5075C /* mask1.png */; };
+		CE50DBA11E769DAA00B5075C /* mask2.png in Resources */ = {isa = PBXBuildFile; fileRef = CE50DB9D1E769DAA00B5075C /* mask2.png */; };
+		CE50DBA21E769DAA00B5075C /* wuyanzu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE50DB9E1E769DAA00B5075C /* wuyanzu.jpg */; };
 		CED5894D1E6E9621002BC9B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CED5894C1E6E9621002BC9B3 /* main.m */; };
 		CED589501E6E9621002BC9B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CED5894F1E6E9621002BC9B3 /* AppDelegate.m */; };
 		CED589531E6E9621002BC9B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED589521E6E9621002BC9B3 /* ViewController.m */; };
@@ -38,6 +42,10 @@
 
 /* Begin PBXFileReference section */
 		CE0C1C491E6FD639008FC9F1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CE50DB9B1E769DAA00B5075C /* 5th-row@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5th-row@2x.png"; sourceTree = "<group>"; };
+		CE50DB9C1E769DAA00B5075C /* mask1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mask1.png; sourceTree = "<group>"; };
+		CE50DB9D1E769DAA00B5075C /* mask2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mask2.png; sourceTree = "<group>"; };
+		CE50DB9E1E769DAA00B5075C /* wuyanzu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wuyanzu.jpg; sourceTree = "<group>"; };
 		CED589481E6E9621002BC9B3 /* animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED5894C1E6E9621002BC9B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CED5894E1E6E9621002BC9B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -92,6 +100,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CE50DB9A1E769DAA00B5075C /* Resource_Ani */ = {
+			isa = PBXGroup;
+			children = (
+				CE50DB9B1E769DAA00B5075C /* 5th-row@2x.png */,
+				CE50DB9C1E769DAA00B5075C /* mask1.png */,
+				CE50DB9D1E769DAA00B5075C /* mask2.png */,
+				CE50DB9E1E769DAA00B5075C /* wuyanzu.jpg */,
+			);
+			path = Resource_Ani;
+			sourceTree = "<group>";
+		};
 		CED5893F1E6E9621002BC9B3 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +135,7 @@
 		CED5894A1E6E9621002BC9B3 /* animation */ = {
 			isa = PBXGroup;
 			children = (
+				CE50DB9A1E769DAA00B5075C /* Resource_Ani */,
 				CED5897E1E6E9633002BC9B3 /* Layer Animation */,
 				CED5894E1E6E9621002BC9B3 /* AppDelegate.h */,
 				CED5894F1E6E9621002BC9B3 /* AppDelegate.m */,
@@ -274,7 +294,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE50DBA21E769DAA00B5075C /* wuyanzu.jpg in Resources */,
+				CE50DBA11E769DAA00B5075C /* mask2.png in Resources */,
 				CED5895B1E6E9621002BC9B3 /* LaunchScreen.storyboard in Resources */,
+				CE50DBA01E769DAA00B5075C /* mask1.png in Resources */,
+				CE50DB9F1E769DAA00B5075C /* 5th-row@2x.png in Resources */,
 				CED589581E6E9621002BC9B3 /* Assets.xcassets in Resources */,
 				CED589561E6E9621002BC9B3 /* Main.storyboard in Resources */,
 			);
