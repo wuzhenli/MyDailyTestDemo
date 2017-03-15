@@ -92,9 +92,15 @@ var addFunc: (Int, Int) -> Int = addInt
 print(addFunc(io_a, io_b))
 
 
-
-
-
+// MARK: 枚举
+enum Direction: Int {
+    case east = 0
+    case north
+    case south
+    case west
+}
+let direction = Direction.west
+print(direction)
 
 
 
