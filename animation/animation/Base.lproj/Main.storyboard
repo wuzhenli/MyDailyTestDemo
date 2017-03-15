@@ -128,6 +128,15 @@
                                     <segue destination="YeU-6u-UA6" kind="push" id="fOU-Dz-i14"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GuD-RQ-gP0">
+                                <rect key="frame" x="20" y="196" width="335" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.82792968749999996" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Layer 形状动画"/>
+                                <connections>
+                                    <segue destination="XCl-vY-Ybn" kind="push" id="VmL-RH-IIa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -141,6 +150,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="870" y="777"/>
+        </scene>
+        <!--Shap View Controller-->
+        <scene sceneID="pTM-ZP-pe7">
+            <objects>
+                <viewController id="XCl-vY-Ybn" customClass="ShapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tXC-Iy-buU"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lm4-1q-BJl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EUO-mx-jiR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mzT-hE-XQX">
+                                <rect key="frame" x="54" y="101" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.016031901040000001" green="0.98255750870000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eku-KE-dzV">
+                                <rect key="frame" x="15" y="602" width="345" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.66376410590000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="LYS-cv-vNn"/>
+                                </constraints>
+                                <state key="normal" title="start"/>
+                                <connections>
+                                    <action selector="startAnimation:" destination="XCl-vY-Ybn" eventType="touchUpInside" id="ffc-lu-eIh"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="275bef523be8820d3ed6f44a137f92b0" translatesAutoresizingMaskIntoConstraints="NO" id="JGK-c1-o7q">
+                                <rect key="frame" x="134" y="419" width="106" height="150"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JGK-c1-o7q" firstAttribute="centerX" secondItem="eku-KE-dzV" secondAttribute="centerX" id="AIH-pH-2pg"/>
+                            <constraint firstAttribute="trailing" secondItem="eku-KE-dzV" secondAttribute="trailing" constant="15" id="C7m-Y6-ik3"/>
+                            <constraint firstItem="eku-KE-dzV" firstAttribute="top" secondItem="JGK-c1-o7q" secondAttribute="bottom" constant="33" id="Uy5-ZR-qPb"/>
+                            <constraint firstItem="eku-KE-dzV" firstAttribute="leading" secondItem="EUO-mx-jiR" secondAttribute="leading" constant="15" id="VzM-3L-LwB"/>
+                            <constraint firstItem="Lm4-1q-BJl" firstAttribute="top" secondItem="eku-KE-dzV" secondAttribute="bottom" constant="25" id="aRc-gz-CBp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FsH-50-5kj"/>
+                    <connections>
+                        <outlet property="redView" destination="mzT-hE-XQX" id="DiT-Mp-NJU"/>
+                        <outlet property="shadowImgView" destination="JGK-c1-o7q" id="tCZ-lx-Sdl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r5s-Va-F0A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1616.8" y="370.16491754122939"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nmf-Vo-npp">
@@ -162,6 +222,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="275bef523be8820d3ed6f44a137f92b0" width="106" height="150"/>
         <image name="mask1.png" width="104" height="157"/>
         <image name="mask2.png" width="104" height="157"/>
     </resources>

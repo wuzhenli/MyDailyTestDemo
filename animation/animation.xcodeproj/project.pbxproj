@@ -12,6 +12,8 @@
 		CE50DBA01E769DAA00B5075C /* mask1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE50DB9C1E769DAA00B5075C /* mask1.png */; };
 		CE50DBA11E769DAA00B5075C /* mask2.png in Resources */ = {isa = PBXBuildFile; fileRef = CE50DB9D1E769DAA00B5075C /* mask2.png */; };
 		CE50DBA21E769DAA00B5075C /* wuyanzu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE50DB9E1E769DAA00B5075C /* wuyanzu.jpg */; };
+		CE53F1611E77DF0A006590B5 /* ShapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE53F1601E77DF0A006590B5 /* ShapViewController.m */; };
+		CE53F1641E77E497006590B5 /* GroupAniView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE53F1631E77E497006590B5 /* GroupAniView.m */; };
 		CED5894D1E6E9621002BC9B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CED5894C1E6E9621002BC9B3 /* main.m */; };
 		CED589501E6E9621002BC9B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CED5894F1E6E9621002BC9B3 /* AppDelegate.m */; };
 		CED589531E6E9621002BC9B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED589521E6E9621002BC9B3 /* ViewController.m */; };
@@ -46,6 +48,10 @@
 		CE50DB9C1E769DAA00B5075C /* mask1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mask1.png; sourceTree = "<group>"; };
 		CE50DB9D1E769DAA00B5075C /* mask2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mask2.png; sourceTree = "<group>"; };
 		CE50DB9E1E769DAA00B5075C /* wuyanzu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wuyanzu.jpg; sourceTree = "<group>"; };
+		CE53F15F1E77DF0A006590B5 /* ShapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapViewController.h; sourceTree = "<group>"; };
+		CE53F1601E77DF0A006590B5 /* ShapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapViewController.m; sourceTree = "<group>"; };
+		CE53F1621E77E497006590B5 /* GroupAniView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupAniView.h; sourceTree = "<group>"; };
+		CE53F1631E77E497006590B5 /* GroupAniView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupAniView.m; sourceTree = "<group>"; };
 		CED589481E6E9621002BC9B3 /* animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED5894C1E6E9621002BC9B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CED5894E1E6E9621002BC9B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -181,6 +187,10 @@
 			children = (
 				CED5897F1E6E9685002BC9B3 /* LayerAnimationViewController.h */,
 				CED589801E6E9685002BC9B3 /* LayerAnimationViewController.m */,
+				CE53F15F1E77DF0A006590B5 /* ShapViewController.h */,
+				CE53F1601E77DF0A006590B5 /* ShapViewController.m */,
+				CE53F1621E77E497006590B5 /* GroupAniView.h */,
+				CE53F1631E77E497006590B5 /* GroupAniView.m */,
 			);
 			name = "Layer Animation";
 			sourceTree = "<group>";
@@ -328,7 +338,9 @@
 				CED589531E6E9621002BC9B3 /* ViewController.m in Sources */,
 				CED589811E6E9685002BC9B3 /* LayerAnimationViewController.m in Sources */,
 				CED589501E6E9621002BC9B3 /* AppDelegate.m in Sources */,
+				CE53F1641E77E497006590B5 /* GroupAniView.m in Sources */,
 				CED5894D1E6E9621002BC9B3 /* main.m in Sources */,
+				CE53F1611E77DF0A006590B5 /* ShapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
