@@ -42,11 +42,16 @@
     [self setTable];
     [self setRightButton];
     
+<<<<<<< HEAD
     [self addItem:@"扫描二维码" class:@"ScaleViewController"];  // ScaleViewController
     [self addItem:@"测试  测试   测试" class:@"AAViewController"];  // 
     [self addItem:@"TTTAttributedLabel" class:@"RootViewController"];  // 
     [self addItem:@"NSlayoutConstraint" class:@"LayoutViewController"];  // 
     [self addItem:@"深拷贝" class:@"DepyCopyViewController"];  // 
+=======
+    [self addItem:@"运行时-保存单例" class:@"SaveDataViewController"];  // SaveDataViewController
+    [self addItem:@"深拷贝" class:@"DepyCopyViewController"];  //
+>>>>>>> swift
     [self addItem:@"ArchiveViewController" class:@"ArchiveViewController"];  //
     [self addItem:@"设置图片圆角" class:@"CornerRadiousViewController"];  //
     [self addItem:@"显示网页" class:@"WebVC"];  //
@@ -81,8 +86,12 @@
      
     
     
+<<<<<<< HEAD
       
     [self pushInto:@"AAViewController"];
+=======
+    [self pushInto:@"SaveDataViewController"];
+>>>>>>> swift
 //    [self loadDic];
     self.title = NSStringFromClass([self class]);
 }
