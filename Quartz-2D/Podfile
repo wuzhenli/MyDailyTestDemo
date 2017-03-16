@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '8.0'
+
+target 'Quartz-2D' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Quartz-2D
+  pod 'SnapKit', '~> 3.2.0'
+
+
+  target 'Quartz-2DTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Quartz-2DUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
