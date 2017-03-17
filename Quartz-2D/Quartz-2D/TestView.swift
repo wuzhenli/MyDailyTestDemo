@@ -12,15 +12,60 @@ import CoreGraphics
 
 
 
-class TestView: UIView {
+class TestView: UIView { //  200 * 220
 
     override func draw(_ rect: CGRect) {
-
-        drawTest_3()
+        draw_Text()
+        
     }
     
-    func drawTest_4() {
+    func draw_Text() {
+        let str: NSString = "这是要现实的文本Text。。。。"
+        let rect = CGRect(x: 10, y: 10, width: 100, height: 100)
         
+        let atts = [
+            NSFontAttributeName : UIFont.systemFont(ofSize: 18),
+            NSForegroundColorAttributeName : UIColor.red
+        ]
+        
+        str.draw(in: rect, withAttributes: atts)
+        
+    }
+    
+    func draw_Rect() {
+        let con = UIGraphicsGetCurrentContext()
+        con?.addRect(CGRect(x: 10, y: 10, width: 180, height: 24))
+        con?.setStrokeColor(UIColor.green.cgColor)
+        con?.setFillColor(UIColor.blue.cgColor)
+        con?.setLineWidth(6)
+        con?.strokePath()
+    }
+    
+    func draw_Line() {
+        let con = UIGraphicsGetCurrentContext()!
+        con.move(to: CGPoint(x: 10, y: 10))
+        con.addLine(to: CGPoint(x: 60, y:45))
+        con.addLine(to: CGPoint(x: 100 ,y:10))
+        con.setStrokeColor(UIColor.black.cgColor)
+        con.setLineWidth(3)
+        con.setLineCap(.butt)
+        con.setLineJoin(.bevel)
+        con.strokePath()
+        con.saveGState()
+        // line another
+        con.move(to: CGPoint(x:22, y:10))
+        con.addLine(to: CGPoint(x:120, y:120))
+        con.setStrokeColor(UIColor.red.cgColor)
+        con.setLineWidth(6)
+        con.strokePath()
+        
+        con.saveGState()
+        con.restoreGState()
+        con.restoreGState()
+        // line three
+        con.move(to: CGPoint(x:100, y:0))
+        con.addLine(to: CGPoint(x:10 ,y:122))
+        con.strokePath()
     }
     
     

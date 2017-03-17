@@ -31,15 +31,26 @@ class ViewController: UIViewController {
             make.center.equalTo(view)
             make.width.height.equalTo(100)
         }
+        
     }
 
 
+//    func testString() {
+//        let str1: NSString = "NSString1"
+//        let str2: NSString = "NSString1"
+//        
+//        let s1: String = "string1"
+//        let s2: String = "string1"
+//        
+//        
+//        print(tr1)
+//    }
 
 }
 
 extension ViewController {
     func addQuartzView_1() {
-        let rect = CGRect(x: 10, y: 90, width: 200, height: 120)
+        let rect = CGRect(x: 10, y: 90, width: 200, height: 220)
         let v = TestView()
         v.backgroundColor = UIColor.orange
         v.frame = rect
