@@ -7,17 +7,15 @@
 //
 
 import UIKit
-<<<<<<< HEAD
 import QuartzCore
 import CoreGraphics
 
-=======
->>>>>>> 9bb23a715ec15ca97366d5947ce8d2403784f299
+
 
 class TestView: UIView {
 
     override func draw(_ rect: CGRect) {
-<<<<<<< HEAD
+
         drawTest_3()
     }
     
@@ -45,9 +43,6 @@ class TestView: UIView {
         con?.setStrokeColor(UIColor.green.cgColor)
         
         con?.fillPath()
-=======
-        drawTest_1()
->>>>>>> 9bb23a715ec15ca97366d5947ce8d2403784f299
     }
     
     func drawTest_1() {

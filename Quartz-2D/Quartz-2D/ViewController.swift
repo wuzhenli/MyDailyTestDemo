@@ -7,7 +7,7 @@
 //
 
 import UIKit
-<<<<<<< HEAD
+
 import SnapKit
 
 class ViewController: UIViewController {
@@ -18,16 +18,12 @@ class ViewController: UIViewController {
 
         return imgV
     }()
-=======
 
-class ViewController: UIViewController {
->>>>>>> 9bb23a715ec15ca97366d5947ce8d2403784f299
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         addQuartzView_1()
-<<<<<<< HEAD
         
         view.addSubview(imgView)
         imgView.image = drawPic()
@@ -36,10 +32,7 @@ class ViewController: UIViewController {
             make.width.height.equalTo(100)
         }
     }
-    
-=======
-    }
->>>>>>> 9bb23a715ec15ca97366d5947ce8d2403784f299
+
 
 
 }
@@ -52,7 +45,6 @@ extension ViewController {
         v.frame = rect
         view.addSubview(v)
     }
-<<<<<<< HEAD
     func drawPic() -> UIImage {
         UIGraphicsBeginImageContextWithOptions(CGSize(width: 100, height:100), false, UIScreen.main.scale)
         
@@ -90,7 +82,3 @@ extension ViewController {
 
 
 
-=======
-}
-
->>>>>>> 9bb23a715ec15ca97366d5947ce8d2403784f299
