@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "RTCar.h"
 
 @interface ViewController ()
 
@@ -17,10 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-//    char *c = @encode(int);
-//    NSLog(@"%s", c);
-//    NSLog(@"%s", @encode(NSObject));
-//    NSLog(@"%s", @encode(BOOL));
+    [RTCar logIvars];
+    [RTCar logMethodList];
+    [RTCar logPropertyList];
+    
 }
 
 

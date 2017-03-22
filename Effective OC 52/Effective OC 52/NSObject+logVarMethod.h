@@ -1,5 +1,5 @@
 //
-//  RTCar.h
+//  NSObject+logVarMethod.h
 //  Effective OC 52
 //
 //  Created by kfz on 2017/3/22.
@@ -8,16 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+@interface NSObject (logVarMethod)
++ (void)logMethodList ;
 
-@protocol RTCarProtocal <NSObject>
++ (void)logPropertyList ;
 
-
-@end
-
-@interface RTCar : NSObject
-
-@property (copy, nonatomic, readonly) NSString *firstName;
-
-- (void)run ;
-
++ (void)logIvars;
 @end

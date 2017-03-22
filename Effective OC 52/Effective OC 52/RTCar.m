@@ -8,10 +8,17 @@
 
 #import "RTCar.h"
 
+@interface RTCar ()
+
+@property (copy, nonatomic) NSString *firstName;
+
+@end
+
 @implementation RTCar
 
 - (void)run {
     NSLog(@"%s", __func__);
+    self.firstName = @"firs";
 }
 
 @end
