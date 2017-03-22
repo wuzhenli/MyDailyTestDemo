@@ -17,6 +17,8 @@
 		CE0750BD1E815B4D0040EF1C /* Effective_OC_52UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0750BC1E815B4D0040EF1C /* Effective_OC_52UITests.m */; };
 		CE0750CC1E815B8D0040EF1C /* RuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0750CB1E815B8D0040EF1C /* RuntimeViewController.m */; };
 		CE0750D11E815BE40040EF1C /* RTPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0750D01E815BE40040EF1C /* RTPerson.m */; };
+		CE0750D41E820ADD0040EF1C /* RTStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0750D31E820ADD0040EF1C /* RTStudent.m */; };
+		CE0750D71E820B5D0040EF1C /* RTCar.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0750D61E820B5D0040EF1C /* RTCar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,10 @@
 		CE0750CB1E815B8D0040EF1C /* RuntimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeViewController.m; sourceTree = "<group>"; };
 		CE0750CF1E815BE40040EF1C /* RTPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPerson.h; sourceTree = "<group>"; };
 		CE0750D01E815BE40040EF1C /* RTPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPerson.m; sourceTree = "<group>"; };
+		CE0750D21E820ADD0040EF1C /* RTStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTStudent.h; sourceTree = "<group>"; };
+		CE0750D31E820ADD0040EF1C /* RTStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTStudent.m; sourceTree = "<group>"; };
+		CE0750D51E820B5D0040EF1C /* RTCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTCar.h; sourceTree = "<group>"; };
+		CE0750D61E820B5D0040EF1C /* RTCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTCar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +161,10 @@
 				CE0750CB1E815B8D0040EF1C /* RuntimeViewController.m */,
 				CE0750CF1E815BE40040EF1C /* RTPerson.h */,
 				CE0750D01E815BE40040EF1C /* RTPerson.m */,
+				CE0750D21E820ADD0040EF1C /* RTStudent.h */,
+				CE0750D31E820ADD0040EF1C /* RTStudent.m */,
+				CE0750D51E820B5D0040EF1C /* RTCar.h */,
+				CE0750D61E820B5D0040EF1C /* RTCar.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -303,9 +313,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE07509F1E815B4D0040EF1C /* ViewController.m in Sources */,
+				CE0750D41E820ADD0040EF1C /* RTStudent.m in Sources */,
 				CE0750CC1E815B8D0040EF1C /* RuntimeViewController.m in Sources */,
 				CE07509C1E815B4D0040EF1C /* AppDelegate.m in Sources */,
 				CE0750D11E815BE40040EF1C /* RTPerson.m in Sources */,
+				CE0750D71E820B5D0040EF1C /* RTCar.m in Sources */,
 				CE0750991E815B4D0040EF1C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

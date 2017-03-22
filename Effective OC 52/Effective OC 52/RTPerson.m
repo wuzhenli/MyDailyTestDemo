@@ -14,7 +14,7 @@
 @property (strong, nonatomic) NSMutableDictionary *backingStore;
 
 @end
-
+// @   @ :
 id autoDictionaryGetter(id self, SEL _cmd) {
     RTPerson *typeSelf = (RTPerson *)self;
     NSMutableDictionary *storeDic = typeSelf.backingStore;
@@ -22,7 +22,7 @@ id autoDictionaryGetter(id self, SEL _cmd) {
     
     return [storeDic objectForKey:selector];
 }
-
+// v@:@
 void autoDictionarySetter(id self, SEL _cmd, id value) {
     RTPerson *typeSelf = (RTPerson *)self;
     NSMutableDictionary *storeDic = typeSelf.backingStore;
@@ -57,11 +57,16 @@ void autoDictionarySetter(id self, SEL _cmd, id value) {
     return self;
 }
 
+/*
+ v  void
+ @  object
+ :  SEL
+ */
 + (BOOL)resolveInstanceMethod:(SEL)sel {
     NSString *selector = NSStringFromSelector(sel);
-    if ([selector containsString:@"ackingStore"]) {
-        return NO;
-    }
+//    if ([selector containsString:@"ackingStore"]) {
+//        return [super resolveInstanceMethod:sel];
+//    }
 //    NSLog(@"resolveInstanceMethod -- sel:%@", selector);
     
     if ([selector hasPrefix:@"set"]) {
@@ -73,6 +78,19 @@ void autoDictionarySetter(id self, SEL _cmd, id value) {
     return YES;
 }
 
+- (id)forwardingTargetForSelector:(SEL)aSelector {
+//    NSLog(@"%s", __func__);
+//    if ([NSStringFromSelector(aSelector) isEqualToString:@"run"]) {
+//        
+//    }
+    id r = [super forwardingTargetForSelector:aSelector];
+    NSLog(@"%s : return:%@", __func__, r);
+    return r;
+}
+
+- (void)forwardInvocation:(NSInvocation *)anInvocation {
+    
+}
 
 
 @end

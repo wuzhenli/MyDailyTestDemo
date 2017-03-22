@@ -7,10 +7,12 @@
 //
 
 #import "RuntimeViewController.h"
-#import "RTPerson.h"
+#import "RTCar.h"
+#import "RTStudent.h"
 
 @interface RuntimeViewController ()
-@property (strong, nonatomic) RTPerson *person;
+//@property (strong, nonatomic) RTPerson *person;
+@property (strong, nonatomic) RTStudent *student;
 @end
 
 @implementation RuntimeViewController
@@ -18,20 +20,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    RTPerson *p = [RTPerson new];
-    self.person = p;
+    self.student = [RTStudent new];
+    _student.name = @"name student";
+    _student.age = 12;
 }
 - (IBAction)action_1:(id)sender {
+    NSLog(@"%@", _student.name);
+    NSLog(@"%lu", _student.age);
     
-    self.person.opaqueObject = @"dd";
     
 }
 
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    NSMutableDictionary *dic = [self.person valueForKey:@"backingStore"];
-    NSLog(@"dic:%@", dic);
-    
+    SEL s = NSSelectorFromString(@"run");
+    [_student performSelector:s];
 //    NSLog(@"%@", self.person.opaqueObject);
 }
 

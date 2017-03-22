@@ -17,6 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+//    char *c = @encode(int);
+//    NSLog(@"%s", c);
+//    NSLog(@"%s", @encode(NSObject));
+//    NSLog(@"%s", @encode(BOOL));
 }
 
 
