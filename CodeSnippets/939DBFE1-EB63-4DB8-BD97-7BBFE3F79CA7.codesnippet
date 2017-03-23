@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>logMethodList</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>unsigned int count = 0;
+    Method *methods = class_copyMethodList([self class], &amp;count);
+    
+    for (unsigned int i = 0; i&lt;count; i++) {
+        Method method = methods[i];
+        SEL sel = method_getName(method);
+        NSString *name = NSStringFromSelector(sel);
+        NSLog(@"\t%@", name);
+    }
+    free(methods);</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>939DBFE1-EB63-4DB8-BD97-7BBFE3F79CA7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>logMethodList</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>logMethodList</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
