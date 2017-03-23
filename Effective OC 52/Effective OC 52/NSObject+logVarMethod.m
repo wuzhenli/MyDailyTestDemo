@@ -9,8 +9,6 @@
 #import "NSObject+logVarMethod.h"
 #import <objc/objc-runtime.h>
 
-//#define DEBUG 2
-
 @implementation NSObject (logVarMethod)
 
 + (void)logMethodList {
@@ -24,6 +22,7 @@
         Method method = methods[i];
         SEL sel = method_getName(method);
         NSString *name = NSStringFromSelector(sel);
+        
         NSLog(@"\t%@", name);
     }
     free(methods);

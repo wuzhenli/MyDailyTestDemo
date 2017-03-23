@@ -10,6 +10,6 @@
 
 @interface RTCar (getSet)
 /// 分类中的属性默认用 @dynamic 修饰
-@property (strong, nonatomic) NSString *ID;
+//@property (strong, nonatomic) NSString *ID;
 
 @end

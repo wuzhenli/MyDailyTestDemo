@@ -14,10 +14,12 @@
 
 @end
 
-@interface RTCar : NSObject
+@interface RTCar : NSObject {
+    NSString *_firstName;
+}
+
 
 @property (copy, nonatomic, readonly) NSString *firstName;
 
-- (void)run ;
 
 @end
