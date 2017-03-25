@@ -7,280 +7,293 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7104334C3E3611F7E5BAFEFA /* libPods-defineCameraTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78231D8FEDBEA33ED7232723 /* libPods-defineCameraTests.a */; };
-		949647D1E4C2562E2D3A1230 /* libPods-defineCameraUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C42341FCE04F53F1B68BEFA /* libPods-defineCameraUITests.a */; };
-		C2E0D62317E1843C9F2B726B /* libPods-defineCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EF66D611047C1D2A54955AA /* libPods-defineCamera.a */; };
-		CE0A646F1E6A52520062CD84 /* KFZImageDBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0A646E1E6A52520062CD84 /* KFZImageDBTool.m */; };
-		CE0EB6691E69A8DD00115D2E /* cameraGridNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0EB6571E69A8DD00115D2E /* cameraGridNormal.png */; };
-		CE0EB66A1E69A8DD00115D2E /* cameraGridNormal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0EB6581E69A8DD00115D2E /* cameraGridNormal@2x.png */; };
-		CE0EB66B1E69A8DD00115D2E /* cameraGridNormal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0EB6591E69A8DD00115D2E /* cameraGridNormal@3x.png */; };
-		CE0EB66C1E69A8DD00115D2E /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0EB65A1E69A8DD00115D2E /* close.png */; };
-		CE0EB66D1E69A8DD00115D2E /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0EB65B1E69A8DD00115D2E /* close@2x.png */; };
-		CE0EB66E1E69A8DD00115D2E /* close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0EB65C1E69A8DD00115D2E /* close@3x.png */; };
-		CE0EB66F1E69A8DD00115D2E /* crop.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0EB65D1E69A8DD00115D2E /* crop.png */; };
-		CE0EB6701E69A8DD00115D2E /* crop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0EB65E1E69A8DD00115D2E /* crop@2x.png */; };
-		CE0EB6711E69A8DD00115D2E /* crop@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0EB65F1E69A8DD00115D2E /* crop@3x.png */; };
-		CE0EB6721E69A8DD00115D2E /* flash.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0EB6601E69A8DD00115D2E /* flash.png */; };
-		CE0EB6731E69A8DD00115D2E /* flash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0EB6611E69A8DD00115D2E /* flash@2x.png */; };
-		CE0EB6741E69A8DD00115D2E /* flash@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0EB6621E69A8DD00115D2E /* flash@3x.png */; };
-		CE0EB6751E69A8DD00115D2E /* flip.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0EB6631E69A8DD00115D2E /* flip.png */; };
-		CE0EB6761E69A8DD00115D2E /* flip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0EB6641E69A8DD00115D2E /* flip@2x.png */; };
-		CE0EB6771E69A8DD00115D2E /* flip@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0EB6651E69A8DD00115D2E /* flip@3x.png */; };
-		CE0EB6781E69A8DD00115D2E /* trigger.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0EB6661E69A8DD00115D2E /* trigger.png */; };
-		CE0EB6791E69A8DD00115D2E /* trigger@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0EB6671E69A8DD00115D2E /* trigger@2x.png */; };
-		CE0EB67A1E69A8DD00115D2E /* trigger@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0EB6681E69A8DD00115D2E /* trigger@3x.png */; };
-		CE18338D1E695C020083F712 /* KFZCameraShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE18338C1E695C020083F712 /* KFZCameraShowView.m */; };
-		CE18338F1E695C190083F712 /* KFZCameraShowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE18338E1E695C180083F712 /* KFZCameraShowView.xib */; };
-		CE1833931E6960110083F712 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1833911E6960110083F712 /* MainViewController.m */; };
-		CE1833941E6960110083F712 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1833921E6960110083F712 /* MainViewController.xib */; };
-		CE747D7B1E67FE0C00D7DA3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE747D7A1E67FE0C00D7DA3A /* main.m */; };
-		CE747D7E1E67FE0C00D7DA3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE747D7D1E67FE0C00D7DA3A /* AppDelegate.m */; };
-		CE747D811E67FE0C00D7DA3A /* KFZBaseCameraVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE747D801E67FE0C00D7DA3A /* KFZBaseCameraVC.m */; };
-		CE747D861E67FE0C00D7DA3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE747D851E67FE0C00D7DA3A /* Assets.xcassets */; };
-		CE747D891E67FE0C00D7DA3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE747D871E67FE0C00D7DA3A /* LaunchScreen.storyboard */; };
-		CE747D941E67FE0C00D7DA3A /* defineCameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE747D931E67FE0C00D7DA3A /* defineCameraTests.m */; };
-		CE747D9F1E67FE0C00D7DA3A /* defineCameraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE747D9E1E67FE0C00D7DA3A /* defineCameraUITests.m */; };
+		293128E2F803511274AFB3D5 /* libPods-defineCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD6160B3E27E9AD99E5892 /* libPods-defineCamera.a */; };
+		8100F87099525EF3BBE91EFB /* libPods-defineCameraTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93EA97E04080B14837026258 /* libPods-defineCameraTests.a */; };
+		CE0A14A61E86A15800C4068F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0A14A51E86A15800C4068F /* main.m */; };
+		CE0A14A91E86A15800C4068F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0A14A81E86A15800C4068F /* AppDelegate.m */; };
+		CE0A14AC1E86A15800C4068F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0A14AB1E86A15800C4068F /* ViewController.m */; };
+		CE0A14AF1E86A15800C4068F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0A14AD1E86A15800C4068F /* Main.storyboard */; };
+		CE0A14B11E86A15800C4068F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0A14B01E86A15800C4068F /* Assets.xcassets */; };
+		CE0A14B41E86A15800C4068F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0A14B21E86A15800C4068F /* LaunchScreen.storyboard */; };
+		CE0A14BF1E86A15800C4068F /* defineCameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0A14BE1E86A15800C4068F /* defineCameraTests.m */; };
+		CE0A14CA1E86A15800C4068F /* defineCameraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0A14C91E86A15800C4068F /* defineCameraUITests.m */; };
+		CE41CC651E86A24C00AA6E6B /* KFZImageDBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CE41CC641E86A24C00AA6E6B /* KFZImageDBTool.m */; };
+		CE41CC681E86A28B00AA6E6B /* UIImage+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CE41CC671E86A28B00AA6E6B /* UIImage+extension.m */; };
+		CE41CCA81E86A5F300AA6E6B /* KFZBaseCameraVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE41CC911E86A5F300AA6E6B /* KFZBaseCameraVC.m */; };
+		CE41CCA91E86A5F300AA6E6B /* KFZCameraShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE41CC931E86A5F300AA6E6B /* KFZCameraShowView.m */; };
+		CE41CCAA1E86A5F300AA6E6B /* KFZCameraShowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE41CC941E86A5F300AA6E6B /* KFZCameraShowView.xib */; };
+		CE41CCAB1E86A5F300AA6E6B /* cameraClose.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41CC961E86A5F300AA6E6B /* cameraClose.png */; };
+		CE41CCAC1E86A5F300AA6E6B /* cameraClose@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41CC971E86A5F300AA6E6B /* cameraClose@2x.png */; };
+		CE41CCAD1E86A5F300AA6E6B /* cameraClose@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41CC981E86A5F300AA6E6B /* cameraClose@3x.png */; };
+		CE41CCAE1E86A5F300AA6E6B /* cameraCrop.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41CC991E86A5F300AA6E6B /* cameraCrop.png */; };
+		CE41CCAF1E86A5F300AA6E6B /* cameraCrop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41CC9A1E86A5F300AA6E6B /* cameraCrop@2x.png */; };
+		CE41CCB01E86A5F300AA6E6B /* cameraCrop@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41CC9B1E86A5F300AA6E6B /* cameraCrop@3x.png */; };
+		CE41CCB11E86A5F300AA6E6B /* cameraFlash.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41CC9C1E86A5F300AA6E6B /* cameraFlash.png */; };
+		CE41CCB21E86A5F300AA6E6B /* cameraFlash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41CC9D1E86A5F300AA6E6B /* cameraFlash@2x.png */; };
+		CE41CCB31E86A5F300AA6E6B /* cameraFlash@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41CC9E1E86A5F300AA6E6B /* cameraFlash@3x.png */; };
+		CE41CCB41E86A5F300AA6E6B /* cameraFlip.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41CC9F1E86A5F300AA6E6B /* cameraFlip.png */; };
+		CE41CCB51E86A5F300AA6E6B /* cameraFlip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41CCA01E86A5F300AA6E6B /* cameraFlip@2x.png */; };
+		CE41CCB61E86A5F300AA6E6B /* cameraFlip@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41CCA11E86A5F300AA6E6B /* cameraFlip@3x.png */; };
+		CE41CCB71E86A5F300AA6E6B /* cameraGridNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41CCA21E86A5F300AA6E6B /* cameraGridNormal.png */; };
+		CE41CCB81E86A5F300AA6E6B /* cameraGridNormal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41CCA31E86A5F300AA6E6B /* cameraGridNormal@2x.png */; };
+		CE41CCB91E86A5F300AA6E6B /* cameraGridNormal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41CCA41E86A5F300AA6E6B /* cameraGridNormal@3x.png */; };
+		CE41CCBA1E86A5F300AA6E6B /* cameraTrigger.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41CCA51E86A5F300AA6E6B /* cameraTrigger.png */; };
+		CE41CCBB1E86A5F300AA6E6B /* cameraTrigger@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41CCA61E86A5F300AA6E6B /* cameraTrigger@2x.png */; };
+		CE41CCBC1E86A5F300AA6E6B /* cameraTrigger@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41CCA71E86A5F300AA6E6B /* cameraTrigger@3x.png */; };
+		DA7FCA05A70037C499FC0C4E /* libPods-defineCameraUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91383BB5550562E154B4B86A /* libPods-defineCameraUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CE747D901E67FE0C00D7DA3A /* PBXContainerItemProxy */ = {
+		CE0A14BB1E86A15800C4068F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CE747D6E1E67FE0C00D7DA3A /* Project object */;
+			containerPortal = CE0A14991E86A15800C4068F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CE747D751E67FE0C00D7DA3A;
+			remoteGlobalIDString = CE0A14A01E86A15800C4068F;
 			remoteInfo = defineCamera;
 		};
-		CE747D9B1E67FE0C00D7DA3A /* PBXContainerItemProxy */ = {
+		CE0A14C61E86A15800C4068F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CE747D6E1E67FE0C00D7DA3A /* Project object */;
+			containerPortal = CE0A14991E86A15800C4068F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CE747D751E67FE0C00D7DA3A;
+			remoteGlobalIDString = CE0A14A01E86A15800C4068F;
 			remoteInfo = defineCamera;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1ED44209FF3BA2C030B3135B /* Pods-defineCameraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defineCameraTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-defineCameraTests/Pods-defineCameraTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1EF66D611047C1D2A54955AA /* libPods-defineCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-defineCamera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4437C30AEF1F16E3ED8D378D /* Pods-defineCameraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defineCameraUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-defineCameraUITests/Pods-defineCameraUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		45FA01952DE77EC2D16D5076 /* Pods-defineCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defineCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-defineCamera/Pods-defineCamera.release.xcconfig"; sourceTree = "<group>"; };
-		50789B34C424F534E89EE1F3 /* Pods-defineCameraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defineCameraUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-defineCameraUITests/Pods-defineCameraUITests.release.xcconfig"; sourceTree = "<group>"; };
-		778F912EDC20E6E2C4713047 /* Pods-defineCameraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defineCameraTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-defineCameraTests/Pods-defineCameraTests.release.xcconfig"; sourceTree = "<group>"; };
-		78231D8FEDBEA33ED7232723 /* libPods-defineCameraTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-defineCameraTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C42341FCE04F53F1B68BEFA /* libPods-defineCameraUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-defineCameraUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE0A646D1E6A52520062CD84 /* KFZImageDBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFZImageDBTool.h; sourceTree = "<group>"; };
-		CE0A646E1E6A52520062CD84 /* KFZImageDBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFZImageDBTool.m; sourceTree = "<group>"; };
-		CE0EB6571E69A8DD00115D2E /* cameraGridNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraGridNormal.png; sourceTree = "<group>"; };
-		CE0EB6581E69A8DD00115D2E /* cameraGridNormal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraGridNormal@2x.png"; sourceTree = "<group>"; };
-		CE0EB6591E69A8DD00115D2E /* cameraGridNormal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraGridNormal@3x.png"; sourceTree = "<group>"; };
-		CE0EB65A1E69A8DD00115D2E /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
-		CE0EB65B1E69A8DD00115D2E /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@2x.png"; sourceTree = "<group>"; };
-		CE0EB65C1E69A8DD00115D2E /* close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@3x.png"; sourceTree = "<group>"; };
-		CE0EB65D1E69A8DD00115D2E /* crop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crop.png; sourceTree = "<group>"; };
-		CE0EB65E1E69A8DD00115D2E /* crop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crop@2x.png"; sourceTree = "<group>"; };
-		CE0EB65F1E69A8DD00115D2E /* crop@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crop@3x.png"; sourceTree = "<group>"; };
-		CE0EB6601E69A8DD00115D2E /* flash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flash.png; sourceTree = "<group>"; };
-		CE0EB6611E69A8DD00115D2E /* flash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flash@2x.png"; sourceTree = "<group>"; };
-		CE0EB6621E69A8DD00115D2E /* flash@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flash@3x.png"; sourceTree = "<group>"; };
-		CE0EB6631E69A8DD00115D2E /* flip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flip.png; sourceTree = "<group>"; };
-		CE0EB6641E69A8DD00115D2E /* flip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flip@2x.png"; sourceTree = "<group>"; };
-		CE0EB6651E69A8DD00115D2E /* flip@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flip@3x.png"; sourceTree = "<group>"; };
-		CE0EB6661E69A8DD00115D2E /* trigger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trigger.png; sourceTree = "<group>"; };
-		CE0EB6671E69A8DD00115D2E /* trigger@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trigger@2x.png"; sourceTree = "<group>"; };
-		CE0EB6681E69A8DD00115D2E /* trigger@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trigger@3x.png"; sourceTree = "<group>"; };
-		CE18338B1E695C020083F712 /* KFZCameraShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFZCameraShowView.h; sourceTree = "<group>"; };
-		CE18338C1E695C020083F712 /* KFZCameraShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFZCameraShowView.m; sourceTree = "<group>"; };
-		CE18338E1E695C180083F712 /* KFZCameraShowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KFZCameraShowView.xib; sourceTree = "<group>"; };
-		CE1833901E6960110083F712 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		CE1833911E6960110083F712 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		CE1833921E6960110083F712 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		CE747D761E67FE0C00D7DA3A /* defineCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = defineCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE747D7A1E67FE0C00D7DA3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CE747D7C1E67FE0C00D7DA3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		CE747D7D1E67FE0C00D7DA3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CE747D7F1E67FE0C00D7DA3A /* KFZBaseCameraVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFZBaseCameraVC.h; sourceTree = "<group>"; };
-		CE747D801E67FE0C00D7DA3A /* KFZBaseCameraVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFZBaseCameraVC.m; sourceTree = "<group>"; };
-		CE747D851E67FE0C00D7DA3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CE747D881E67FE0C00D7DA3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CE747D8A1E67FE0C00D7DA3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE747D8F1E67FE0C00D7DA3A /* defineCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = defineCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE747D931E67FE0C00D7DA3A /* defineCameraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = defineCameraTests.m; sourceTree = "<group>"; };
-		CE747D951E67FE0C00D7DA3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE747D9A1E67FE0C00D7DA3A /* defineCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = defineCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE747D9E1E67FE0C00D7DA3A /* defineCameraUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = defineCameraUITests.m; sourceTree = "<group>"; };
-		CE747DA01E67FE0C00D7DA3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E198BAB409A6CEEF285B412C /* Pods-defineCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defineCamera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-defineCamera/Pods-defineCamera.debug.xcconfig"; sourceTree = "<group>"; };
+		220664C6E5892C02FAC24168 /* Pods-defineCameraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defineCameraTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-defineCameraTests/Pods-defineCameraTests.release.xcconfig"; sourceTree = "<group>"; };
+		2ECD6160B3E27E9AD99E5892 /* libPods-defineCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-defineCamera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3785B064DE3D1D900C8B45CC /* Pods-defineCameraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defineCameraTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-defineCameraTests/Pods-defineCameraTests.debug.xcconfig"; sourceTree = "<group>"; };
+		87243336C405286056458E1C /* Pods-defineCameraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defineCameraUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-defineCameraUITests/Pods-defineCameraUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8D9E03F4133ED2ADDCE82C9B /* Pods-defineCameraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defineCameraUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-defineCameraUITests/Pods-defineCameraUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		91383BB5550562E154B4B86A /* libPods-defineCameraUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-defineCameraUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93EA97E04080B14837026258 /* libPods-defineCameraTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-defineCameraTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0A14A11E86A15800C4068F /* defineCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = defineCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0A14A51E86A15800C4068F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE0A14A71E86A15800C4068F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE0A14A81E86A15800C4068F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE0A14AA1E86A15800C4068F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CE0A14AB1E86A15800C4068F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CE0A14AE1E86A15800C4068F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE0A14B01E86A15800C4068F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE0A14B31E86A15800C4068F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE0A14B51E86A15800C4068F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE0A14BA1E86A15800C4068F /* defineCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = defineCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0A14BE1E86A15800C4068F /* defineCameraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = defineCameraTests.m; sourceTree = "<group>"; };
+		CE0A14C01E86A15800C4068F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE0A14C51E86A15800C4068F /* defineCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = defineCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0A14C91E86A15800C4068F /* defineCameraUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = defineCameraUITests.m; sourceTree = "<group>"; };
+		CE0A14CB1E86A15800C4068F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE41CC631E86A24C00AA6E6B /* KFZImageDBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFZImageDBTool.h; sourceTree = "<group>"; };
+		CE41CC641E86A24C00AA6E6B /* KFZImageDBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFZImageDBTool.m; sourceTree = "<group>"; };
+		CE41CC661E86A28B00AA6E6B /* UIImage+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+extension.h"; sourceTree = "<group>"; };
+		CE41CC671E86A28B00AA6E6B /* UIImage+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+extension.m"; sourceTree = "<group>"; };
+		CE41CC901E86A5F300AA6E6B /* KFZBaseCameraVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFZBaseCameraVC.h; sourceTree = "<group>"; };
+		CE41CC911E86A5F300AA6E6B /* KFZBaseCameraVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFZBaseCameraVC.m; sourceTree = "<group>"; };
+		CE41CC921E86A5F300AA6E6B /* KFZCameraShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFZCameraShowView.h; sourceTree = "<group>"; };
+		CE41CC931E86A5F300AA6E6B /* KFZCameraShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFZCameraShowView.m; sourceTree = "<group>"; };
+		CE41CC941E86A5F300AA6E6B /* KFZCameraShowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KFZCameraShowView.xib; sourceTree = "<group>"; };
+		CE41CC961E86A5F300AA6E6B /* cameraClose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraClose.png; sourceTree = "<group>"; };
+		CE41CC971E86A5F300AA6E6B /* cameraClose@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraClose@2x.png"; sourceTree = "<group>"; };
+		CE41CC981E86A5F300AA6E6B /* cameraClose@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraClose@3x.png"; sourceTree = "<group>"; };
+		CE41CC991E86A5F300AA6E6B /* cameraCrop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraCrop.png; sourceTree = "<group>"; };
+		CE41CC9A1E86A5F300AA6E6B /* cameraCrop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraCrop@2x.png"; sourceTree = "<group>"; };
+		CE41CC9B1E86A5F300AA6E6B /* cameraCrop@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraCrop@3x.png"; sourceTree = "<group>"; };
+		CE41CC9C1E86A5F300AA6E6B /* cameraFlash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraFlash.png; sourceTree = "<group>"; };
+		CE41CC9D1E86A5F300AA6E6B /* cameraFlash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraFlash@2x.png"; sourceTree = "<group>"; };
+		CE41CC9E1E86A5F300AA6E6B /* cameraFlash@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraFlash@3x.png"; sourceTree = "<group>"; };
+		CE41CC9F1E86A5F300AA6E6B /* cameraFlip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraFlip.png; sourceTree = "<group>"; };
+		CE41CCA01E86A5F300AA6E6B /* cameraFlip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraFlip@2x.png"; sourceTree = "<group>"; };
+		CE41CCA11E86A5F300AA6E6B /* cameraFlip@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraFlip@3x.png"; sourceTree = "<group>"; };
+		CE41CCA21E86A5F300AA6E6B /* cameraGridNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraGridNormal.png; sourceTree = "<group>"; };
+		CE41CCA31E86A5F300AA6E6B /* cameraGridNormal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraGridNormal@2x.png"; sourceTree = "<group>"; };
+		CE41CCA41E86A5F300AA6E6B /* cameraGridNormal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraGridNormal@3x.png"; sourceTree = "<group>"; };
+		CE41CCA51E86A5F300AA6E6B /* cameraTrigger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraTrigger.png; sourceTree = "<group>"; };
+		CE41CCA61E86A5F300AA6E6B /* cameraTrigger@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraTrigger@2x.png"; sourceTree = "<group>"; };
+		CE41CCA71E86A5F300AA6E6B /* cameraTrigger@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraTrigger@3x.png"; sourceTree = "<group>"; };
+		D5B722465D49DA8920E55EDA /* Pods-defineCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defineCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-defineCamera/Pods-defineCamera.release.xcconfig"; sourceTree = "<group>"; };
+		D6F57C586E9C61CB11B6925F /* Pods-defineCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defineCamera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-defineCamera/Pods-defineCamera.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CE747D731E67FE0C00D7DA3A /* Frameworks */ = {
+		CE0A149E1E86A15800C4068F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2E0D62317E1843C9F2B726B /* libPods-defineCamera.a in Frameworks */,
+				293128E2F803511274AFB3D5 /* libPods-defineCamera.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE747D8C1E67FE0C00D7DA3A /* Frameworks */ = {
+		CE0A14B71E86A15800C4068F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7104334C3E3611F7E5BAFEFA /* libPods-defineCameraTests.a in Frameworks */,
+				8100F87099525EF3BBE91EFB /* libPods-defineCameraTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE747D971E67FE0C00D7DA3A /* Frameworks */ = {
+		CE0A14C21E86A15800C4068F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				949647D1E4C2562E2D3A1230 /* libPods-defineCameraUITests.a in Frameworks */,
+				DA7FCA05A70037C499FC0C4E /* libPods-defineCameraUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B2993D0B884BD1C8812DEC0 /* Pods */ = {
+		6A093236090F55A15351659A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E198BAB409A6CEEF285B412C /* Pods-defineCamera.debug.xcconfig */,
-				45FA01952DE77EC2D16D5076 /* Pods-defineCamera.release.xcconfig */,
-				1ED44209FF3BA2C030B3135B /* Pods-defineCameraTests.debug.xcconfig */,
-				778F912EDC20E6E2C4713047 /* Pods-defineCameraTests.release.xcconfig */,
-				4437C30AEF1F16E3ED8D378D /* Pods-defineCameraUITests.debug.xcconfig */,
-				50789B34C424F534E89EE1F3 /* Pods-defineCameraUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		2C33071BCA74C0F8F3DBB5DB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1EF66D611047C1D2A54955AA /* libPods-defineCamera.a */,
-				78231D8FEDBEA33ED7232723 /* libPods-defineCameraTests.a */,
-				9C42341FCE04F53F1B68BEFA /* libPods-defineCameraUITests.a */,
+				2ECD6160B3E27E9AD99E5892 /* libPods-defineCamera.a */,
+				93EA97E04080B14837026258 /* libPods-defineCameraTests.a */,
+				91383BB5550562E154B4B86A /* libPods-defineCameraUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CE0EB6561E69A8DD00115D2E /* KFZCameSources */ = {
+		C9CDD36BD37616948C678A08 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CE0EB6571E69A8DD00115D2E /* cameraGridNormal.png */,
-				CE0EB6581E69A8DD00115D2E /* cameraGridNormal@2x.png */,
-				CE0EB6591E69A8DD00115D2E /* cameraGridNormal@3x.png */,
-				CE0EB65A1E69A8DD00115D2E /* close.png */,
-				CE0EB65B1E69A8DD00115D2E /* close@2x.png */,
-				CE0EB65C1E69A8DD00115D2E /* close@3x.png */,
-				CE0EB65D1E69A8DD00115D2E /* crop.png */,
-				CE0EB65E1E69A8DD00115D2E /* crop@2x.png */,
-				CE0EB65F1E69A8DD00115D2E /* crop@3x.png */,
-				CE0EB6601E69A8DD00115D2E /* flash.png */,
-				CE0EB6611E69A8DD00115D2E /* flash@2x.png */,
-				CE0EB6621E69A8DD00115D2E /* flash@3x.png */,
-				CE0EB6631E69A8DD00115D2E /* flip.png */,
-				CE0EB6641E69A8DD00115D2E /* flip@2x.png */,
-				CE0EB6651E69A8DD00115D2E /* flip@3x.png */,
-				CE0EB6661E69A8DD00115D2E /* trigger.png */,
-				CE0EB6671E69A8DD00115D2E /* trigger@2x.png */,
-				CE0EB6681E69A8DD00115D2E /* trigger@3x.png */,
+				D6F57C586E9C61CB11B6925F /* Pods-defineCamera.debug.xcconfig */,
+				D5B722465D49DA8920E55EDA /* Pods-defineCamera.release.xcconfig */,
+				3785B064DE3D1D900C8B45CC /* Pods-defineCameraTests.debug.xcconfig */,
+				220664C6E5892C02FAC24168 /* Pods-defineCameraTests.release.xcconfig */,
+				8D9E03F4133ED2ADDCE82C9B /* Pods-defineCameraUITests.debug.xcconfig */,
+				87243336C405286056458E1C /* Pods-defineCameraUITests.release.xcconfig */,
 			);
-			path = KFZCameSources;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		CE1833951E6962D40083F712 /* KFZCamera */ = {
+		CE0A14981E86A15800C4068F = {
 			isa = PBXGroup;
 			children = (
-				CE0A646D1E6A52520062CD84 /* KFZImageDBTool.h */,
-				CE0A646E1E6A52520062CD84 /* KFZImageDBTool.m */,
-				CE0EB6561E69A8DD00115D2E /* KFZCameSources */,
-				CE747D7F1E67FE0C00D7DA3A /* KFZBaseCameraVC.h */,
-				CE747D801E67FE0C00D7DA3A /* KFZBaseCameraVC.m */,
-				CE18338B1E695C020083F712 /* KFZCameraShowView.h */,
-				CE18338C1E695C020083F712 /* KFZCameraShowView.m */,
-				CE18338E1E695C180083F712 /* KFZCameraShowView.xib */,
-			);
-			name = KFZCamera;
-			sourceTree = "<group>";
-		};
-		CE747D6D1E67FE0C00D7DA3A = {
-			isa = PBXGroup;
-			children = (
-				CE747D781E67FE0C00D7DA3A /* defineCamera */,
-				CE747D921E67FE0C00D7DA3A /* defineCameraTests */,
-				CE747D9D1E67FE0C00D7DA3A /* defineCameraUITests */,
-				CE747D771E67FE0C00D7DA3A /* Products */,
-				0B2993D0B884BD1C8812DEC0 /* Pods */,
-				2C33071BCA74C0F8F3DBB5DB /* Frameworks */,
+				CE0A14A31E86A15800C4068F /* defineCamera */,
+				CE0A14BD1E86A15800C4068F /* defineCameraTests */,
+				CE0A14C81E86A15800C4068F /* defineCameraUITests */,
+				CE0A14A21E86A15800C4068F /* Products */,
+				C9CDD36BD37616948C678A08 /* Pods */,
+				6A093236090F55A15351659A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		CE747D771E67FE0C00D7DA3A /* Products */ = {
+		CE0A14A21E86A15800C4068F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE747D761E67FE0C00D7DA3A /* defineCamera.app */,
-				CE747D8F1E67FE0C00D7DA3A /* defineCameraTests.xctest */,
-				CE747D9A1E67FE0C00D7DA3A /* defineCameraUITests.xctest */,
+				CE0A14A11E86A15800C4068F /* defineCamera.app */,
+				CE0A14BA1E86A15800C4068F /* defineCameraTests.xctest */,
+				CE0A14C51E86A15800C4068F /* defineCameraUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CE747D781E67FE0C00D7DA3A /* defineCamera */ = {
+		CE0A14A31E86A15800C4068F /* defineCamera */ = {
 			isa = PBXGroup;
 			children = (
-				CE1833951E6962D40083F712 /* KFZCamera */,
-				CE747D7C1E67FE0C00D7DA3A /* AppDelegate.h */,
-				CE747D7D1E67FE0C00D7DA3A /* AppDelegate.m */,
-				CE1833901E6960110083F712 /* MainViewController.h */,
-				CE1833911E6960110083F712 /* MainViewController.m */,
-				CE1833921E6960110083F712 /* MainViewController.xib */,
-				CE747D851E67FE0C00D7DA3A /* Assets.xcassets */,
-				CE747D871E67FE0C00D7DA3A /* LaunchScreen.storyboard */,
-				CE747D8A1E67FE0C00D7DA3A /* Info.plist */,
-				CE747D791E67FE0C00D7DA3A /* Supporting Files */,
+				CE41CC8E1E86A5F300AA6E6B /* KFZCame */,
+				CE41CC661E86A28B00AA6E6B /* UIImage+extension.h */,
+				CE41CC671E86A28B00AA6E6B /* UIImage+extension.m */,
+				CE41CC631E86A24C00AA6E6B /* KFZImageDBTool.h */,
+				CE41CC641E86A24C00AA6E6B /* KFZImageDBTool.m */,
+				CE0A14A71E86A15800C4068F /* AppDelegate.h */,
+				CE0A14A81E86A15800C4068F /* AppDelegate.m */,
+				CE0A14AA1E86A15800C4068F /* ViewController.h */,
+				CE0A14AB1E86A15800C4068F /* ViewController.m */,
+				CE0A14AD1E86A15800C4068F /* Main.storyboard */,
+				CE0A14B01E86A15800C4068F /* Assets.xcassets */,
+				CE0A14B21E86A15800C4068F /* LaunchScreen.storyboard */,
+				CE0A14B51E86A15800C4068F /* Info.plist */,
+				CE0A14A41E86A15800C4068F /* Supporting Files */,
 			);
 			path = defineCamera;
 			sourceTree = "<group>";
 		};
-		CE747D791E67FE0C00D7DA3A /* Supporting Files */ = {
+		CE0A14A41E86A15800C4068F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CE747D7A1E67FE0C00D7DA3A /* main.m */,
+				CE0A14A51E86A15800C4068F /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CE747D921E67FE0C00D7DA3A /* defineCameraTests */ = {
+		CE0A14BD1E86A15800C4068F /* defineCameraTests */ = {
 			isa = PBXGroup;
 			children = (
-				CE747D931E67FE0C00D7DA3A /* defineCameraTests.m */,
-				CE747D951E67FE0C00D7DA3A /* Info.plist */,
+				CE0A14BE1E86A15800C4068F /* defineCameraTests.m */,
+				CE0A14C01E86A15800C4068F /* Info.plist */,
 			);
 			path = defineCameraTests;
 			sourceTree = "<group>";
 		};
-		CE747D9D1E67FE0C00D7DA3A /* defineCameraUITests */ = {
+		CE0A14C81E86A15800C4068F /* defineCameraUITests */ = {
 			isa = PBXGroup;
 			children = (
-				CE747D9E1E67FE0C00D7DA3A /* defineCameraUITests.m */,
-				CE747DA01E67FE0C00D7DA3A /* Info.plist */,
+				CE0A14C91E86A15800C4068F /* defineCameraUITests.m */,
+				CE0A14CB1E86A15800C4068F /* Info.plist */,
 			);
 			path = defineCameraUITests;
+			sourceTree = "<group>";
+		};
+		CE41CC8E1E86A5F300AA6E6B /* KFZCame */ = {
+			isa = PBXGroup;
+			children = (
+				CE41CC8F1E86A5F300AA6E6B /* Core */,
+				CE41CC951E86A5F300AA6E6B /* Resource */,
+			);
+			path = KFZCame;
+			sourceTree = "<group>";
+		};
+		CE41CC8F1E86A5F300AA6E6B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CE41CC901E86A5F300AA6E6B /* KFZBaseCameraVC.h */,
+				CE41CC911E86A5F300AA6E6B /* KFZBaseCameraVC.m */,
+				CE41CC921E86A5F300AA6E6B /* KFZCameraShowView.h */,
+				CE41CC931E86A5F300AA6E6B /* KFZCameraShowView.m */,
+				CE41CC941E86A5F300AA6E6B /* KFZCameraShowView.xib */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CE41CC951E86A5F300AA6E6B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				CE41CC961E86A5F300AA6E6B /* cameraClose.png */,
+				CE41CC971E86A5F300AA6E6B /* cameraClose@2x.png */,
+				CE41CC981E86A5F300AA6E6B /* cameraClose@3x.png */,
+				CE41CC991E86A5F300AA6E6B /* cameraCrop.png */,
+				CE41CC9A1E86A5F300AA6E6B /* cameraCrop@2x.png */,
+				CE41CC9B1E86A5F300AA6E6B /* cameraCrop@3x.png */,
+				CE41CC9C1E86A5F300AA6E6B /* cameraFlash.png */,
+				CE41CC9D1E86A5F300AA6E6B /* cameraFlash@2x.png */,
+				CE41CC9E1E86A5F300AA6E6B /* cameraFlash@3x.png */,
+				CE41CC9F1E86A5F300AA6E6B /* cameraFlip.png */,
+				CE41CCA01E86A5F300AA6E6B /* cameraFlip@2x.png */,
+				CE41CCA11E86A5F300AA6E6B /* cameraFlip@3x.png */,
+				CE41CCA21E86A5F300AA6E6B /* cameraGridNormal.png */,
+				CE41CCA31E86A5F300AA6E6B /* cameraGridNormal@2x.png */,
+				CE41CCA41E86A5F300AA6E6B /* cameraGridNormal@3x.png */,
+				CE41CCA51E86A5F300AA6E6B /* cameraTrigger.png */,
+				CE41CCA61E86A5F300AA6E6B /* cameraTrigger@2x.png */,
+				CE41CCA71E86A5F300AA6E6B /* cameraTrigger@3x.png */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CE747D751E67FE0C00D7DA3A /* defineCamera */ = {
+		CE0A14A01E86A15800C4068F /* defineCamera */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE747DA31E67FE0C00D7DA3A /* Build configuration list for PBXNativeTarget "defineCamera" */;
+			buildConfigurationList = CE0A14CE1E86A15800C4068F /* Build configuration list for PBXNativeTarget "defineCamera" */;
 			buildPhases = (
-				D496A67FC3C65364462BFA45 /* [CP] Check Pods Manifest.lock */,
-				CE747D721E67FE0C00D7DA3A /* Sources */,
-				CE747D731E67FE0C00D7DA3A /* Frameworks */,
-				CE747D741E67FE0C00D7DA3A /* Resources */,
-				C2D6C17C212FAF0D653BD9E1 /* [CP] Embed Pods Frameworks */,
-				F90201C7C74D9137E03289D0 /* [CP] Copy Pods Resources */,
+				77E7746F87F8372BD239614A /* [CP] Check Pods Manifest.lock */,
+				CE0A149D1E86A15800C4068F /* Sources */,
+				CE0A149E1E86A15800C4068F /* Frameworks */,
+				CE0A149F1E86A15800C4068F /* Resources */,
+				515F6E463FA09128D03B13AB /* [CP] Embed Pods Frameworks */,
+				D146B9EBA4D6663AB2A2D934 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -288,78 +301,80 @@
 			);
 			name = defineCamera;
 			productName = defineCamera;
-			productReference = CE747D761E67FE0C00D7DA3A /* defineCamera.app */;
+			productReference = CE0A14A11E86A15800C4068F /* defineCamera.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CE747D8E1E67FE0C00D7DA3A /* defineCameraTests */ = {
+		CE0A14B91E86A15800C4068F /* defineCameraTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE747DA61E67FE0C00D7DA3A /* Build configuration list for PBXNativeTarget "defineCameraTests" */;
+			buildConfigurationList = CE0A14D11E86A15800C4068F /* Build configuration list for PBXNativeTarget "defineCameraTests" */;
 			buildPhases = (
-				0D29CFCC289F48C0618F7B24 /* [CP] Check Pods Manifest.lock */,
-				CE747D8B1E67FE0C00D7DA3A /* Sources */,
-				CE747D8C1E67FE0C00D7DA3A /* Frameworks */,
-				CE747D8D1E67FE0C00D7DA3A /* Resources */,
-				BBC24ECE5E7880D7769D6FF5 /* [CP] Embed Pods Frameworks */,
-				32DC4A4D4EB4637D79902B09 /* [CP] Copy Pods Resources */,
+				6E800C0CBEDF1BD35ED24D51 /* [CP] Check Pods Manifest.lock */,
+				CE0A14B61E86A15800C4068F /* Sources */,
+				CE0A14B71E86A15800C4068F /* Frameworks */,
+				CE0A14B81E86A15800C4068F /* Resources */,
+				13CC8F8AD80751ACC3F12001 /* [CP] Embed Pods Frameworks */,
+				6D75165C8F6F5B83FADAD330 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CE747D911E67FE0C00D7DA3A /* PBXTargetDependency */,
+				CE0A14BC1E86A15800C4068F /* PBXTargetDependency */,
 			);
 			name = defineCameraTests;
 			productName = defineCameraTests;
-			productReference = CE747D8F1E67FE0C00D7DA3A /* defineCameraTests.xctest */;
+			productReference = CE0A14BA1E86A15800C4068F /* defineCameraTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CE747D991E67FE0C00D7DA3A /* defineCameraUITests */ = {
+		CE0A14C41E86A15800C4068F /* defineCameraUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE747DA91E67FE0C00D7DA3A /* Build configuration list for PBXNativeTarget "defineCameraUITests" */;
+			buildConfigurationList = CE0A14D41E86A15800C4068F /* Build configuration list for PBXNativeTarget "defineCameraUITests" */;
 			buildPhases = (
-				9F6DC91BE144852B475D521C /* [CP] Check Pods Manifest.lock */,
-				CE747D961E67FE0C00D7DA3A /* Sources */,
-				CE747D971E67FE0C00D7DA3A /* Frameworks */,
-				CE747D981E67FE0C00D7DA3A /* Resources */,
-				45BFB8A7BD780C22858ACF7A /* [CP] Embed Pods Frameworks */,
-				3BE8738065D1FF98B6E6E70C /* [CP] Copy Pods Resources */,
+				46360D00563324C2EC501AC0 /* [CP] Check Pods Manifest.lock */,
+				CE0A14C11E86A15800C4068F /* Sources */,
+				CE0A14C21E86A15800C4068F /* Frameworks */,
+				CE0A14C31E86A15800C4068F /* Resources */,
+				536DEF4C4FC26B3E1F4CC4FA /* [CP] Embed Pods Frameworks */,
+				42D5C146941543F1BBF23126 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CE747D9C1E67FE0C00D7DA3A /* PBXTargetDependency */,
+				CE0A14C71E86A15800C4068F /* PBXTargetDependency */,
 			);
 			name = defineCameraUITests;
 			productName = defineCameraUITests;
-			productReference = CE747D9A1E67FE0C00D7DA3A /* defineCameraUITests.xctest */;
+			productReference = CE0A14C51E86A15800C4068F /* defineCameraUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CE747D6E1E67FE0C00D7DA3A /* Project object */ = {
+		CE0A14991E86A15800C4068F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = kongfz;
 				TargetAttributes = {
-					CE747D751E67FE0C00D7DA3A = {
+					CE0A14A01E86A15800C4068F = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = AR8RH55RMX;
 						ProvisioningStyle = Automatic;
 					};
-					CE747D8E1E67FE0C00D7DA3A = {
+					CE0A14B91E86A15800C4068F = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = AR8RH55RMX;
 						ProvisioningStyle = Automatic;
-						TestTargetID = CE747D751E67FE0C00D7DA3A;
+						TestTargetID = CE0A14A01E86A15800C4068F;
 					};
-					CE747D991E67FE0C00D7DA3A = {
+					CE0A14C41E86A15800C4068F = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = AR8RH55RMX;
 						ProvisioningStyle = Automatic;
-						TestTargetID = CE747D751E67FE0C00D7DA3A;
+						TestTargetID = CE0A14A01E86A15800C4068F;
 					};
 				};
 			};
-			buildConfigurationList = CE747D711E67FE0C00D7DA3A /* Build configuration list for PBXProject "defineCamera" */;
+			buildConfigurationList = CE0A149C1E86A15800C4068F /* Build configuration list for PBXProject "defineCamera" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -367,56 +382,56 @@
 				en,
 				Base,
 			);
-			mainGroup = CE747D6D1E67FE0C00D7DA3A;
-			productRefGroup = CE747D771E67FE0C00D7DA3A /* Products */;
+			mainGroup = CE0A14981E86A15800C4068F;
+			productRefGroup = CE0A14A21E86A15800C4068F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CE747D751E67FE0C00D7DA3A /* defineCamera */,
-				CE747D8E1E67FE0C00D7DA3A /* defineCameraTests */,
-				CE747D991E67FE0C00D7DA3A /* defineCameraUITests */,
+				CE0A14A01E86A15800C4068F /* defineCamera */,
+				CE0A14B91E86A15800C4068F /* defineCameraTests */,
+				CE0A14C41E86A15800C4068F /* defineCameraUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CE747D741E67FE0C00D7DA3A /* Resources */ = {
+		CE0A149F1E86A15800C4068F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE0EB6721E69A8DD00115D2E /* flash.png in Resources */,
-				CE0EB66E1E69A8DD00115D2E /* close@3x.png in Resources */,
-				CE0EB6711E69A8DD00115D2E /* crop@3x.png in Resources */,
-				CE0EB66D1E69A8DD00115D2E /* close@2x.png in Resources */,
-				CE0EB6751E69A8DD00115D2E /* flip.png in Resources */,
-				CE0EB6771E69A8DD00115D2E /* flip@3x.png in Resources */,
-				CE0EB66F1E69A8DD00115D2E /* crop.png in Resources */,
-				CE0EB66A1E69A8DD00115D2E /* cameraGridNormal@2x.png in Resources */,
-				CE0EB6701E69A8DD00115D2E /* crop@2x.png in Resources */,
-				CE0EB6731E69A8DD00115D2E /* flash@2x.png in Resources */,
-				CE0EB6741E69A8DD00115D2E /* flash@3x.png in Resources */,
-				CE0EB6691E69A8DD00115D2E /* cameraGridNormal.png in Resources */,
-				CE0EB66C1E69A8DD00115D2E /* close.png in Resources */,
-				CE0EB66B1E69A8DD00115D2E /* cameraGridNormal@3x.png in Resources */,
-				CE747D891E67FE0C00D7DA3A /* LaunchScreen.storyboard in Resources */,
-				CE0EB6791E69A8DD00115D2E /* trigger@2x.png in Resources */,
-				CE747D861E67FE0C00D7DA3A /* Assets.xcassets in Resources */,
-				CE0EB6761E69A8DD00115D2E /* flip@2x.png in Resources */,
-				CE0EB67A1E69A8DD00115D2E /* trigger@3x.png in Resources */,
-				CE18338F1E695C190083F712 /* KFZCameraShowView.xib in Resources */,
-				CE0EB6781E69A8DD00115D2E /* trigger.png in Resources */,
-				CE1833941E6960110083F712 /* MainViewController.xib in Resources */,
+				CE41CCB11E86A5F300AA6E6B /* cameraFlash.png in Resources */,
+				CE41CCBB1E86A5F300AA6E6B /* cameraTrigger@2x.png in Resources */,
+				CE41CCAC1E86A5F300AA6E6B /* cameraClose@2x.png in Resources */,
+				CE41CCB51E86A5F300AA6E6B /* cameraFlip@2x.png in Resources */,
+				CE41CCB91E86A5F300AA6E6B /* cameraGridNormal@3x.png in Resources */,
+				CE41CCB61E86A5F300AA6E6B /* cameraFlip@3x.png in Resources */,
+				CE0A14B41E86A15800C4068F /* LaunchScreen.storyboard in Resources */,
+				CE41CCB41E86A5F300AA6E6B /* cameraFlip.png in Resources */,
+				CE41CCB81E86A5F300AA6E6B /* cameraGridNormal@2x.png in Resources */,
+				CE41CCB71E86A5F300AA6E6B /* cameraGridNormal.png in Resources */,
+				CE0A14B11E86A15800C4068F /* Assets.xcassets in Resources */,
+				CE41CCAD1E86A5F300AA6E6B /* cameraClose@3x.png in Resources */,
+				CE41CCAF1E86A5F300AA6E6B /* cameraCrop@2x.png in Resources */,
+				CE41CCB21E86A5F300AA6E6B /* cameraFlash@2x.png in Resources */,
+				CE41CCBA1E86A5F300AA6E6B /* cameraTrigger.png in Resources */,
+				CE41CCAA1E86A5F300AA6E6B /* KFZCameraShowView.xib in Resources */,
+				CE0A14AF1E86A15800C4068F /* Main.storyboard in Resources */,
+				CE41CCBC1E86A5F300AA6E6B /* cameraTrigger@3x.png in Resources */,
+				CE41CCAE1E86A5F300AA6E6B /* cameraCrop.png in Resources */,
+				CE41CCB01E86A5F300AA6E6B /* cameraCrop@3x.png in Resources */,
+				CE41CCAB1E86A5F300AA6E6B /* cameraClose.png in Resources */,
+				CE41CCB31E86A5F300AA6E6B /* cameraFlash@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE747D8D1E67FE0C00D7DA3A /* Resources */ = {
+		CE0A14B81E86A15800C4068F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE747D981E67FE0C00D7DA3A /* Resources */ = {
+		CE0A14C31E86A15800C4068F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -426,82 +441,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0D29CFCC289F48C0618F7B24 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		32DC4A4D4EB4637D79902B09 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-defineCameraTests/Pods-defineCameraTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3BE8738065D1FF98B6E6E70C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-defineCameraUITests/Pods-defineCameraUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		45BFB8A7BD780C22858ACF7A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-defineCameraUITests/Pods-defineCameraUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9F6DC91BE144852B475D521C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		BBC24ECE5E7880D7769D6FF5 /* [CP] Embed Pods Frameworks */ = {
+		13CC8F8AD80751ACC3F12001 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -516,22 +456,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-defineCameraTests/Pods-defineCameraTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C2D6C17C212FAF0D653BD9E1 /* [CP] Embed Pods Frameworks */ = {
+		42D5C146941543F1BBF23126 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-defineCamera/Pods-defineCamera-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-defineCameraUITests/Pods-defineCameraUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D496A67FC3C65364462BFA45 /* [CP] Check Pods Manifest.lock */ = {
+		46360D00563324C2EC501AC0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -546,7 +486,82 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		F90201C7C74D9137E03289D0 /* [CP] Copy Pods Resources */ = {
+		515F6E463FA09128D03B13AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-defineCamera/Pods-defineCamera-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		536DEF4C4FC26B3E1F4CC4FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-defineCameraUITests/Pods-defineCameraUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D75165C8F6F5B83FADAD330 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-defineCameraTests/Pods-defineCameraTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E800C0CBEDF1BD35ED24D51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		77E7746F87F8372BD239614A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D146B9EBA4D6663AB2A2D934 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -564,55 +579,64 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CE747D721E67FE0C00D7DA3A /* Sources */ = {
+		CE0A149D1E86A15800C4068F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE747D811E67FE0C00D7DA3A /* KFZBaseCameraVC.m in Sources */,
-				CE747D7E1E67FE0C00D7DA3A /* AppDelegate.m in Sources */,
-				CE18338D1E695C020083F712 /* KFZCameraShowView.m in Sources */,
-				CE1833931E6960110083F712 /* MainViewController.m in Sources */,
-				CE747D7B1E67FE0C00D7DA3A /* main.m in Sources */,
-				CE0A646F1E6A52520062CD84 /* KFZImageDBTool.m in Sources */,
+				CE41CC681E86A28B00AA6E6B /* UIImage+extension.m in Sources */,
+				CE0A14AC1E86A15800C4068F /* ViewController.m in Sources */,
+				CE41CCA91E86A5F300AA6E6B /* KFZCameraShowView.m in Sources */,
+				CE41CCA81E86A5F300AA6E6B /* KFZBaseCameraVC.m in Sources */,
+				CE0A14A91E86A15800C4068F /* AppDelegate.m in Sources */,
+				CE0A14A61E86A15800C4068F /* main.m in Sources */,
+				CE41CC651E86A24C00AA6E6B /* KFZImageDBTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE747D8B1E67FE0C00D7DA3A /* Sources */ = {
+		CE0A14B61E86A15800C4068F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE747D941E67FE0C00D7DA3A /* defineCameraTests.m in Sources */,
+				CE0A14BF1E86A15800C4068F /* defineCameraTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE747D961E67FE0C00D7DA3A /* Sources */ = {
+		CE0A14C11E86A15800C4068F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE747D9F1E67FE0C00D7DA3A /* defineCameraUITests.m in Sources */,
+				CE0A14CA1E86A15800C4068F /* defineCameraUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CE747D911E67FE0C00D7DA3A /* PBXTargetDependency */ = {
+		CE0A14BC1E86A15800C4068F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CE747D751E67FE0C00D7DA3A /* defineCamera */;
-			targetProxy = CE747D901E67FE0C00D7DA3A /* PBXContainerItemProxy */;
+			target = CE0A14A01E86A15800C4068F /* defineCamera */;
+			targetProxy = CE0A14BB1E86A15800C4068F /* PBXContainerItemProxy */;
 		};
-		CE747D9C1E67FE0C00D7DA3A /* PBXTargetDependency */ = {
+		CE0A14C71E86A15800C4068F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CE747D751E67FE0C00D7DA3A /* defineCamera */;
-			targetProxy = CE747D9B1E67FE0C00D7DA3A /* PBXContainerItemProxy */;
+			target = CE0A14A01E86A15800C4068F /* defineCamera */;
+			targetProxy = CE0A14C61E86A15800C4068F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CE747D871E67FE0C00D7DA3A /* LaunchScreen.storyboard */ = {
+		CE0A14AD1E86A15800C4068F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CE747D881E67FE0C00D7DA3A /* Base */,
+				CE0A14AE1E86A15800C4068F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE0A14B21E86A15800C4068F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE0A14B31E86A15800C4068F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -620,7 +644,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CE747DA11E67FE0C00D7DA3A /* Debug */ = {
+		CE0A14CC1E86A15800C4068F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -667,7 +691,7 @@
 			};
 			name = Debug;
 		};
-		CE747DA21E67FE0C00D7DA3A /* Release */ = {
+		CE0A14CD1E86A15800C4068F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -708,77 +732,81 @@
 			};
 			name = Release;
 		};
-		CE747DA41E67FE0C00D7DA3A /* Debug */ = {
+		CE0A14CF1E86A15800C4068F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E198BAB409A6CEEF285B412C /* Pods-defineCamera.debug.xcconfig */;
+			baseConfigurationReference = D6F57C586E9C61CB11B6925F /* Pods-defineCamera.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AR8RH55RMX;
 				INFOPLIST_FILE = defineCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kongfz.www.weixin.defineCamera;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kongfz.www.defineCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		CE747DA51E67FE0C00D7DA3A /* Release */ = {
+		CE0A14D01E86A15800C4068F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45FA01952DE77EC2D16D5076 /* Pods-defineCamera.release.xcconfig */;
+			baseConfigurationReference = D5B722465D49DA8920E55EDA /* Pods-defineCamera.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AR8RH55RMX;
 				INFOPLIST_FILE = defineCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kongfz.www.weixin.defineCamera;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kongfz.www.defineCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		CE747DA71E67FE0C00D7DA3A /* Debug */ = {
+		CE0A14D21E86A15800C4068F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1ED44209FF3BA2C030B3135B /* Pods-defineCameraTests.debug.xcconfig */;
+			baseConfigurationReference = 3785B064DE3D1D900C8B45CC /* Pods-defineCameraTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = AR8RH55RMX;
 				INFOPLIST_FILE = defineCameraTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kongfz.www.weixin.defineCameraTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kongfz.www.defineCameraTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/defineCamera.app/defineCamera";
 			};
 			name = Debug;
 		};
-		CE747DA81E67FE0C00D7DA3A /* Release */ = {
+		CE0A14D31E86A15800C4068F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 778F912EDC20E6E2C4713047 /* Pods-defineCameraTests.release.xcconfig */;
+			baseConfigurationReference = 220664C6E5892C02FAC24168 /* Pods-defineCameraTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = AR8RH55RMX;
 				INFOPLIST_FILE = defineCameraTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kongfz.www.weixin.defineCameraTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kongfz.www.defineCameraTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/defineCamera.app/defineCamera";
 			};
 			name = Release;
 		};
-		CE747DAA1E67FE0C00D7DA3A /* Debug */ = {
+		CE0A14D51E86A15800C4068F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4437C30AEF1F16E3ED8D378D /* Pods-defineCameraUITests.debug.xcconfig */;
+			baseConfigurationReference = 8D9E03F4133ED2ADDCE82C9B /* Pods-defineCameraUITests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = AR8RH55RMX;
 				INFOPLIST_FILE = defineCameraUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kongfz.www.weixin.defineCameraUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kongfz.www.defineCameraUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = defineCamera;
 			};
 			name = Debug;
 		};
-		CE747DAB1E67FE0C00D7DA3A /* Release */ = {
+		CE0A14D61E86A15800C4068F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50789B34C424F534E89EE1F3 /* Pods-defineCameraUITests.release.xcconfig */;
+			baseConfigurationReference = 87243336C405286056458E1C /* Pods-defineCameraUITests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = AR8RH55RMX;
 				INFOPLIST_FILE = defineCameraUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kongfz.www.weixin.defineCameraUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kongfz.www.defineCameraUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = defineCamera;
 			};
@@ -787,43 +815,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CE747D711E67FE0C00D7DA3A /* Build configuration list for PBXProject "defineCamera" */ = {
+		CE0A149C1E86A15800C4068F /* Build configuration list for PBXProject "defineCamera" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CE747DA11E67FE0C00D7DA3A /* Debug */,
-				CE747DA21E67FE0C00D7DA3A /* Release */,
+				CE0A14CC1E86A15800C4068F /* Debug */,
+				CE0A14CD1E86A15800C4068F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE747DA31E67FE0C00D7DA3A /* Build configuration list for PBXNativeTarget "defineCamera" */ = {
+		CE0A14CE1E86A15800C4068F /* Build configuration list for PBXNativeTarget "defineCamera" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CE747DA41E67FE0C00D7DA3A /* Debug */,
-				CE747DA51E67FE0C00D7DA3A /* Release */,
+				CE0A14CF1E86A15800C4068F /* Debug */,
+				CE0A14D01E86A15800C4068F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE747DA61E67FE0C00D7DA3A /* Build configuration list for PBXNativeTarget "defineCameraTests" */ = {
+		CE0A14D11E86A15800C4068F /* Build configuration list for PBXNativeTarget "defineCameraTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CE747DA71E67FE0C00D7DA3A /* Debug */,
-				CE747DA81E67FE0C00D7DA3A /* Release */,
+				CE0A14D21E86A15800C4068F /* Debug */,
+				CE0A14D31E86A15800C4068F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE747DA91E67FE0C00D7DA3A /* Build configuration list for PBXNativeTarget "defineCameraUITests" */ = {
+		CE0A14D41E86A15800C4068F /* Build configuration list for PBXNativeTarget "defineCameraUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CE747DAA1E67FE0C00D7DA3A /* Debug */,
-				CE747DAB1E67FE0C00D7DA3A /* Release */,
+				CE0A14D51E86A15800C4068F /* Debug */,
+				CE0A14D61E86A15800C4068F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CE747D6E1E67FE0C00D7DA3A /* Project object */;
+	rootObject = CE0A14991E86A15800C4068F /* Project object */;
 }

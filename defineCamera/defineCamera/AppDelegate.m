@@ -2,12 +2,11 @@
 //  AppDelegate.m
 //  defineCamera
 //
-//  Created by kfz on 2017/3/2.
+//  Created by kfz on 2017/3/25.
 //  Copyright © 2017年 kongfz. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "MainViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,12 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    
-    MainViewController *baseVC = [[MainViewController alloc] init];
-    self.window.rootViewController = baseVC;
-    [self.window makeKeyAndVisible];
-    
+    // Override point for customization after application launch.
     return YES;
 }
 
