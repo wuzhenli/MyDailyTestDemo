@@ -189,10 +189,10 @@ static NSMutableSet *jsqMessagesCollectionViewCellActions = nil;
     self.accessoryButton.hidden = YES;
 }
 
-- (UICollectionViewLayoutAttributes *)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes
-{
-    return layoutAttributes;
-}
+//- (UICollectionViewLayoutAttributes *)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes
+//{
+//    return layoutAttributes;
+//}
 
 - (void)applyLayoutAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes
 {

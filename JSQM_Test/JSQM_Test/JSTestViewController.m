@@ -128,6 +128,7 @@
       didPressRightBarButton:(UIButton *)sender {
     DLOG(@"%s", __func__);
     toolbar.contentView.textView.text = nil;
+//    UIView
 }
 
 /**
@@ -140,6 +141,17 @@
        didPressLeftBarButton:(UIButton *)sender {
     DLOG(@"%s", __func__);
 }
+
+//- (CGFloat)collectionView:(JSQMessagesCollectionView *)collectionView
+//                   layout:(JSQMessagesCollectionViewFlowLayout *)collectionViewLayout heightForMessageBubbleTopLabelAtIndexPath:(NSIndexPath *)indexPath {
+//    return 20;
+//}
+//- (nullable NSAttributedString *)collectionView:(JSQMessagesCollectionView *)collectionView attributedTextForMessageBubbleTopLabelAtIndexPath:(NSIndexPath *)indexPath {
+//    return [[NSAttributedString alloc] initWithString:@"bubbleTopLabel" attributes:@{
+//                                                                                    NSFontAttributeName : [UIFont systemFontOfSize:14],
+//                                                                                    NSForegroundColorAttributeName :[UIColor redColor]
+//                                                                                    }];
+//}
 
 @end
 
