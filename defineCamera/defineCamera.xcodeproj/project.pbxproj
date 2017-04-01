@@ -31,15 +31,12 @@
 		CE41CCB11E86A5F300AA6E6B /* cameraFlash.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41CC9C1E86A5F300AA6E6B /* cameraFlash.png */; };
 		CE41CCB21E86A5F300AA6E6B /* cameraFlash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41CC9D1E86A5F300AA6E6B /* cameraFlash@2x.png */; };
 		CE41CCB31E86A5F300AA6E6B /* cameraFlash@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41CC9E1E86A5F300AA6E6B /* cameraFlash@3x.png */; };
-		CE41CCB41E86A5F300AA6E6B /* cameraFlip.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41CC9F1E86A5F300AA6E6B /* cameraFlip.png */; };
-		CE41CCB51E86A5F300AA6E6B /* cameraFlip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41CCA01E86A5F300AA6E6B /* cameraFlip@2x.png */; };
-		CE41CCB61E86A5F300AA6E6B /* cameraFlip@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41CCA11E86A5F300AA6E6B /* cameraFlip@3x.png */; };
 		CE41CCB71E86A5F300AA6E6B /* cameraGridNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41CCA21E86A5F300AA6E6B /* cameraGridNormal.png */; };
 		CE41CCB81E86A5F300AA6E6B /* cameraGridNormal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41CCA31E86A5F300AA6E6B /* cameraGridNormal@2x.png */; };
 		CE41CCB91E86A5F300AA6E6B /* cameraGridNormal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41CCA41E86A5F300AA6E6B /* cameraGridNormal@3x.png */; };
-		CE41CCBA1E86A5F300AA6E6B /* cameraTrigger.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41CCA51E86A5F300AA6E6B /* cameraTrigger.png */; };
-		CE41CCBB1E86A5F300AA6E6B /* cameraTrigger@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41CCA61E86A5F300AA6E6B /* cameraTrigger@2x.png */; };
-		CE41CCBC1E86A5F300AA6E6B /* cameraTrigger@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41CCA71E86A5F300AA6E6B /* cameraTrigger@3x.png */; };
+		CEAD15651E8F97960012ADFF /* cameraTrigger_highilight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEAD15631E8F97960012ADFF /* cameraTrigger_highilight@2x.png */; };
+		CEAD15661E8F97960012ADFF /* cameraTrigger@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEAD15641E8F97960012ADFF /* cameraTrigger@2x.png */; };
+		CEAD15681E8F989D0012ADFF /* cameraFlip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEAD15671E8F989D0012ADFF /* cameraFlip@2x.png */; };
 		DA7FCA05A70037C499FC0C4E /* libPods-defineCameraUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91383BB5550562E154B4B86A /* libPods-defineCameraUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -102,15 +99,12 @@
 		CE41CC9C1E86A5F300AA6E6B /* cameraFlash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraFlash.png; sourceTree = "<group>"; };
 		CE41CC9D1E86A5F300AA6E6B /* cameraFlash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraFlash@2x.png"; sourceTree = "<group>"; };
 		CE41CC9E1E86A5F300AA6E6B /* cameraFlash@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraFlash@3x.png"; sourceTree = "<group>"; };
-		CE41CC9F1E86A5F300AA6E6B /* cameraFlip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraFlip.png; sourceTree = "<group>"; };
-		CE41CCA01E86A5F300AA6E6B /* cameraFlip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraFlip@2x.png"; sourceTree = "<group>"; };
-		CE41CCA11E86A5F300AA6E6B /* cameraFlip@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraFlip@3x.png"; sourceTree = "<group>"; };
 		CE41CCA21E86A5F300AA6E6B /* cameraGridNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraGridNormal.png; sourceTree = "<group>"; };
 		CE41CCA31E86A5F300AA6E6B /* cameraGridNormal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraGridNormal@2x.png"; sourceTree = "<group>"; };
 		CE41CCA41E86A5F300AA6E6B /* cameraGridNormal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraGridNormal@3x.png"; sourceTree = "<group>"; };
-		CE41CCA51E86A5F300AA6E6B /* cameraTrigger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraTrigger.png; sourceTree = "<group>"; };
-		CE41CCA61E86A5F300AA6E6B /* cameraTrigger@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraTrigger@2x.png"; sourceTree = "<group>"; };
-		CE41CCA71E86A5F300AA6E6B /* cameraTrigger@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraTrigger@3x.png"; sourceTree = "<group>"; };
+		CEAD15631E8F97960012ADFF /* cameraTrigger_highilight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraTrigger_highilight@2x.png"; sourceTree = "<group>"; };
+		CEAD15641E8F97960012ADFF /* cameraTrigger@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraTrigger@2x.png"; sourceTree = "<group>"; };
+		CEAD15671E8F989D0012ADFF /* cameraFlip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraFlip@2x.png"; sourceTree = "<group>"; };
 		D5B722465D49DA8920E55EDA /* Pods-defineCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defineCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-defineCamera/Pods-defineCamera.release.xcconfig"; sourceTree = "<group>"; };
 		D6F57C586E9C61CB11B6925F /* Pods-defineCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defineCamera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-defineCamera/Pods-defineCamera.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -266,17 +260,14 @@
 				CE41CC9A1E86A5F300AA6E6B /* cameraCrop@2x.png */,
 				CE41CC9B1E86A5F300AA6E6B /* cameraCrop@3x.png */,
 				CE41CC9C1E86A5F300AA6E6B /* cameraFlash.png */,
+				CEAD15671E8F989D0012ADFF /* cameraFlip@2x.png */,
 				CE41CC9D1E86A5F300AA6E6B /* cameraFlash@2x.png */,
 				CE41CC9E1E86A5F300AA6E6B /* cameraFlash@3x.png */,
-				CE41CC9F1E86A5F300AA6E6B /* cameraFlip.png */,
-				CE41CCA01E86A5F300AA6E6B /* cameraFlip@2x.png */,
-				CE41CCA11E86A5F300AA6E6B /* cameraFlip@3x.png */,
 				CE41CCA21E86A5F300AA6E6B /* cameraGridNormal.png */,
 				CE41CCA31E86A5F300AA6E6B /* cameraGridNormal@2x.png */,
+				CEAD15631E8F97960012ADFF /* cameraTrigger_highilight@2x.png */,
+				CEAD15641E8F97960012ADFF /* cameraTrigger@2x.png */,
 				CE41CCA41E86A5F300AA6E6B /* cameraGridNormal@3x.png */,
-				CE41CCA51E86A5F300AA6E6B /* cameraTrigger.png */,
-				CE41CCA61E86A5F300AA6E6B /* cameraTrigger@2x.png */,
-				CE41CCA71E86A5F300AA6E6B /* cameraTrigger@3x.png */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -400,23 +391,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE41CCB11E86A5F300AA6E6B /* cameraFlash.png in Resources */,
-				CE41CCBB1E86A5F300AA6E6B /* cameraTrigger@2x.png in Resources */,
+				CEAD15661E8F97960012ADFF /* cameraTrigger@2x.png in Resources */,
 				CE41CCAC1E86A5F300AA6E6B /* cameraClose@2x.png in Resources */,
-				CE41CCB51E86A5F300AA6E6B /* cameraFlip@2x.png in Resources */,
 				CE41CCB91E86A5F300AA6E6B /* cameraGridNormal@3x.png in Resources */,
-				CE41CCB61E86A5F300AA6E6B /* cameraFlip@3x.png in Resources */,
 				CE0A14B41E86A15800C4068F /* LaunchScreen.storyboard in Resources */,
-				CE41CCB41E86A5F300AA6E6B /* cameraFlip.png in Resources */,
 				CE41CCB81E86A5F300AA6E6B /* cameraGridNormal@2x.png in Resources */,
 				CE41CCB71E86A5F300AA6E6B /* cameraGridNormal.png in Resources */,
+				CEAD15681E8F989D0012ADFF /* cameraFlip@2x.png in Resources */,
 				CE0A14B11E86A15800C4068F /* Assets.xcassets in Resources */,
 				CE41CCAD1E86A5F300AA6E6B /* cameraClose@3x.png in Resources */,
 				CE41CCAF1E86A5F300AA6E6B /* cameraCrop@2x.png in Resources */,
 				CE41CCB21E86A5F300AA6E6B /* cameraFlash@2x.png in Resources */,
-				CE41CCBA1E86A5F300AA6E6B /* cameraTrigger.png in Resources */,
+				CEAD15651E8F97960012ADFF /* cameraTrigger_highilight@2x.png in Resources */,
 				CE41CCAA1E86A5F300AA6E6B /* KFZCameraShowView.xib in Resources */,
 				CE0A14AF1E86A15800C4068F /* Main.storyboard in Resources */,
-				CE41CCBC1E86A5F300AA6E6B /* cameraTrigger@3x.png in Resources */,
 				CE41CCAE1E86A5F300AA6E6B /* cameraCrop.png in Resources */,
 				CE41CCB01E86A5F300AA6E6B /* cameraCrop@3x.png in Resources */,
 				CE41CCAB1E86A5F300AA6E6B /* cameraClose.png in Resources */,

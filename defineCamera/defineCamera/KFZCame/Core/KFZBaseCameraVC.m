@@ -365,10 +365,12 @@
 #pragma -mark UI
 - (UIButton *)captureButton {
     if (!_captureButton) {
-        _captureButton = [UIButton buttonWithType:UIButtonTypeSystem];
-        _captureButton.backgroundColor = [UIColor whiteColor];
+        _captureButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _captureButton.backgroundColor = [UIColor clearColor];
+        UIImage *image_h = [[UIImage imageNamed:@"cameraTrigger_highilight"]  imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         UIImage *image = [[UIImage imageNamed:@"cameraTrigger"]  imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         [_captureButton setImage:image forState:UIControlStateNormal];
+        [_captureButton setImage:image_h forState:UIControlStateHighlighted];
         
         [_captureButton addTarget:self action:@selector(captureButtonClicked) forControlEvents:UIControlEventTouchUpInside];
         _captureButton.layer.cornerRadius = 40;

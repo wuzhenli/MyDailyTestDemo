@@ -26,7 +26,6 @@
     
     
     self.inputToolbar.delegate = self;
-    
 }
 
 
