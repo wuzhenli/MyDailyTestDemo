@@ -42,6 +42,8 @@ static FMDatabase *db = nil;
             NSLog(@"保存成功");
         } else {
             NSLog(@"保存-- 失败 --");
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"error" message:@"save image error" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+            [alert show];
         }
     };
     Block(imageIn, imgId);

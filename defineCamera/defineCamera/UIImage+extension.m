@@ -37,9 +37,9 @@
     CGFloat maxCompress = 0.05;
     NSData *data = UIImageJPEGRepresentation(self, 1.);
     
-    while ( data.length > 500 * 1024 && compress > maxCompress) {
+    while ( data.length > maxFileSize && compress > maxCompress) {
         data = UIImageJPEGRepresentation(self, compress);
-        compress -= 0.05;
+        compress -= 0.2;
     }
     UIImage *image  = [UIImage imageWithData:data];
     return image;

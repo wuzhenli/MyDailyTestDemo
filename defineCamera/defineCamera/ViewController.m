@@ -35,13 +35,19 @@
 }
 
 - (void)KFZBaseCameraVC:(KFZBaseCameraVC *)vc takeImageData:(NSData *)data {
-    UIImage *img = [UIImage imageWithData:data];
+    UIImage *img = [[UIImage imageWithData:data] getSendImage];
     self.imgView.image = img;
     [self.view setNeedsLayout];
+    NSDate *date = [NSDate date];
+    NSString *clientMsgId = [NSString stringWithFormat:@"%lf",[date timeIntervalSince1970]];
     
-    NSString *ID = [NSString stringWithFormat:@"%ld", time(NULL)];
+    NSString *ID = clientMsgId; // [NSString stringWithFormat:@"%ld", time(NULL)];
     NSLog(@"ID -- : %@", ID);
-    [KFZImageDBTool insertImage:[img getThumbnailImage] clientMsgId:ID];
+    
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        [KFZImageDBTool insertImage:[img getThumbnailImage] clientMsgId:ID];
+    });
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
