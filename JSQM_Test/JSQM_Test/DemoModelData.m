@@ -121,7 +121,7 @@
                      [[JSQMessage alloc] initWithSenderId:kJSQDemoAvatarIdJobs
                                         senderDisplayName:kJSQDemoAvatarDisplayNameJobs
                                                      date:[NSDate date]
-                                                     text:NSLocalizedString(@"JSQMessagesViewController is nearly an exact replica of the iOS Messages App. And perhaps, better.", nil)],
+                                                     text:NSLocalizedString(@"JSQMessagesViewController is nearly an exact replica of the iOS Messages App. And perhaps, better. http://www.baidu.com", nil)],
                      
                      [[JSQMessage alloc] initWithSenderId:kJSQDemoAvatarIdCook
                                         senderDisplayName:kJSQDemoAvatarDisplayNameCook
