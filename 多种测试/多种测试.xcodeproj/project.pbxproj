@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE7DE5FA1E9DBA5A006A9216 /* JLKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7DE5F81E9DBA5A006A9216 /* JLKVOViewController.m */; };
+		CE7DE5FB1E9DBA5A006A9216 /* JLKVOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7DE5F91E9DBA5A006A9216 /* JLKVOViewController.xib */; };
+		CE7DE5FE1E9DBA97006A9216 /* KVO_Person.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7DE5FD1E9DBA97006A9216 /* KVO_Person.m */; };
 		DB1CBA391D8B7971007E076B /* FileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1CBA371D8B7971007E076B /* FileViewController.m */; };
 		DB2DFF681DDC80F200950C50 /* NSMutableArray+crashExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2DFF671DDC80F200950C50 /* NSMutableArray+crashExtension.m */; };
 		DB2DFF6C1DDC812F00950C50 /* CrashTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2DFF6A1DDC812F00950C50 /* CrashTestViewController.m */; };
@@ -178,6 +181,11 @@
 		6E5A099A9E69DB413F054185 /* Pods-多种测试.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-多种测试.release.xcconfig"; path = "Pods/Target Support Files/Pods-多种测试/Pods-多种测试.release.xcconfig"; sourceTree = "<group>"; };
 		73D33731F2A100566310D352 /* Pods-多种测试.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-多种测试.debug.xcconfig"; path = "Pods/Target Support Files/Pods-多种测试/Pods-多种测试.debug.xcconfig"; sourceTree = "<group>"; };
 		959D722EBA33F15F9BDC6B7C /* libPods-多种测试.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-多种测试.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7DE5F71E9DBA5A006A9216 /* JLKVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLKVOViewController.h; sourceTree = "<group>"; };
+		CE7DE5F81E9DBA5A006A9216 /* JLKVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLKVOViewController.m; sourceTree = "<group>"; };
+		CE7DE5F91E9DBA5A006A9216 /* JLKVOViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JLKVOViewController.xib; sourceTree = "<group>"; };
+		CE7DE5FC1E9DBA97006A9216 /* KVO_Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVO_Person.h; sourceTree = "<group>"; };
+		CE7DE5FD1E9DBA97006A9216 /* KVO_Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVO_Person.m; sourceTree = "<group>"; };
 		DB1CBA361D8B7971007E076B /* FileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileViewController.h; sourceTree = "<group>"; };
 		DB1CBA371D8B7971007E076B /* FileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileViewController.m; sourceTree = "<group>"; };
 		DB2DFF661DDC80F200950C50 /* NSMutableArray+crashExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+crashExtension.h"; sourceTree = "<group>"; };
@@ -472,6 +480,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CE7DE5F61E9DBA42006A9216 /* KVO-NSOperation */ = {
+			isa = PBXGroup;
+			children = (
+				CE7DE5F71E9DBA5A006A9216 /* JLKVOViewController.h */,
+				CE7DE5F81E9DBA5A006A9216 /* JLKVOViewController.m */,
+				CE7DE5F91E9DBA5A006A9216 /* JLKVOViewController.xib */,
+				CE7DE5FC1E9DBA97006A9216 /* KVO_Person.h */,
+				CE7DE5FD1E9DBA97006A9216 /* KVO_Person.m */,
+			);
+			name = "KVO-NSOperation";
+			sourceTree = "<group>";
+		};
 		DB1CBA351D8B7960007E076B /* fileTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -604,6 +624,7 @@
 		DB7D3A151D0405E80002A704 /* SubPage */ = {
 			isa = PBXGroup;
 			children = (
+				CE7DE5F61E9DBA42006A9216 /* KVO-NSOperation */,
 				DBC057E41DEC43B30052BD5D /* 扫描二维码 */,
 				DB2DFF641DDC80C000950C50 /* 运行时+崩溃处理 */,
 				DB6519001DD815E4005FD77A /* NSlayoutConstraint */,
@@ -1268,6 +1289,7 @@
 				DB81AF541D98FE3A00346EB0 /* CameraViewController.xib in Resources */,
 				DB80535B1D7A9A6A0026860C /* PastViewController.xib in Resources */,
 				DB830E9D1D7D24D0009EAE7D /* SaveImageViewController.xib in Resources */,
+				CE7DE5FB1E9DBA5A006A9216 /* JLKVOViewController.xib in Resources */,
 				DB36B4951DDB2C1E00124062 /* espressos.txt in Resources */,
 				DBD4CC331D7BB925008219E1 /* mulitiTest.js in Resources */,
 				DB7D1C371D506FC5004CB242 /* CFViewController.xib in Resources */,
@@ -1391,6 +1413,7 @@
 				DBD315161D7A5AFC00CA6610 /* User.m in Sources */,
 				DBCC98601D5D787D00E7DE2A /* BBViewController.m in Sources */,
 				DB36B4931DDB2C1100124062 /* DetailViewController.m in Sources */,
+				CE7DE5FA1E9DBA5A006A9216 /* JLKVOViewController.m in Sources */,
 				DB80535A1D7A9A6A0026860C /* PastViewController.m in Sources */,
 				DB8053641D7AC4A50026860C /* JSQMessagesCellTextView.m in Sources */,
 				DB73965F1D714E240057804E /* CTLinkUtil.m in Sources */,
@@ -1447,6 +1470,7 @@
 				DB2DFF681DDC80F200950C50 /* NSMutableArray+crashExtension.m in Sources */,
 				DB8130E11D965D110074E712 /* LineView.m in Sources */,
 				DBE1324E1CFFDDC300FC702C /* main.m in Sources */,
+				CE7DE5FE1E9DBA97006A9216 /* KVO_Person.m in Sources */,
 				DBC449E71D9CBA2C007C74FF /* UIImage+extension.m in Sources */,
 				DB329B761DB6432A002AB449 /* DepyCopyViewController.m in Sources */,
 				DB830E9C1D7D24D0009EAE7D /* SaveImageViewController.m in Sources */,

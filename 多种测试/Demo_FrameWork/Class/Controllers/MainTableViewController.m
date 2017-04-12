@@ -42,6 +42,7 @@
     [self setTable];
     [self setRightButton];
     
+    [self addItem:@"JLKVOViewController" class:@"JLKVOViewController"];  // ScaleViewController
     [self addItem:@"扫描二维码" class:@"ScaleViewController"];  // ScaleViewController
     [self addItem:@"测试  测试   测试" class:@"AAViewController"];  // 
     [self addItem:@"TTTAttributedLabel" class:@"RootViewController"];  // 
@@ -81,8 +82,7 @@
     
     
       
-    [self pushInto:@"AAViewController"];
-//    [self loadDic];
+    [self pushInto:@"JLKVOViewController"];
     self.title = NSStringFromClass([self class]);
 }
 
