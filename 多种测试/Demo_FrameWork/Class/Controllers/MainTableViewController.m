@@ -7,7 +7,7 @@
 //  主页
 
 #import "MainTableViewController.h"
-#import "KVO_ViewController.h"
+
 #import "AAViewController.h"
 #import <WebKit/WebKit.h>
 
@@ -59,7 +59,6 @@
     [self addItem:@"GCD" class:@"GCDViewController"]; //
     [self addItem:@"文件 测试" class:@"FileViewController"]; // FileViewController
     [self addItem:@"用数据库保存图片" class:@"SqlImageViewController"]; //
-    [self addItem:@"数值--修改界面（KVO）" class:@"KVO_ViewController"]; //
     [self addItem:@"控件的Scale动画" class:@"ButtonScaleViewController"];  //
     [self addItem:@"响应者链" class:@"ResponderChainViewController"];  //
     [self addItem:@"密码输入不清空" class:@"PswViewController"];  //

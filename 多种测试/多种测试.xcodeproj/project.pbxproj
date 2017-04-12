@@ -42,10 +42,6 @@
 		DB7D1C481D50A3E3004CB242 /* CTFrameParserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D1C471D50A3E3004CB242 /* CTFrameParserConfig.m */; };
 		DB7D1C4B1D50A520004CB242 /* CTFrameParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D1C4A1D50A520004CB242 /* CTFrameParser.m */; };
 		DB7D1C4E1D50A599004CB242 /* CoreTextData.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D1C4D1D50A599004CB242 /* CoreTextData.m */; };
-		DB7D3A191D0406110002A704 /* KVO_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D3A171D0406110002A704 /* KVO_ViewController.m */; };
-		DB7D3A1A1D0406110002A704 /* KVO_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB7D3A181D0406110002A704 /* KVO_ViewController.xib */; };
-		DB7D3A1D1D04062A0002A704 /* TipView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D3A1C1D04062A0002A704 /* TipView.m */; };
-		DB7D3A1F1D04063B0002A704 /* TipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB7D3A1E1D04063B0002A704 /* TipView.xib */; };
 		DB7DC0011D8CFB6500B1C52C /* FromViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7DBFFF1D8CFB6500B1C52C /* FromViewController.m */; };
 		DB7DC0021D8CFB6500B1C52C /* FromViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB7DC0001D8CFB6500B1C52C /* FromViewController.xib */; };
 		DB7DC0061D8CFB7100B1C52C /* AniToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7DC0041D8CFB7100B1C52C /* AniToViewController.m */; };
@@ -54,11 +50,7 @@
 		DB7DC00D1D8D291500B1C52C /* SecondToOne.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7DC00C1D8D291500B1C52C /* SecondToOne.m */; };
 		DB7DC0101D8D35F700B1C52C /* AnimationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7DC00F1D8D35F700B1C52C /* AnimationTool.m */; };
 		DB7E18781D61AF0400F2E4CC /* LLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7E18771D61AF0400F2E4CC /* LLButton.m */; };
-		DB7EF31F1D228369005A8267 /* CalenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7EF31E1D228369005A8267 /* CalenderViewController.m */; };
 		DB7F32511D5C7F01001F76E4 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7F32501D5C7F01001F76E4 /* Tools.m */; };
-		DB7F32541D5C7F33001F76E4 /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7F32531D5C7F33001F76E4 /* AViewController.m */; };
-		DB7F32571D5C7F3C001F76E4 /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7F32561D5C7F3C001F76E4 /* BViewController.m */; };
-		DB7F325A1D5C80C2001F76E4 /* ANavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7F32591D5C80C2001F76E4 /* ANavigationController.m */; };
 		DB80535A1D7A9A6A0026860C /* PastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8053581D7A9A6A0026860C /* PastViewController.m */; };
 		DB80535B1D7A9A6A0026860C /* PastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB8053591D7A9A6A0026860C /* PastViewController.xib */; };
 		DB80535E1D7A9B6C0026860C /* UICopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB80535D1D7A9B6C0026860C /* UICopyLabel.m */; };
@@ -73,8 +65,6 @@
 		DB8167041D8A2CB90039685B /* GCDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB8167021D8A2CB90039685B /* GCDViewController.xib */; };
 		DB81AF531D98FE3A00346EB0 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB81AF511D98FE3A00346EB0 /* CameraViewController.m */; };
 		DB81AF541D98FE3A00346EB0 /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB81AF521D98FE3A00346EB0 /* CameraViewController.xib */; };
-		DB81CFE01D13D6BA00C57FFC /* ResponderChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB81CFDE1D13D6BA00C57FFC /* ResponderChainViewController.m */; };
-		DB81CFE11D13D6BA00C57FFC /* ResponderChainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB81CFDF1D13D6BA00C57FFC /* ResponderChainViewController.xib */; };
 		DB81CFE51D13D8A600C57FFC /* PswViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB81CFE41D13D8A600C57FFC /* PswViewController.m */; };
 		DB82A4F31D58CDF9008C1E47 /* TextKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB82A4F11D58CDF9008C1E47 /* TextKitViewController.m */; };
 		DB82A4F41D58CDF9008C1E47 /* TextKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB82A4F21D58CDF9008C1E47 /* TextKitViewController.xib */; };
@@ -160,8 +150,6 @@
 		DBE1325C1CFFDDC300FC702C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBE1325A1CFFDDC300FC702C /* LaunchScreen.storyboard */; };
 		DBE132721CFFDDC300FC702C /* Demo_FrameWorkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE132711CFFDDC300FC702C /* Demo_FrameWorkUITests.m */; };
 		DBE132881CFFDE8500FC702C /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE132871CFFDE8500FC702C /* MainTableViewController.m */; };
-		DBE16CEA1D13B1C4002BDDD4 /* ButtonScaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE16CE81D13B1C4002BDDD4 /* ButtonScaleViewController.m */; };
-		DBE16CEB1D13B1C4002BDDD4 /* ButtonScaleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBE16CE91D13B1C4002BDDD4 /* ButtonScaleViewController.xib */; };
 		DBE1F9CB1D6FC42E00FEAD62 /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE1F9C91D6FC42E00FEAD62 /* NavViewController.m */; };
 		DBE1F9CC1D6FC42E00FEAD62 /* NavViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBE1F9CA1D6FC42E00FEAD62 /* NavViewController.xib */; };
 		DBE6D42C1D2DE70800A12081 /* DFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE6D42A1D2DE70800A12081 /* DFontViewController.m */; };
@@ -253,12 +241,6 @@
 		DB7D1C4A1D50A520004CB242 /* CTFrameParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTFrameParser.m; sourceTree = "<group>"; };
 		DB7D1C4C1D50A599004CB242 /* CoreTextData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextData.h; sourceTree = "<group>"; };
 		DB7D1C4D1D50A599004CB242 /* CoreTextData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextData.m; sourceTree = "<group>"; };
-		DB7D3A161D0406110002A704 /* KVO_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVO_ViewController.h; sourceTree = "<group>"; };
-		DB7D3A171D0406110002A704 /* KVO_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVO_ViewController.m; sourceTree = "<group>"; };
-		DB7D3A181D0406110002A704 /* KVO_ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KVO_ViewController.xib; sourceTree = "<group>"; };
-		DB7D3A1B1D04062A0002A704 /* TipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipView.h; sourceTree = "<group>"; };
-		DB7D3A1C1D04062A0002A704 /* TipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipView.m; sourceTree = "<group>"; };
-		DB7D3A1E1D04063B0002A704 /* TipView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TipView.xib; sourceTree = "<group>"; };
 		DB7DBFFE1D8CFB6500B1C52C /* FromViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FromViewController.h; sourceTree = "<group>"; };
 		DB7DBFFF1D8CFB6500B1C52C /* FromViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FromViewController.m; sourceTree = "<group>"; };
 		DB7DC0001D8CFB6500B1C52C /* FromViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FromViewController.xib; sourceTree = "<group>"; };
@@ -273,16 +255,8 @@
 		DB7DC00F1D8D35F700B1C52C /* AnimationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationTool.m; sourceTree = "<group>"; };
 		DB7E18761D61AF0400F2E4CC /* LLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLButton.h; sourceTree = "<group>"; };
 		DB7E18771D61AF0400F2E4CC /* LLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLButton.m; sourceTree = "<group>"; };
-		DB7EF31D1D228369005A8267 /* CalenderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalenderViewController.h; sourceTree = "<group>"; };
-		DB7EF31E1D228369005A8267 /* CalenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalenderViewController.m; sourceTree = "<group>"; };
 		DB7F324F1D5C7F01001F76E4 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		DB7F32501D5C7F01001F76E4 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
-		DB7F32521D5C7F33001F76E4 /* AViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AViewController.h; sourceTree = "<group>"; };
-		DB7F32531D5C7F33001F76E4 /* AViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AViewController.m; sourceTree = "<group>"; };
-		DB7F32551D5C7F3C001F76E4 /* BViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
-		DB7F32561D5C7F3C001F76E4 /* BViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
-		DB7F32581D5C80C2001F76E4 /* ANavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANavigationController.h; sourceTree = "<group>"; };
-		DB7F32591D5C80C2001F76E4 /* ANavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANavigationController.m; sourceTree = "<group>"; };
 		DB8053571D7A9A6A0026860C /* PastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PastViewController.h; sourceTree = "<group>"; };
 		DB8053581D7A9A6A0026860C /* PastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PastViewController.m; sourceTree = "<group>"; };
 		DB8053591D7A9A6A0026860C /* PastViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PastViewController.xib; sourceTree = "<group>"; };
@@ -307,9 +281,6 @@
 		DB81AF501D98FE3A00346EB0 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
 		DB81AF511D98FE3A00346EB0 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
 		DB81AF521D98FE3A00346EB0 /* CameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
-		DB81CFDD1D13D6BA00C57FFC /* ResponderChainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponderChainViewController.h; sourceTree = "<group>"; };
-		DB81CFDE1D13D6BA00C57FFC /* ResponderChainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponderChainViewController.m; sourceTree = "<group>"; };
-		DB81CFDF1D13D6BA00C57FFC /* ResponderChainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResponderChainViewController.xib; sourceTree = "<group>"; };
 		DB81CFE31D13D8A600C57FFC /* PswViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PswViewController.h; sourceTree = "<group>"; };
 		DB81CFE41D13D8A600C57FFC /* PswViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PswViewController.m; sourceTree = "<group>"; };
 		DB82A4F01D58CDF9008C1E47 /* TextKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextKitViewController.h; sourceTree = "<group>"; };
@@ -366,7 +337,7 @@
 		DB9DC0301D6BD7D2005ACE2A /* AnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
 		DB9DC0311D6BD7D2005ACE2A /* AnimationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimationViewController.xib; sourceTree = "<group>"; };
 		DBA1EE811D8FC7B900856AE3 /* 多种测试Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "多种测试Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBA1EE831D8FC7B900856AE3 /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ____Tests.m; sourceTree = "<group>"; };
+		DBA1EE831D8FC7B900856AE3 /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
 		DBA1EE851D8FC7B900856AE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBA1EEAB1D8FCB2B00856AE3 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
 		DBA1EEAC1D8FCB2B00856AE3 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
@@ -453,9 +424,6 @@
 		DBE132731CFFDDC300FC702C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBE132861CFFDE8500FC702C /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
 		DBE132871CFFDE8500FC702C /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
-		DBE16CE71D13B1C4002BDDD4 /* ButtonScaleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonScaleViewController.h; sourceTree = "<group>"; };
-		DBE16CE81D13B1C4002BDDD4 /* ButtonScaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonScaleViewController.m; sourceTree = "<group>"; };
-		DBE16CE91D13B1C4002BDDD4 /* ButtonScaleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonScaleViewController.xib; sourceTree = "<group>"; };
 		DBE1F9C81D6FC42E00FEAD62 /* NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
 		DBE1F9C91D6FC42E00FEAD62 /* NavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavViewController.m; sourceTree = "<group>"; };
 		DBE1F9CA1D6FC42E00FEAD62 /* NavViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavViewController.xib; sourceTree = "<group>"; };
@@ -805,26 +773,6 @@
 		DB8976AE1D51C3AE00CE36FB /* subGroupTest */ = {
 			isa = PBXGroup;
 			children = (
-				DB7D3A161D0406110002A704 /* KVO_ViewController.h */,
-				DB7D3A171D0406110002A704 /* KVO_ViewController.m */,
-				DB7D3A1B1D04062A0002A704 /* TipView.h */,
-				DB7D3A1C1D04062A0002A704 /* TipView.m */,
-				DB7D3A1E1D04063B0002A704 /* TipView.xib */,
-				DB7D3A181D0406110002A704 /* KVO_ViewController.xib */,
-				DBE16CE71D13B1C4002BDDD4 /* ButtonScaleViewController.h */,
-				DBE16CE81D13B1C4002BDDD4 /* ButtonScaleViewController.m */,
-				DBE16CE91D13B1C4002BDDD4 /* ButtonScaleViewController.xib */,
-				DB81CFDD1D13D6BA00C57FFC /* ResponderChainViewController.h */,
-				DB81CFDE1D13D6BA00C57FFC /* ResponderChainViewController.m */,
-				DB81CFDF1D13D6BA00C57FFC /* ResponderChainViewController.xib */,
-				DB7EF31D1D228369005A8267 /* CalenderViewController.h */,
-				DB7EF31E1D228369005A8267 /* CalenderViewController.m */,
-				DB7F32521D5C7F33001F76E4 /* AViewController.h */,
-				DB7F32531D5C7F33001F76E4 /* AViewController.m */,
-				DB7F32551D5C7F3C001F76E4 /* BViewController.h */,
-				DB7F32561D5C7F3C001F76E4 /* BViewController.m */,
-				DB7F32581D5C80C2001F76E4 /* ANavigationController.h */,
-				DB7F32591D5C80C2001F76E4 /* ANavigationController.m */,
 			);
 			name = subGroupTest;
 			sourceTree = "<group>";
@@ -1307,10 +1255,8 @@
 				DBC449E41D9CB8C8007C74FF /* CoreGraphiViewController.xib in Resources */,
 				DBD215F91D52E3FA00CA0B0B /* red@2x.png in Resources */,
 				DB9DC0331D6BD7D2005ACE2A /* AnimationViewController.xib in Resources */,
-				DB7D3A1F1D04063B0002A704 /* TipView.xib in Resources */,
 				DB8167041D8A2CB90039685B /* GCDViewController.xib in Resources */,
 				DB82D3391D5EF08E00A5A09D /* Localizable.strings in Resources */,
-				DB81CFE11D13D6BA00C57FFC /* ResponderChainViewController.xib in Resources */,
 				DBCC98611D5D787D00E7DE2A /* BBViewController.xib in Resources */,
 				DB82A4F61D58D1B2008C1E47 /* content.txt in Resources */,
 				DB7CADA81D55CA0300CDACBB /* RunloopViewController.xib in Resources */,
@@ -1332,7 +1278,6 @@
 				DBD215F61D52E3FA00CA0B0B /* coretext-image-1.jpg in Resources */,
 				DB8FD8C81D8E804E004AC729 /* KFZProductViewController.xib in Resources */,
 				DB7D1C3D1D5091E5004CB242 /* CoreTextViewController.xib in Resources */,
-				DBE16CEB1D13B1C4002BDDD4 /* ButtonScaleViewController.xib in Resources */,
 				DBC449DF1D9CB87E007C74FF /* CornerRadiousViewController.xib in Resources */,
 				DB8A906E1D6560DA00978F31 /* MyTableViewCell.xib in Resources */,
 				DBD215F81D52E3FA00CA0B0B /* cursor@2x.png in Resources */,
@@ -1343,7 +1288,6 @@
 				DB8069BC1D632CB500CAC951 /* UIViewViewController.xib in Resources */,
 				DB7DC0071D8CFB7100B1C52C /* AniToViewController.xib in Resources */,
 				DB7DC0021D8CFB6500B1C52C /* FromViewController.xib in Resources */,
-				DB7D3A1A1D0406110002A704 /* KVO_ViewController.xib in Resources */,
 				DBE132591CFFDDC300FC702C /* Assets.xcassets in Resources */,
 				DBE132571CFFDDC300FC702C /* Main.storyboard in Resources */,
 				DB8976B31D51E4DB00CE36FB /* content.json in Resources */,
@@ -1435,7 +1379,6 @@
 				DB726EC71DA2809E004C6571 /* BaseNavigationController.m in Sources */,
 				DB6519041DD815FA005FD77A /* LayoutViewController.m in Sources */,
 				DBC449E31D9CB8C8007C74FF /* CoreGraphiViewController.m in Sources */,
-				DB7F32571D5C7F3C001F76E4 /* BViewController.m in Sources */,
 				DB33A4BB1D8B93AE00DA0DB7 /* InLabel.m in Sources */,
 				DB8053671D7ACBD40026860C /* PastTableViewController.m in Sources */,
 				DB80536A1D7ACBE30026860C /* PastTableViewCell.m in Sources */,
@@ -1449,13 +1392,11 @@
 				DBCC98601D5D787D00E7DE2A /* BBViewController.m in Sources */,
 				DB36B4931DDB2C1100124062 /* DetailViewController.m in Sources */,
 				DB80535A1D7A9A6A0026860C /* PastViewController.m in Sources */,
-				DB7F325A1D5C80C2001F76E4 /* ANavigationController.m in Sources */,
 				DB8053641D7AC4A50026860C /* JSQMessagesCellTextView.m in Sources */,
 				DB73965F1D714E240057804E /* CTLinkUtil.m in Sources */,
 				DBD19F6B1D824B1700FB9CB3 /* JLDBTool.m in Sources */,
 				DBD308BC1D9765780031DDEF /* NotificationTool.m in Sources */,
 				DB78DE991D64A9A400BF0F6E /* MyButton.m in Sources */,
-				DB7F32541D5C7F33001F76E4 /* AViewController.m in Sources */,
 				DB83DEB31D87D95800290E10 /* PViewController.m in Sources */,
 				DB7DC0061D8CFB7100B1C52C /* AniToViewController.m in Sources */,
 				DB81AF531D98FE3A00346EB0 /* CameraViewController.m in Sources */,
@@ -1480,11 +1421,9 @@
 				DBDC221E1D86560F00467F1A /* MyLayer.m in Sources */,
 				DB7D1C451D50A294004CB242 /* UIView+extension.m in Sources */,
 				DB83DEB81D87FA7400290E10 /* HeightTableViewController.m in Sources */,
-				DB7EF31F1D228369005A8267 /* CalenderViewController.m in Sources */,
 				DB36B4901DDB2BFF00124062 /* RootViewController.m in Sources */,
 				DB9DC0321D6BD7D2005ACE2A /* AnimationViewController.m in Sources */,
 				DBC449DE1D9CB87E007C74FF /* CornerRadiousViewController.m in Sources */,
-				DB7D3A1D1D04062A0002A704 /* TipView.m in Sources */,
 				DB73965C1D7137850057804E /* CoreTextLineData.m in Sources */,
 				DB8FD8CC1D8E8F94004AC729 /* UITestViewController.m in Sources */,
 				DB8A906D1D6560DA00978F31 /* MyTableViewCell.m in Sources */,
@@ -1506,14 +1445,12 @@
 				DB8B027B1DAC851E00FB354B /* ArchiveViewController.m in Sources */,
 				DBD315121D7A596600CA6610 /* TipsViewController.m in Sources */,
 				DB2DFF681DDC80F200950C50 /* NSMutableArray+crashExtension.m in Sources */,
-				DB7D3A191D0406110002A704 /* KVO_ViewController.m in Sources */,
 				DB8130E11D965D110074E712 /* LineView.m in Sources */,
 				DBE1324E1CFFDDC300FC702C /* main.m in Sources */,
 				DBC449E71D9CBA2C007C74FF /* UIImage+extension.m in Sources */,
 				DB329B761DB6432A002AB449 /* DepyCopyViewController.m in Sources */,
 				DB830E9C1D7D24D0009EAE7D /* SaveImageViewController.m in Sources */,
 				DBD215FC1D52E46000CA0B0B /* CoreTextImageData.m in Sources */,
-				DB81CFE01D13D6BA00C57FFC /* ResponderChainViewController.m in Sources */,
 				DBE132881CFFDE8500FC702C /* MainTableViewController.m in Sources */,
 				DBD4CC381D7BDE4D008219E1 /* LineTableTController.m in Sources */,
 				DB7D1C481D50A3E3004CB242 /* CTFrameParserConfig.m in Sources */,
@@ -1527,7 +1464,6 @@
 				DBC057E81DEC43CE0052BD5D /* ScaleViewController.m in Sources */,
 				DBD308B91D97604E0031DDEF /* MyTextView.m in Sources */,
 				DB84DED41D41BE5300C6527D /* EGOViewController.m in Sources */,
-				DBE16CEA1D13B1C4002BDDD4 /* ButtonScaleViewController.m in Sources */,
 				DB329B7A1DB6435F002AB449 /* DepySuper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
