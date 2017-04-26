@@ -22,7 +22,7 @@
     [self.view addSubview:self.layerView];
     self.containerView.hidden = YES;
     
-    [self defineMediaTiming];
+   
 }
 - (IBAction)back:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -33,9 +33,14 @@
     
 }
 
+#pragma -mark
+#pragma -mark 自定义 TimingFunction 
+- (void)defineTimingFunction {
+    CAMediaTimingFunction *func = [CAMediaTimingFunction functionWithControlPoints:1 :0 :0.75 :1];
+    [self timingWithTimeingFunction:func];
+}
 
-- (void)defineMediaTiming {
-    CAMediaTimingFunction *function = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+- (void)timingWithTimeingFunction:(CAMediaTimingFunction *)function {
     // get controlPoint
     float f1[2] = {0}, f2[2] = {0};
     [function getControlPointAtIndex:1 values:f1];
@@ -57,7 +62,11 @@
     [self.layerView.layer addSublayer:layer];
     // self
     self.layerView.layer.geometryFlipped = YES;
-    
+}
+
+- (void)defineMediaTiming {
+    CAMediaTimingFunction *function = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    [self timingWithTimeingFunction:function];
 }
 
 - (UIView *)layerView {
