@@ -14,6 +14,7 @@
 		CE50DBA21E769DAA00B5075C /* wuyanzu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE50DB9E1E769DAA00B5075C /* wuyanzu.jpg */; };
 		CE53F1611E77DF0A006590B5 /* ShapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE53F1601E77DF0A006590B5 /* ShapViewController.m */; };
 		CE53F1641E77E497006590B5 /* GroupAniView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE53F1631E77E497006590B5 /* GroupAniView.m */; };
+		CE73E0761EB07D1600102F90 /* TimeingFuncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE73E0751EB07D1600102F90 /* TimeingFuncViewController.m */; };
 		CED5894D1E6E9621002BC9B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CED5894C1E6E9621002BC9B3 /* main.m */; };
 		CED589501E6E9621002BC9B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CED5894F1E6E9621002BC9B3 /* AppDelegate.m */; };
 		CED589531E6E9621002BC9B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED589521E6E9621002BC9B3 /* ViewController.m */; };
@@ -52,6 +53,8 @@
 		CE53F1601E77DF0A006590B5 /* ShapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapViewController.m; sourceTree = "<group>"; };
 		CE53F1621E77E497006590B5 /* GroupAniView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupAniView.h; sourceTree = "<group>"; };
 		CE53F1631E77E497006590B5 /* GroupAniView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupAniView.m; sourceTree = "<group>"; };
+		CE73E0741EB07D1600102F90 /* TimeingFuncViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeingFuncViewController.h; sourceTree = "<group>"; };
+		CE73E0751EB07D1600102F90 /* TimeingFuncViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeingFuncViewController.m; sourceTree = "<group>"; };
 		CED589481E6E9621002BC9B3 /* animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED5894C1E6E9621002BC9B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CED5894E1E6E9621002BC9B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +120,15 @@
 			path = Resource_Ani;
 			sourceTree = "<group>";
 		};
+		CE73E0731EB07C7100102F90 /* iOS-CoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				CE73E0741EB07D1600102F90 /* TimeingFuncViewController.h */,
+				CE73E0751EB07D1600102F90 /* TimeingFuncViewController.m */,
+			);
+			name = "iOS-CoreAnimation";
+			sourceTree = "<group>";
+		};
 		CED5893F1E6E9621002BC9B3 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +153,7 @@
 		CED5894A1E6E9621002BC9B3 /* animation */ = {
 			isa = PBXGroup;
 			children = (
+				CE73E0731EB07C7100102F90 /* iOS-CoreAnimation */,
 				CE50DB9A1E769DAA00B5075C /* Resource_Ani */,
 				CED5897E1E6E9633002BC9B3 /* Layer Animation */,
 				CED5894E1E6E9621002BC9B3 /* AppDelegate.h */,
@@ -336,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CED589531E6E9621002BC9B3 /* ViewController.m in Sources */,
+				CE73E0761EB07D1600102F90 /* TimeingFuncViewController.m in Sources */,
 				CED589811E6E9685002BC9B3 /* LayerAnimationViewController.m in Sources */,
 				CED589501E6E9621002BC9B3 /* AppDelegate.m in Sources */,
 				CE53F1641E77E497006590B5 /* GroupAniView.m in Sources */,
