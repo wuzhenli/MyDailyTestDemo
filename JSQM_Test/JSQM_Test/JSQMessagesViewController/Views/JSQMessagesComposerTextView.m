@@ -176,22 +176,14 @@
 {
     [super setBounds:bounds];
     
-    NSLog(@"------   %@  ", NSStringFromCGPoint(self.contentOffset));
-     NSLog(@"%@   %@", NSStringFromCGSize(self.contentSize), NSStringFromCGRect(self.bounds));
+//    NSLog(@"------   %@  ", NSStringFromCGPoint(self.contentOffset));
+//     NSLog(@"%@   %@", NSStringFromCGSize(self.contentSize), NSStringFromCGRect(self.bounds));
     if (self.contentSize.height <= self.bounds.size.height + 1){
         self.contentOffset = CGPointZero; // Fix wrong contentOfset
     } 
-    else if ( self.contentOffset.y > self.contentSize.height - self.bounds.size.height + 1.1) {
-        self.contentOffset = CGPointMake(0, self.contentSize.height - self.bounds.size.height + 1.1 );
-    }
-    
-    //  140    28
-    
-    //  170    150  |   20  
-    
-    
-//    self.textContainerInset = UIEdgeInsetsMake(4.0f, 2.0f, 4.0f, 2.0f);
-//    self.contentInset = UIEdgeInsetsMake(1.0f, 0.0f, 1.0f, 0.0f);
+//    else if ( self.contentOffset.y > self.contentSize.height - self.bounds.size.height + 1.1) {
+//        self.contentOffset = CGPointMake(0, self.contentSize.height - self.bounds.size.height + 1.1 );
+//    }
 }
 
 - (void)setText:(NSString *)text

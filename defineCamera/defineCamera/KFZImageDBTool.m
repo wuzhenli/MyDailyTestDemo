@@ -35,24 +35,18 @@ static FMDatabase *db = nil;
  * 保存图片
  */
 + (void)insertImage:(UIImage *)imageIn clientMsgId:(NSString *)imgId {
-    NSData *imgData = [NSKeyedArchiver archivedDataWithRootObject:imageIn];
-    NSString *sql = [NSString stringWithFormat:@"insert into %@ (id, image) values (?, ?)", tableName];
-    BOOL result = [db executeUpdate:sql,imgId, imgData ];
-    if (result == NO) {
-        NSLog(@"保持图片失败：%@", imgId);
-    } else {
-        NSLog(@"保持 成功：%@", imgId);
-    }
-    
-//    void(^Block)(UIImage *, NSString *) = ^(UIImage *image, NSString *imgId) {
-//        NSData *imgData = [NSKeyedArchiver archivedDataWithRootObject:image];
-//        NSString *sql = [NSString stringWithFormat:@"insert into %@ (id, image) values (?, ?)", tableName];
-//        BOOL result = [db executeUpdate:sql,imgId, imgData ];
-//        if (result == NO) {
-//            DLog(@"保持图片失败：%@", imgId);
-//        }
-//    };
-//    Block(imageIn, imgId);
+    void(^Block)(UIImage *, NSString *) = ^(UIImage *image, NSString *imgId) {
+        NSData *imgData = [NSKeyedArchiver archivedDataWithRootObject:image];
+        NSString *sql = [NSString stringWithFormat:@"insert into %@ (id, image) values (?, ?)", tableName];
+        if ([db executeUpdate:sql,imgId, imgData ]) {
+            NSLog(@"保存成功");
+        } else {
+            NSLog(@"保存-- 失败 --");
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"error" message:@"save image error" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+            [alert show];
+        }
+    };
+    Block(imageIn, imgId);
 }
 
 /**

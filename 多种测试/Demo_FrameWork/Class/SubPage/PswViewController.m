@@ -9,9 +9,9 @@
 #import "PswViewController.h"
 #import <AFNetworking.h>
 #import "PSTextField.h"
-#import "AViewController.h"
+
 #import "Tools.h"
-#import "ANavigationController.h"
+
 
 
 @interface PswViewController ()<UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource>
@@ -54,13 +54,7 @@
     });
 }
 - (void)show {
-//    NSLog(@"%@",self.textField.text);
-    AViewController *vc = [[AViewController alloc] init];
-    ANavigationController *nav = [[ANavigationController alloc] initWithRootViewController:vc];
-    [self presentViewController:nav animated:YES completion:nil];
-    
-    UIViewController *vc1 = [Tools getCurrentVC];
-    NSLog(@"%@",[vc1 class]);
+//
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

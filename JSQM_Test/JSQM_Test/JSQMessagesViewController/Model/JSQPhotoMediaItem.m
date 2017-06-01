@@ -99,6 +99,22 @@
 {
     return UIImageJPEGRepresentation(self.image, 1);
 }
+- (CGSize)mediaViewDisplaySize {
+    CGFloat maxWidth = _image.size.width > _image.size.height ? _image.size.width : _image.size.height;
+    if (maxWidth > [UIScreen mainScreen].bounds.size.width * 0.6) {
+        maxWidth = [UIScreen mainScreen].bounds.size.width * 0.6;
+    }
+    CGFloat height = 1;
+    if (_image.size.width > _image.size.height) {
+        height = maxWidth / _image.size.width * _image.size.height;
+    } else {
+        height = maxWidth;
+        
+        maxWidth = height / _image.size.height * _image.size.width;
+    }
+    
+    return CGSizeMake(maxWidth, height);
+}
 
 #pragma mark - NSObject
 

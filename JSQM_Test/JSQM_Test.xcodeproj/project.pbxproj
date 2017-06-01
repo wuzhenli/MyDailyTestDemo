@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE69BDF31EA848D5004D003F /* sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE69BDF21EA848D5004D003F /* sound.wav */; };
 		DB546C5D1DCD894C00B15616 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB546C5C1DCD894C00B15616 /* main.m */; };
 		DB546C601DCD894C00B15616 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB546C5F1DCD894C00B15616 /* AppDelegate.m */; };
 		DB546C681DCD894C00B15616 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB546C671DCD894C00B15616 /* Assets.xcassets */; };
@@ -81,6 +82,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE69BDF21EA848D5004D003F /* sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound.wav; sourceTree = "<group>"; };
 		DB546C581DCD894C00B15616 /* JSQM_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSQM_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB546C5C1DCD894C00B15616 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DB546C5E1DCD894C00B15616 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -448,6 +450,7 @@
 		DB546D201DCD89C000B15616 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CE69BDF21EA848D5004D003F /* sound.wav */,
 				DB546D281DCD8F4C00B15616 /* DemoModelData.h */,
 				DB546D291DCD8F4C00B15616 /* DemoModelData.m */,
 				DB546D251DCD8F4100B15616 /* NSUserDefaults+DemoSettings.h */,
@@ -573,6 +576,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE69BDF31EA848D5004D003F /* sound.wav in Resources */,
 				DB546C6B1DCD894C00B15616 /* LaunchScreen.storyboard in Resources */,
 				DB546D1E1DCD89BD00B15616 /* JSQMessagesTypingIndicatorFooterView.xib in Resources */,
 				DB546CF31DCD89BD00B15616 /* JSQMessagesAssets.bundle in Resources */,
