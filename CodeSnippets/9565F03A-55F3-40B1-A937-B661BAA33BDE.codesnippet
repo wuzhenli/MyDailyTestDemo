@@ -3,32 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>logIvars</string>
+	<string>copy shortcut</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>unsigned int count = 0;
-    Ivar *ivars = class_copyIvarList([self class], &amp;count);
-    
-    for (unsigned int i = 0; i&lt;count; i++) {
-        Ivar ivar = ivars[i];
-        const char * cName = ivar_getName(ivar);
-        NSLog(@"\t%s", cName);
-    }
-    free(ivars);</string>
+	<string>@property (copy, nonatomic) &lt;#type#&gt; &lt;#name#&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>780595E4-CDBC-4CFA-980E-6675A85F4CBD</string>
+	<string>9565F03A-55F3-40B1-A937-B661BAA33BDE</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>logIvars</string>
+	<string>copy summary</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>logIvars</string>
+	<string>copy title</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>

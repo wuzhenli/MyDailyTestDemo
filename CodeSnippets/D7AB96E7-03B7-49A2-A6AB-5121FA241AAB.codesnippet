@@ -3,24 +3,48 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>return 返回值</string>
+	<string>blank</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>return &lt;#value#&gt;</string>
+	<string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>075497EB-FF6A-493E-B37D-4AB2957D27CF</string>
+	<string>D7AB96E7-03B7-49A2-A6AB-5121FA241AAB</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>return summary</string>
+	<string>blank</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>返回变量</string>
+	<string>blank</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
