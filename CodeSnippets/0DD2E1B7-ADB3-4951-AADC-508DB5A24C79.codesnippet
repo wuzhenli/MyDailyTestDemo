@@ -3,45 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>blank</string>
+	<string>__func shortcut</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</string>
+	<string>NSLog(@"%s", __func__);</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>D7AB96E7-03B7-49A2-A6AB-5121FA241AAB</string>
+	<string>0DD2E1B7-ADB3-4951-AADC-508DB5A24C79</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>blank</string>
+	<string>__func summary</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>blank</string>
+	<string>__func title</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

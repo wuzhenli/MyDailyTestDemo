@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>logProperty</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSLog(@" ------- %@ PropertyList------- ", NSStringFromClass([self class]));
+    unsigned int count = 0;
+    objc_property_t *propertys = class_copyPropertyList([self class], &amp;count);
+    
+    for (unsigned int i = 0; i&lt;count; i++) {
+        objc_property_t property = propertys[i];
+        const char * cName = property_getName(property);
+        NSLog(@"\t%s", cName);
+    }
+    free(propertys);</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0F89463B-6E5A-4959-A3E3-3AFD25361050</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>logProperty</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>logProperty</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

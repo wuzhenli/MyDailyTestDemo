@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>blank</string>
+	<string>blank_Swift</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>
@@ -35,13 +35,61 @@
 
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>D7AB96E7-03B7-49A2-A6AB-5121FA241AAB</string>
+	<string>8165829B-C82E-4889-97E5-21DB29A49686</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>blank</string>
+	<string>blank_Swift
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+blank_swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>blank</string>
+	<string>blank_Swift</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

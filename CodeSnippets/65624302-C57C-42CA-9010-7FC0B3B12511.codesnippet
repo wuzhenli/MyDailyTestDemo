@@ -3,45 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>blank</string>
+	<string>return shortcut</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</string>
+	<string>return &lt;#value#&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>D7AB96E7-03B7-49A2-A6AB-5121FA241AAB</string>
+	<string>65624302-C57C-42CA-9010-7FC0B3B12511</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>blank</string>
+	<string>return summary</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>blank</string>
+	<string>return title</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
